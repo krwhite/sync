@@ -1,0 +1,529 @@
+[07-Jun-2013 14:54:18] PHP Fatal error:  Call to undefined function the_author_lin() in /var/www/html/wordpress/wp-content/themes/bones/news.php on line 39
+[25-Sep-2013 16:25:55] WordPress database error Duplicate entry '1' for key 1 for query INSERT INTO `wp_bup_htmltype` VALUES
+			(1, 'text', 'Text'),
+			(2, 'password', 'Password'),
+			(3, 'hidden', 'Hidden'),
+			(4, 'checkbox', 'Checkbox'),
+			(5, 'checkboxlist', 'Checkboxes'),
+			(6, 'datepicker', 'Date Picker'),
+			(7, 'submit', 'Button'),
+			(8, 'img', 'Image'),
+			(9, 'selectbox', 'Drop Down'),
+			(10, 'radiobuttons', 'Radio Buttons'),
+			(11, 'countryList', 'Countries List'),
+			(12, 'selectlist', 'List'),
+			(13, 'countryListMultiple', 'Country List with posibility to select multiple countries'),
+			(14, 'block', 'Will show only value as text'),
+			(15, 'statesList', 'States List'),
+			(16, 'textFieldsDynamicTable', 'Dynamic table - multiple text options set'),
+			(17, 'textarea', 'Textarea'),
+			(18, 'checkboxHiddenVal', 'Checkbox with Hidden field') made by require_once('wp-admin/admin.php'), require_once('wp-load.php'), require_once('/var/www/html/wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/ready-backup/backup-ready.php'), installerBup::update, installerBup::init, dbBup::query
+[25-Sep-2013 16:25:55] WordPress database error Duplicate entry 'adminmenu' for key 2 for query INSERT INTO `wp_bup_modules` (id, code, active, type_id, params, has_tab, label, description) VALUES
+		  (NULL, 'adminmenu',1,1,'',0,'Admin Menu',''),
+		  (NULL, 'options',1,1,'',1,'Options',''),
+		  (NULL, 'log', 1, 1, '', 0, 'Log', 'Internal system module to log some actions on server'),
+		  (NULL, 'templates',1,1,'',0,'Templates for Plugin',''),
+		  (NULL, 'backup', 1, 1, '', 1, 'Backup ready!', 'Backup ready!'),
+		  (NULL, 'schedule', 1, 1, '', 1, 'Schedule', 'Schedule'),
+		  (NULL, 'storage', 1, 1, '', 1, 'Storage', 'Storage'); made by require_once('wp-admin/admin.php'), require_once('wp-load.php'), require_once('/var/www/html/wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/ready-backup/backup-ready.php'), installerBup::update, installerBup::init, dbBup::query
+[25-Sep-2013 16:25:55] WordPress database error Duplicate entry '1' for key 1 for query INSERT INTO `wp_bup_modules_type` VALUES
+		  (1,'system'),
+		  (2,'addons')
+		   made by require_once('wp-admin/admin.php'), require_once('wp-load.php'), require_once('/var/www/html/wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/ready-backup/backup-ready.php'), installerBup::update, installerBup::init, dbBup::query
+[25-Sep-2013 16:25:55] WordPress database error Duplicate entry 'full' for key 2 for query INSERT INTO `wp_bup_options` (`id`,`code`,`value`,`label`,`description`,`htmltype_id`,`params`,`cat_id`,`sort_order`,`value_type`) VALUES 
+			(NULL,'full','1','Full backup','on/off full backup',1,'',0,0,'dest_backup'),
+			(NULL,'plugins','0','Plugins','on/off backup plugins',1,'',0,0,'dest_backup'),
+			(NULL,'themes','0','Themes','on/off backup themes',1,'',0,0,'dest_backup'),
+			(NULL,'uploads','0','Uploads','on/off backup uploads',1,'',0,0,'dest_backup'),
+			(NULL,'database','1','Database','on/off backup database',1,'',0,0,'db_backup'),
+			(NULL,'any_directories','0','Any','Any other directories found inside wp-content',1,'',0,0,'dest_backup'),
+			(NULL,'warehouse','/wp-content/upready/','Warehouse','path to storage',1,'',0,0,''),
+			(NULL,'warehouse_ignore','upready','Warehouse_ignore','Name ignore directory storage',1,'',0,0,''),
+			(NULL,'safe_array','','Safe array','Safe file array',1,'',0,0,''),
+			(NULL,'count_folder','','Count folder','Count folder',1,'',0,0,'')
+			; made by require_once('wp-admin/admin.php'), require_once('wp-load.php'), require_once('/var/www/html/wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/ready-backup/backup-ready.php'), installerBup::update, installerBup::init, dbBup::query
+[25-Sep-2013 16:25:55] WordPress database error Duplicate entry '1' for key 1 for query INSERT INTO `wp_bup_options_categories` VALUES
+			(1, 'General'),
+			(2, 'Template'),
+			(3, 'Subscribe'),
+			(4, 'Social'); made by require_once('wp-admin/admin.php'), require_once('wp-load.php'), require_once('/var/www/html/wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/ready-backup/backup-ready.php'), installerBup::update, installerBup::init, dbBup::query
+[25-Sep-2013 16:25:57] WordPress database error Duplicate entry '1' for key 1 for query INSERT INTO `wp_bup_htmltype` VALUES
+			(1, 'text', 'Text'),
+			(2, 'password', 'Password'),
+			(3, 'hidden', 'Hidden'),
+			(4, 'checkbox', 'Checkbox'),
+			(5, 'checkboxlist', 'Checkboxes'),
+			(6, 'datepicker', 'Date Picker'),
+			(7, 'submit', 'Button'),
+			(8, 'img', 'Image'),
+			(9, 'selectbox', 'Drop Down'),
+			(10, 'radiobuttons', 'Radio Buttons'),
+			(11, 'countryList', 'Countries List'),
+			(12, 'selectlist', 'List'),
+			(13, 'countryListMultiple', 'Country List with posibility to select multiple countries'),
+			(14, 'block', 'Will show only value as text'),
+			(15, 'statesList', 'States List'),
+			(16, 'textFieldsDynamicTable', 'Dynamic table - multiple text options set'),
+			(17, 'textarea', 'Textarea'),
+			(18, 'checkboxHiddenVal', 'Checkbox with Hidden field') made by require_once('wp-load.php'), require_once('/var/www/html/wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/ready-backup/backup-ready.php'), installerBup::update, installerBup::init, dbBup::query
+[25-Sep-2013 16:25:57] WordPress database error Duplicate entry 'adminmenu' for key 2 for query INSERT INTO `wp_bup_modules` (id, code, active, type_id, params, has_tab, label, description) VALUES
+		  (NULL, 'adminmenu',1,1,'',0,'Admin Menu',''),
+		  (NULL, 'options',1,1,'',1,'Options',''),
+		  (NULL, 'log', 1, 1, '', 0, 'Log', 'Internal system module to log some actions on server'),
+		  (NULL, 'templates',1,1,'',0,'Templates for Plugin',''),
+		  (NULL, 'backup', 1, 1, '', 1, 'Backup ready!', 'Backup ready!'),
+		  (NULL, 'schedule', 1, 1, '', 1, 'Schedule', 'Schedule'),
+		  (NULL, 'storage', 1, 1, '', 1, 'Storage', 'Storage'); made by require_once('wp-load.php'), require_once('/var/www/html/wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/ready-backup/backup-ready.php'), installerBup::update, installerBup::init, dbBup::query
+[25-Sep-2013 16:25:57] WordPress database error Duplicate entry '1' for key 1 for query INSERT INTO `wp_bup_modules_type` VALUES
+		  (1,'system'),
+		  (2,'addons')
+		   made by require_once('wp-load.php'), require_once('/var/www/html/wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/ready-backup/backup-ready.php'), installerBup::update, installerBup::init, dbBup::query
+[25-Sep-2013 16:25:57] WordPress database error Duplicate entry 'full' for key 2 for query INSERT INTO `wp_bup_options` (`id`,`code`,`value`,`label`,`description`,`htmltype_id`,`params`,`cat_id`,`sort_order`,`value_type`) VALUES 
+			(NULL,'full','1','Full backup','on/off full backup',1,'',0,0,'dest_backup'),
+			(NULL,'plugins','0','Plugins','on/off backup plugins',1,'',0,0,'dest_backup'),
+			(NULL,'themes','0','Themes','on/off backup themes',1,'',0,0,'dest_backup'),
+			(NULL,'uploads','0','Uploads','on/off backup uploads',1,'',0,0,'dest_backup'),
+			(NULL,'database','1','Database','on/off backup database',1,'',0,0,'db_backup'),
+			(NULL,'any_directories','0','Any','Any other directories found inside wp-content',1,'',0,0,'dest_backup'),
+			(NULL,'warehouse','/wp-content/upready/','Warehouse','path to storage',1,'',0,0,''),
+			(NULL,'warehouse_ignore','upready','Warehouse_ignore','Name ignore directory storage',1,'',0,0,''),
+			(NULL,'safe_array','','Safe array','Safe file array',1,'',0,0,''),
+			(NULL,'count_folder','','Count folder','Count folder',1,'',0,0,'')
+			; made by require_once('wp-load.php'), require_once('/var/www/html/wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/ready-backup/backup-ready.php'), installerBup::update, installerBup::init, dbBup::query
+[25-Sep-2013 16:25:57] WordPress database error Duplicate entry '1' for key 1 for query INSERT INTO `wp_bup_options_categories` VALUES
+			(1, 'General'),
+			(2, 'Template'),
+			(3, 'Subscribe'),
+			(4, 'Social'); made by require_once('wp-load.php'), require_once('/var/www/html/wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/ready-backup/backup-ready.php'), installerBup::update, installerBup::init, dbBup::query
+[25-Sep-2013 16:26:09] WordPress database error Duplicate entry '1' for key 1 for query INSERT INTO `wp_bup_htmltype` VALUES
+			(1, 'text', 'Text'),
+			(2, 'password', 'Password'),
+			(3, 'hidden', 'Hidden'),
+			(4, 'checkbox', 'Checkbox'),
+			(5, 'checkboxlist', 'Checkboxes'),
+			(6, 'datepicker', 'Date Picker'),
+			(7, 'submit', 'Button'),
+			(8, 'img', 'Image'),
+			(9, 'selectbox', 'Drop Down'),
+			(10, 'radiobuttons', 'Radio Buttons'),
+			(11, 'countryList', 'Countries List'),
+			(12, 'selectlist', 'List'),
+			(13, 'countryListMultiple', 'Country List with posibility to select multiple countries'),
+			(14, 'block', 'Will show only value as text'),
+			(15, 'statesList', 'States List'),
+			(16, 'textFieldsDynamicTable', 'Dynamic table - multiple text options set'),
+			(17, 'textarea', 'Textarea'),
+			(18, 'checkboxHiddenVal', 'Checkbox with Hidden field') made by require_once('wp-load.php'), require_once('/var/www/html/wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/ready-backup/backup-ready.php'), installerBup::update, installerBup::init, dbBup::query
+[25-Sep-2013 16:26:09] WordPress database error Duplicate entry 'adminmenu' for key 2 for query INSERT INTO `wp_bup_modules` (id, code, active, type_id, params, has_tab, label, description) VALUES
+		  (NULL, 'adminmenu',1,1,'',0,'Admin Menu',''),
+		  (NULL, 'options',1,1,'',1,'Options',''),
+		  (NULL, 'log', 1, 1, '', 0, 'Log', 'Internal system module to log some actions on server'),
+		  (NULL, 'templates',1,1,'',0,'Templates for Plugin',''),
+		  (NULL, 'backup', 1, 1, '', 1, 'Backup ready!', 'Backup ready!'),
+		  (NULL, 'schedule', 1, 1, '', 1, 'Schedule', 'Schedule'),
+		  (NULL, 'storage', 1, 1, '', 1, 'Storage', 'Storage'); made by require_once('wp-load.php'), require_once('/var/www/html/wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/ready-backup/backup-ready.php'), installerBup::update, installerBup::init, dbBup::query
+[25-Sep-2013 16:26:09] WordPress database error Duplicate entry '1' for key 1 for query INSERT INTO `wp_bup_modules_type` VALUES
+		  (1,'system'),
+		  (2,'addons')
+		   made by require_once('wp-load.php'), require_once('/var/www/html/wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/ready-backup/backup-ready.php'), installerBup::update, installerBup::init, dbBup::query
+[25-Sep-2013 16:26:09] WordPress database error Duplicate entry 'full' for key 2 for query INSERT INTO `wp_bup_options` (`id`,`code`,`value`,`label`,`description`,`htmltype_id`,`params`,`cat_id`,`sort_order`,`value_type`) VALUES 
+			(NULL,'full','1','Full backup','on/off full backup',1,'',0,0,'dest_backup'),
+			(NULL,'plugins','0','Plugins','on/off backup plugins',1,'',0,0,'dest_backup'),
+			(NULL,'themes','0','Themes','on/off backup themes',1,'',0,0,'dest_backup'),
+			(NULL,'uploads','0','Uploads','on/off backup uploads',1,'',0,0,'dest_backup'),
+			(NULL,'database','1','Database','on/off backup database',1,'',0,0,'db_backup'),
+			(NULL,'any_directories','0','Any','Any other directories found inside wp-content',1,'',0,0,'dest_backup'),
+			(NULL,'warehouse','/wp-content/upready/','Warehouse','path to storage',1,'',0,0,''),
+			(NULL,'warehouse_ignore','upready','Warehouse_ignore','Name ignore directory storage',1,'',0,0,''),
+			(NULL,'safe_array','','Safe array','Safe file array',1,'',0,0,''),
+			(NULL,'count_folder','','Count folder','Count folder',1,'',0,0,'')
+			; made by require_once('wp-load.php'), require_once('/var/www/html/wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/ready-backup/backup-ready.php'), installerBup::update, installerBup::init, dbBup::query
+[25-Sep-2013 16:26:09] WordPress database error Duplicate entry '1' for key 1 for query INSERT INTO `wp_bup_options_categories` VALUES
+			(1, 'General'),
+			(2, 'Template'),
+			(3, 'Subscribe'),
+			(4, 'Social'); made by require_once('wp-load.php'), require_once('/var/www/html/wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/ready-backup/backup-ready.php'), installerBup::update, installerBup::init, dbBup::query
+[25-Sep-2013 16:26:10] WordPress database error Duplicate entry '1' for key 1 for query INSERT INTO `wp_bup_htmltype` VALUES
+			(1, 'text', 'Text'),
+			(2, 'password', 'Password'),
+			(3, 'hidden', 'Hidden'),
+			(4, 'checkbox', 'Checkbox'),
+			(5, 'checkboxlist', 'Checkboxes'),
+			(6, 'datepicker', 'Date Picker'),
+			(7, 'submit', 'Button'),
+			(8, 'img', 'Image'),
+			(9, 'selectbox', 'Drop Down'),
+			(10, 'radiobuttons', 'Radio Buttons'),
+			(11, 'countryList', 'Countries List'),
+			(12, 'selectlist', 'List'),
+			(13, 'countryListMultiple', 'Country List with posibility to select multiple countries'),
+			(14, 'block', 'Will show only value as text'),
+			(15, 'statesList', 'States List'),
+			(16, 'textFieldsDynamicTable', 'Dynamic table - multiple text options set'),
+			(17, 'textarea', 'Textarea'),
+			(18, 'checkboxHiddenVal', 'Checkbox with Hidden field') made by require_once('wp-load.php'), require_once('/var/www/html/wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/ready-backup/backup-ready.php'), installerBup::update, installerBup::init, dbBup::query
+[25-Sep-2013 16:26:10] WordPress database error Duplicate entry 'adminmenu' for key 2 for query INSERT INTO `wp_bup_modules` (id, code, active, type_id, params, has_tab, label, description) VALUES
+		  (NULL, 'adminmenu',1,1,'',0,'Admin Menu',''),
+		  (NULL, 'options',1,1,'',1,'Options',''),
+		  (NULL, 'log', 1, 1, '', 0, 'Log', 'Internal system module to log some actions on server'),
+		  (NULL, 'templates',1,1,'',0,'Templates for Plugin',''),
+		  (NULL, 'backup', 1, 1, '', 1, 'Backup ready!', 'Backup ready!'),
+		  (NULL, 'schedule', 1, 1, '', 1, 'Schedule', 'Schedule'),
+		  (NULL, 'storage', 1, 1, '', 1, 'Storage', 'Storage'); made by require_once('wp-load.php'), require_once('/var/www/html/wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/ready-backup/backup-ready.php'), installerBup::update, installerBup::init, dbBup::query
+[25-Sep-2013 16:26:10] WordPress database error Duplicate entry '1' for key 1 for query INSERT INTO `wp_bup_modules_type` VALUES
+		  (1,'system'),
+		  (2,'addons')
+		   made by require_once('wp-load.php'), require_once('/var/www/html/wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/ready-backup/backup-ready.php'), installerBup::update, installerBup::init, dbBup::query
+[25-Sep-2013 16:26:10] WordPress database error Duplicate entry 'full' for key 2 for query INSERT INTO `wp_bup_options` (`id`,`code`,`value`,`label`,`description`,`htmltype_id`,`params`,`cat_id`,`sort_order`,`value_type`) VALUES 
+			(NULL,'full','1','Full backup','on/off full backup',1,'',0,0,'dest_backup'),
+			(NULL,'plugins','0','Plugins','on/off backup plugins',1,'',0,0,'dest_backup'),
+			(NULL,'themes','0','Themes','on/off backup themes',1,'',0,0,'dest_backup'),
+			(NULL,'uploads','0','Uploads','on/off backup uploads',1,'',0,0,'dest_backup'),
+			(NULL,'database','1','Database','on/off backup database',1,'',0,0,'db_backup'),
+			(NULL,'any_directories','0','Any','Any other directories found inside wp-content',1,'',0,0,'dest_backup'),
+			(NULL,'warehouse','/wp-content/upready/','Warehouse','path to storage',1,'',0,0,''),
+			(NULL,'warehouse_ignore','upready','Warehouse_ignore','Name ignore directory storage',1,'',0,0,''),
+			(NULL,'safe_array','','Safe array','Safe file array',1,'',0,0,''),
+			(NULL,'count_folder','','Count folder','Count folder',1,'',0,0,'')
+			; made by require_once('wp-load.php'), require_once('/var/www/html/wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/ready-backup/backup-ready.php'), installerBup::update, installerBup::init, dbBup::query
+[25-Sep-2013 16:26:10] WordPress database error Duplicate entry '1' for key 1 for query INSERT INTO `wp_bup_options_categories` VALUES
+			(1, 'General'),
+			(2, 'Template'),
+			(3, 'Subscribe'),
+			(4, 'Social'); made by require_once('wp-load.php'), require_once('/var/www/html/wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/ready-backup/backup-ready.php'), installerBup::update, installerBup::init, dbBup::query
+[25-Sep-2013 16:26:11] WordPress database error Duplicate entry '1' for key 1 for query INSERT INTO `wp_bup_htmltype` VALUES
+			(1, 'text', 'Text'),
+			(2, 'password', 'Password'),
+			(3, 'hidden', 'Hidden'),
+			(4, 'checkbox', 'Checkbox'),
+			(5, 'checkboxlist', 'Checkboxes'),
+			(6, 'datepicker', 'Date Picker'),
+			(7, 'submit', 'Button'),
+			(8, 'img', 'Image'),
+			(9, 'selectbox', 'Drop Down'),
+			(10, 'radiobuttons', 'Radio Buttons'),
+			(11, 'countryList', 'Countries List'),
+			(12, 'selectlist', 'List'),
+			(13, 'countryListMultiple', 'Country List with posibility to select multiple countries'),
+			(14, 'block', 'Will show only value as text'),
+			(15, 'statesList', 'States List'),
+			(16, 'textFieldsDynamicTable', 'Dynamic table - multiple text options set'),
+			(17, 'textarea', 'Textarea'),
+			(18, 'checkboxHiddenVal', 'Checkbox with Hidden field') made by require_once('wp-load.php'), require_once('/var/www/html/wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/ready-backup/backup-ready.php'), installerBup::update, installerBup::init, dbBup::query
+[25-Sep-2013 16:26:11] WordPress database error Duplicate entry 'adminmenu' for key 2 for query INSERT INTO `wp_bup_modules` (id, code, active, type_id, params, has_tab, label, description) VALUES
+		  (NULL, 'adminmenu',1,1,'',0,'Admin Menu',''),
+		  (NULL, 'options',1,1,'',1,'Options',''),
+		  (NULL, 'log', 1, 1, '', 0, 'Log', 'Internal system module to log some actions on server'),
+		  (NULL, 'templates',1,1,'',0,'Templates for Plugin',''),
+		  (NULL, 'backup', 1, 1, '', 1, 'Backup ready!', 'Backup ready!'),
+		  (NULL, 'schedule', 1, 1, '', 1, 'Schedule', 'Schedule'),
+		  (NULL, 'storage', 1, 1, '', 1, 'Storage', 'Storage'); made by require_once('wp-load.php'), require_once('/var/www/html/wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/ready-backup/backup-ready.php'), installerBup::update, installerBup::init, dbBup::query
+[25-Sep-2013 16:26:11] WordPress database error Duplicate entry '1' for key 1 for query INSERT INTO `wp_bup_modules_type` VALUES
+		  (1,'system'),
+		  (2,'addons')
+		   made by require_once('wp-load.php'), require_once('/var/www/html/wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/ready-backup/backup-ready.php'), installerBup::update, installerBup::init, dbBup::query
+[25-Sep-2013 16:26:11] WordPress database error Duplicate entry 'full' for key 2 for query INSERT INTO `wp_bup_options` (`id`,`code`,`value`,`label`,`description`,`htmltype_id`,`params`,`cat_id`,`sort_order`,`value_type`) VALUES 
+			(NULL,'full','1','Full backup','on/off full backup',1,'',0,0,'dest_backup'),
+			(NULL,'plugins','0','Plugins','on/off backup plugins',1,'',0,0,'dest_backup'),
+			(NULL,'themes','0','Themes','on/off backup themes',1,'',0,0,'dest_backup'),
+			(NULL,'uploads','0','Uploads','on/off backup uploads',1,'',0,0,'dest_backup'),
+			(NULL,'database','1','Database','on/off backup database',1,'',0,0,'db_backup'),
+			(NULL,'any_directories','0','Any','Any other directories found inside wp-content',1,'',0,0,'dest_backup'),
+			(NULL,'warehouse','/wp-content/upready/','Warehouse','path to storage',1,'',0,0,''),
+			(NULL,'warehouse_ignore','upready','Warehouse_ignore','Name ignore directory storage',1,'',0,0,''),
+			(NULL,'safe_array','','Safe array','Safe file array',1,'',0,0,''),
+			(NULL,'count_folder','','Count folder','Count folder',1,'',0,0,'')
+			; made by require_once('wp-load.php'), require_once('/var/www/html/wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/ready-backup/backup-ready.php'), installerBup::update, installerBup::init, dbBup::query
+[25-Sep-2013 16:26:11] WordPress database error Duplicate entry '1' for key 1 for query INSERT INTO `wp_bup_options_categories` VALUES
+			(1, 'General'),
+			(2, 'Template'),
+			(3, 'Subscribe'),
+			(4, 'Social'); made by require_once('wp-load.php'), require_once('/var/www/html/wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/ready-backup/backup-ready.php'), installerBup::update, installerBup::init, dbBup::query
+[25-Sep-2013 16:26:31] WordPress database error Duplicate entry '1' for key 1 for query INSERT INTO `wp_bup_htmltype` VALUES
+			(1, 'text', 'Text'),
+			(2, 'password', 'Password'),
+			(3, 'hidden', 'Hidden'),
+			(4, 'checkbox', 'Checkbox'),
+			(5, 'checkboxlist', 'Checkboxes'),
+			(6, 'datepicker', 'Date Picker'),
+			(7, 'submit', 'Button'),
+			(8, 'img', 'Image'),
+			(9, 'selectbox', 'Drop Down'),
+			(10, 'radiobuttons', 'Radio Buttons'),
+			(11, 'countryList', 'Countries List'),
+			(12, 'selectlist', 'List'),
+			(13, 'countryListMultiple', 'Country List with posibility to select multiple countries'),
+			(14, 'block', 'Will show only value as text'),
+			(15, 'statesList', 'States List'),
+			(16, 'textFieldsDynamicTable', 'Dynamic table - multiple text options set'),
+			(17, 'textarea', 'Textarea'),
+			(18, 'checkboxHiddenVal', 'Checkbox with Hidden field') made by require_once('wp-load.php'), require_once('/var/www/html/wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/ready-backup/backup-ready.php'), installerBup::update, installerBup::init, dbBup::query
+[25-Sep-2013 16:26:31] WordPress database error Duplicate entry 'adminmenu' for key 2 for query INSERT INTO `wp_bup_modules` (id, code, active, type_id, params, has_tab, label, description) VALUES
+		  (NULL, 'adminmenu',1,1,'',0,'Admin Menu',''),
+		  (NULL, 'options',1,1,'',1,'Options',''),
+		  (NULL, 'log', 1, 1, '', 0, 'Log', 'Internal system module to log some actions on server'),
+		  (NULL, 'templates',1,1,'',0,'Templates for Plugin',''),
+		  (NULL, 'backup', 1, 1, '', 1, 'Backup ready!', 'Backup ready!'),
+		  (NULL, 'schedule', 1, 1, '', 1, 'Schedule', 'Schedule'),
+		  (NULL, 'storage', 1, 1, '', 1, 'Storage', 'Storage'); made by require_once('wp-load.php'), require_once('/var/www/html/wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/ready-backup/backup-ready.php'), installerBup::update, installerBup::init, dbBup::query
+[25-Sep-2013 16:26:31] WordPress database error Duplicate entry '1' for key 1 for query INSERT INTO `wp_bup_modules_type` VALUES
+		  (1,'system'),
+		  (2,'addons')
+		   made by require_once('wp-load.php'), require_once('/var/www/html/wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/ready-backup/backup-ready.php'), installerBup::update, installerBup::init, dbBup::query
+[25-Sep-2013 16:26:31] WordPress database error Duplicate entry 'full' for key 2 for query INSERT INTO `wp_bup_options` (`id`,`code`,`value`,`label`,`description`,`htmltype_id`,`params`,`cat_id`,`sort_order`,`value_type`) VALUES 
+			(NULL,'full','1','Full backup','on/off full backup',1,'',0,0,'dest_backup'),
+			(NULL,'plugins','0','Plugins','on/off backup plugins',1,'',0,0,'dest_backup'),
+			(NULL,'themes','0','Themes','on/off backup themes',1,'',0,0,'dest_backup'),
+			(NULL,'uploads','0','Uploads','on/off backup uploads',1,'',0,0,'dest_backup'),
+			(NULL,'database','1','Database','on/off backup database',1,'',0,0,'db_backup'),
+			(NULL,'any_directories','0','Any','Any other directories found inside wp-content',1,'',0,0,'dest_backup'),
+			(NULL,'warehouse','/wp-content/upready/','Warehouse','path to storage',1,'',0,0,''),
+			(NULL,'warehouse_ignore','upready','Warehouse_ignore','Name ignore directory storage',1,'',0,0,''),
+			(NULL,'safe_array','','Safe array','Safe file array',1,'',0,0,''),
+			(NULL,'count_folder','','Count folder','Count folder',1,'',0,0,'')
+			; made by require_once('wp-load.php'), require_once('/var/www/html/wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/ready-backup/backup-ready.php'), installerBup::update, installerBup::init, dbBup::query
+[25-Sep-2013 16:26:31] WordPress database error Duplicate entry '1' for key 1 for query INSERT INTO `wp_bup_options_categories` VALUES
+			(1, 'General'),
+			(2, 'Template'),
+			(3, 'Subscribe'),
+			(4, 'Social'); made by require_once('wp-load.php'), require_once('/var/www/html/wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/ready-backup/backup-ready.php'), installerBup::update, installerBup::init, dbBup::query
+[25-Sep-2013 16:26:53] WordPress database error Duplicate entry '1' for key 1 for query INSERT INTO `wp_bup_htmltype` VALUES
+			(1, 'text', 'Text'),
+			(2, 'password', 'Password'),
+			(3, 'hidden', 'Hidden'),
+			(4, 'checkbox', 'Checkbox'),
+			(5, 'checkboxlist', 'Checkboxes'),
+			(6, 'datepicker', 'Date Picker'),
+			(7, 'submit', 'Button'),
+			(8, 'img', 'Image'),
+			(9, 'selectbox', 'Drop Down'),
+			(10, 'radiobuttons', 'Radio Buttons'),
+			(11, 'countryList', 'Countries List'),
+			(12, 'selectlist', 'List'),
+			(13, 'countryListMultiple', 'Country List with posibility to select multiple countries'),
+			(14, 'block', 'Will show only value as text'),
+			(15, 'statesList', 'States List'),
+			(16, 'textFieldsDynamicTable', 'Dynamic table - multiple text options set'),
+			(17, 'textarea', 'Textarea'),
+			(18, 'checkboxHiddenVal', 'Checkbox with Hidden field') made by require_once('wp-load.php'), require_once('/var/www/html/wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/ready-backup/backup-ready.php'), installerBup::update, installerBup::init, dbBup::query
+[25-Sep-2013 16:26:53] WordPress database error Duplicate entry 'adminmenu' for key 2 for query INSERT INTO `wp_bup_modules` (id, code, active, type_id, params, has_tab, label, description) VALUES
+		  (NULL, 'adminmenu',1,1,'',0,'Admin Menu',''),
+		  (NULL, 'options',1,1,'',1,'Options',''),
+		  (NULL, 'log', 1, 1, '', 0, 'Log', 'Internal system module to log some actions on server'),
+		  (NULL, 'templates',1,1,'',0,'Templates for Plugin',''),
+		  (NULL, 'backup', 1, 1, '', 1, 'Backup ready!', 'Backup ready!'),
+		  (NULL, 'schedule', 1, 1, '', 1, 'Schedule', 'Schedule'),
+		  (NULL, 'storage', 1, 1, '', 1, 'Storage', 'Storage'); made by require_once('wp-load.php'), require_once('/var/www/html/wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/ready-backup/backup-ready.php'), installerBup::update, installerBup::init, dbBup::query
+[25-Sep-2013 16:26:53] WordPress database error Duplicate entry '1' for key 1 for query INSERT INTO `wp_bup_modules_type` VALUES
+		  (1,'system'),
+		  (2,'addons')
+		   made by require_once('wp-load.php'), require_once('/var/www/html/wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/ready-backup/backup-ready.php'), installerBup::update, installerBup::init, dbBup::query
+[25-Sep-2013 16:26:53] WordPress database error Duplicate entry 'full' for key 2 for query INSERT INTO `wp_bup_options` (`id`,`code`,`value`,`label`,`description`,`htmltype_id`,`params`,`cat_id`,`sort_order`,`value_type`) VALUES 
+			(NULL,'full','1','Full backup','on/off full backup',1,'',0,0,'dest_backup'),
+			(NULL,'plugins','0','Plugins','on/off backup plugins',1,'',0,0,'dest_backup'),
+			(NULL,'themes','0','Themes','on/off backup themes',1,'',0,0,'dest_backup'),
+			(NULL,'uploads','0','Uploads','on/off backup uploads',1,'',0,0,'dest_backup'),
+			(NULL,'database','1','Database','on/off backup database',1,'',0,0,'db_backup'),
+			(NULL,'any_directories','0','Any','Any other directories found inside wp-content',1,'',0,0,'dest_backup'),
+			(NULL,'warehouse','/wp-content/upready/','Warehouse','path to storage',1,'',0,0,''),
+			(NULL,'warehouse_ignore','upready','Warehouse_ignore','Name ignore directory storage',1,'',0,0,''),
+			(NULL,'safe_array','','Safe array','Safe file array',1,'',0,0,''),
+			(NULL,'count_folder','','Count folder','Count folder',1,'',0,0,'')
+			; made by require_once('wp-load.php'), require_once('/var/www/html/wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/ready-backup/backup-ready.php'), installerBup::update, installerBup::init, dbBup::query
+[25-Sep-2013 16:26:53] WordPress database error Duplicate entry '1' for key 1 for query INSERT INTO `wp_bup_options_categories` VALUES
+			(1, 'General'),
+			(2, 'Template'),
+			(3, 'Subscribe'),
+			(4, 'Social'); made by require_once('wp-load.php'), require_once('/var/www/html/wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/ready-backup/backup-ready.php'), installerBup::update, installerBup::init, dbBup::query
+[25-Sep-2013 16:27:12] WordPress database error Duplicate entry '1' for key 1 for query INSERT INTO `wp_bup_htmltype` VALUES
+			(1, 'text', 'Text'),
+			(2, 'password', 'Password'),
+			(3, 'hidden', 'Hidden'),
+			(4, 'checkbox', 'Checkbox'),
+			(5, 'checkboxlist', 'Checkboxes'),
+			(6, 'datepicker', 'Date Picker'),
+			(7, 'submit', 'Button'),
+			(8, 'img', 'Image'),
+			(9, 'selectbox', 'Drop Down'),
+			(10, 'radiobuttons', 'Radio Buttons'),
+			(11, 'countryList', 'Countries List'),
+			(12, 'selectlist', 'List'),
+			(13, 'countryListMultiple', 'Country List with posibility to select multiple countries'),
+			(14, 'block', 'Will show only value as text'),
+			(15, 'statesList', 'States List'),
+			(16, 'textFieldsDynamicTable', 'Dynamic table - multiple text options set'),
+			(17, 'textarea', 'Textarea'),
+			(18, 'checkboxHiddenVal', 'Checkbox with Hidden field') made by require_once('wp-load.php'), require_once('/var/www/html/wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/ready-backup/backup-ready.php'), installerBup::update, installerBup::init, dbBup::query
+[25-Sep-2013 16:27:12] WordPress database error Duplicate entry 'adminmenu' for key 2 for query INSERT INTO `wp_bup_modules` (id, code, active, type_id, params, has_tab, label, description) VALUES
+		  (NULL, 'adminmenu',1,1,'',0,'Admin Menu',''),
+		  (NULL, 'options',1,1,'',1,'Options',''),
+		  (NULL, 'log', 1, 1, '', 0, 'Log', 'Internal system module to log some actions on server'),
+		  (NULL, 'templates',1,1,'',0,'Templates for Plugin',''),
+		  (NULL, 'backup', 1, 1, '', 1, 'Backup ready!', 'Backup ready!'),
+		  (NULL, 'schedule', 1, 1, '', 1, 'Schedule', 'Schedule'),
+		  (NULL, 'storage', 1, 1, '', 1, 'Storage', 'Storage'); made by require_once('wp-load.php'), require_once('/var/www/html/wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/ready-backup/backup-ready.php'), installerBup::update, installerBup::init, dbBup::query
+[25-Sep-2013 16:27:12] WordPress database error Duplicate entry '1' for key 1 for query INSERT INTO `wp_bup_modules_type` VALUES
+		  (1,'system'),
+		  (2,'addons')
+		   made by require_once('wp-load.php'), require_once('/var/www/html/wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/ready-backup/backup-ready.php'), installerBup::update, installerBup::init, dbBup::query
+[25-Sep-2013 16:27:12] WordPress database error Duplicate entry 'full' for key 2 for query INSERT INTO `wp_bup_options` (`id`,`code`,`value`,`label`,`description`,`htmltype_id`,`params`,`cat_id`,`sort_order`,`value_type`) VALUES 
+			(NULL,'full','1','Full backup','on/off full backup',1,'',0,0,'dest_backup'),
+			(NULL,'plugins','0','Plugins','on/off backup plugins',1,'',0,0,'dest_backup'),
+			(NULL,'themes','0','Themes','on/off backup themes',1,'',0,0,'dest_backup'),
+			(NULL,'uploads','0','Uploads','on/off backup uploads',1,'',0,0,'dest_backup'),
+			(NULL,'database','1','Database','on/off backup database',1,'',0,0,'db_backup'),
+			(NULL,'any_directories','0','Any','Any other directories found inside wp-content',1,'',0,0,'dest_backup'),
+			(NULL,'warehouse','/wp-content/upready/','Warehouse','path to storage',1,'',0,0,''),
+			(NULL,'warehouse_ignore','upready','Warehouse_ignore','Name ignore directory storage',1,'',0,0,''),
+			(NULL,'safe_array','','Safe array','Safe file array',1,'',0,0,''),
+			(NULL,'count_folder','','Count folder','Count folder',1,'',0,0,'')
+			; made by require_once('wp-load.php'), require_once('/var/www/html/wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/ready-backup/backup-ready.php'), installerBup::update, installerBup::init, dbBup::query
+[25-Sep-2013 16:27:12] WordPress database error Duplicate entry '1' for key 1 for query INSERT INTO `wp_bup_options_categories` VALUES
+			(1, 'General'),
+			(2, 'Template'),
+			(3, 'Subscribe'),
+			(4, 'Social'); made by require_once('wp-load.php'), require_once('/var/www/html/wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/ready-backup/backup-ready.php'), installerBup::update, installerBup::init, dbBup::query
+[25-Sep-2013 16:27:17] WordPress database error Duplicate entry '1' for key 1 for query INSERT INTO `wp_bup_htmltype` VALUES
+			(1, 'text', 'Text'),
+			(2, 'password', 'Password'),
+			(3, 'hidden', 'Hidden'),
+			(4, 'checkbox', 'Checkbox'),
+			(5, 'checkboxlist', 'Checkboxes'),
+			(6, 'datepicker', 'Date Picker'),
+			(7, 'submit', 'Button'),
+			(8, 'img', 'Image'),
+			(9, 'selectbox', 'Drop Down'),
+			(10, 'radiobuttons', 'Radio Buttons'),
+			(11, 'countryList', 'Countries List'),
+			(12, 'selectlist', 'List'),
+			(13, 'countryListMultiple', 'Country List with posibility to select multiple countries'),
+			(14, 'block', 'Will show only value as text'),
+			(15, 'statesList', 'States List'),
+			(16, 'textFieldsDynamicTable', 'Dynamic table - multiple text options set'),
+			(17, 'textarea', 'Textarea'),
+			(18, 'checkboxHiddenVal', 'Checkbox with Hidden field') made by require_once('wp-load.php'), require_once('/var/www/html/wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/ready-backup/backup-ready.php'), installerBup::update, installerBup::init, dbBup::query
+[25-Sep-2013 16:27:17] WordPress database error Duplicate entry 'adminmenu' for key 2 for query INSERT INTO `wp_bup_modules` (id, code, active, type_id, params, has_tab, label, description) VALUES
+		  (NULL, 'adminmenu',1,1,'',0,'Admin Menu',''),
+		  (NULL, 'options',1,1,'',1,'Options',''),
+		  (NULL, 'log', 1, 1, '', 0, 'Log', 'Internal system module to log some actions on server'),
+		  (NULL, 'templates',1,1,'',0,'Templates for Plugin',''),
+		  (NULL, 'backup', 1, 1, '', 1, 'Backup ready!', 'Backup ready!'),
+		  (NULL, 'schedule', 1, 1, '', 1, 'Schedule', 'Schedule'),
+		  (NULL, 'storage', 1, 1, '', 1, 'Storage', 'Storage'); made by require_once('wp-load.php'), require_once('/var/www/html/wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/ready-backup/backup-ready.php'), installerBup::update, installerBup::init, dbBup::query
+[25-Sep-2013 16:27:17] WordPress database error Duplicate entry '1' for key 1 for query INSERT INTO `wp_bup_modules_type` VALUES
+		  (1,'system'),
+		  (2,'addons')
+		   made by require_once('wp-load.php'), require_once('/var/www/html/wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/ready-backup/backup-ready.php'), installerBup::update, installerBup::init, dbBup::query
+[25-Sep-2013 16:27:17] WordPress database error Duplicate entry 'full' for key 2 for query INSERT INTO `wp_bup_options` (`id`,`code`,`value`,`label`,`description`,`htmltype_id`,`params`,`cat_id`,`sort_order`,`value_type`) VALUES 
+			(NULL,'full','1','Full backup','on/off full backup',1,'',0,0,'dest_backup'),
+			(NULL,'plugins','0','Plugins','on/off backup plugins',1,'',0,0,'dest_backup'),
+			(NULL,'themes','0','Themes','on/off backup themes',1,'',0,0,'dest_backup'),
+			(NULL,'uploads','0','Uploads','on/off backup uploads',1,'',0,0,'dest_backup'),
+			(NULL,'database','1','Database','on/off backup database',1,'',0,0,'db_backup'),
+			(NULL,'any_directories','0','Any','Any other directories found inside wp-content',1,'',0,0,'dest_backup'),
+			(NULL,'warehouse','/wp-content/upready/','Warehouse','path to storage',1,'',0,0,''),
+			(NULL,'warehouse_ignore','upready','Warehouse_ignore','Name ignore directory storage',1,'',0,0,''),
+			(NULL,'safe_array','','Safe array','Safe file array',1,'',0,0,''),
+			(NULL,'count_folder','','Count folder','Count folder',1,'',0,0,'')
+			; made by require_once('wp-load.php'), require_once('/var/www/html/wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/ready-backup/backup-ready.php'), installerBup::update, installerBup::init, dbBup::query
+[25-Sep-2013 16:27:17] WordPress database error Duplicate entry '1' for key 1 for query INSERT INTO `wp_bup_options_categories` VALUES
+			(1, 'General'),
+			(2, 'Template'),
+			(3, 'Subscribe'),
+			(4, 'Social'); made by require_once('wp-load.php'), require_once('/var/www/html/wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/ready-backup/backup-ready.php'), installerBup::update, installerBup::init, dbBup::query
+[25-Sep-2013 16:27:21] WordPress database error Duplicate entry '1' for key 1 for query INSERT INTO `wp_bup_htmltype` VALUES
+			(1, 'text', 'Text'),
+			(2, 'password', 'Password'),
+			(3, 'hidden', 'Hidden'),
+			(4, 'checkbox', 'Checkbox'),
+			(5, 'checkboxlist', 'Checkboxes'),
+			(6, 'datepicker', 'Date Picker'),
+			(7, 'submit', 'Button'),
+			(8, 'img', 'Image'),
+			(9, 'selectbox', 'Drop Down'),
+			(10, 'radiobuttons', 'Radio Buttons'),
+			(11, 'countryList', 'Countries List'),
+			(12, 'selectlist', 'List'),
+			(13, 'countryListMultiple', 'Country List with posibility to select multiple countries'),
+			(14, 'block', 'Will show only value as text'),
+			(15, 'statesList', 'States List'),
+			(16, 'textFieldsDynamicTable', 'Dynamic table - multiple text options set'),
+			(17, 'textarea', 'Textarea'),
+			(18, 'checkboxHiddenVal', 'Checkbox with Hidden field') made by require_once('wp-load.php'), require_once('/var/www/html/wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/ready-backup/backup-ready.php'), installerBup::update, installerBup::init, dbBup::query
+[25-Sep-2013 16:27:21] WordPress database error Duplicate entry 'adminmenu' for key 2 for query INSERT INTO `wp_bup_modules` (id, code, active, type_id, params, has_tab, label, description) VALUES
+		  (NULL, 'adminmenu',1,1,'',0,'Admin Menu',''),
+		  (NULL, 'options',1,1,'',1,'Options',''),
+		  (NULL, 'log', 1, 1, '', 0, 'Log', 'Internal system module to log some actions on server'),
+		  (NULL, 'templates',1,1,'',0,'Templates for Plugin',''),
+		  (NULL, 'backup', 1, 1, '', 1, 'Backup ready!', 'Backup ready!'),
+		  (NULL, 'schedule', 1, 1, '', 1, 'Schedule', 'Schedule'),
+		  (NULL, 'storage', 1, 1, '', 1, 'Storage', 'Storage'); made by require_once('wp-load.php'), require_once('/var/www/html/wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/ready-backup/backup-ready.php'), installerBup::update, installerBup::init, dbBup::query
+[25-Sep-2013 16:27:21] WordPress database error Duplicate entry '1' for key 1 for query INSERT INTO `wp_bup_modules_type` VALUES
+		  (1,'system'),
+		  (2,'addons')
+		   made by require_once('wp-load.php'), require_once('/var/www/html/wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/ready-backup/backup-ready.php'), installerBup::update, installerBup::init, dbBup::query
+[25-Sep-2013 16:27:21] WordPress database error Duplicate entry 'full' for key 2 for query INSERT INTO `wp_bup_options` (`id`,`code`,`value`,`label`,`description`,`htmltype_id`,`params`,`cat_id`,`sort_order`,`value_type`) VALUES 
+			(NULL,'full','1','Full backup','on/off full backup',1,'',0,0,'dest_backup'),
+			(NULL,'plugins','0','Plugins','on/off backup plugins',1,'',0,0,'dest_backup'),
+			(NULL,'themes','0','Themes','on/off backup themes',1,'',0,0,'dest_backup'),
+			(NULL,'uploads','0','Uploads','on/off backup uploads',1,'',0,0,'dest_backup'),
+			(NULL,'database','1','Database','on/off backup database',1,'',0,0,'db_backup'),
+			(NULL,'any_directories','0','Any','Any other directories found inside wp-content',1,'',0,0,'dest_backup'),
+			(NULL,'warehouse','/wp-content/upready/','Warehouse','path to storage',1,'',0,0,''),
+			(NULL,'warehouse_ignore','upready','Warehouse_ignore','Name ignore directory storage',1,'',0,0,''),
+			(NULL,'safe_array','','Safe array','Safe file array',1,'',0,0,''),
+			(NULL,'count_folder','','Count folder','Count folder',1,'',0,0,'')
+			; made by require_once('wp-load.php'), require_once('/var/www/html/wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/ready-backup/backup-ready.php'), installerBup::update, installerBup::init, dbBup::query
+[25-Sep-2013 16:27:21] WordPress database error Duplicate entry '1' for key 1 for query INSERT INTO `wp_bup_options_categories` VALUES
+			(1, 'General'),
+			(2, 'Template'),
+			(3, 'Subscribe'),
+			(4, 'Social'); made by require_once('wp-load.php'), require_once('/var/www/html/wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/ready-backup/backup-ready.php'), installerBup::update, installerBup::init, dbBup::query
+[25-Sep-2013 16:27:27] WordPress database error Duplicate entry '1' for key 1 for query INSERT INTO `wp_bup_htmltype` VALUES
+			(1, 'text', 'Text'),
+			(2, 'password', 'Password'),
+			(3, 'hidden', 'Hidden'),
+			(4, 'checkbox', 'Checkbox'),
+			(5, 'checkboxlist', 'Checkboxes'),
+			(6, 'datepicker', 'Date Picker'),
+			(7, 'submit', 'Button'),
+			(8, 'img', 'Image'),
+			(9, 'selectbox', 'Drop Down'),
+			(10, 'radiobuttons', 'Radio Buttons'),
+			(11, 'countryList', 'Countries List'),
+			(12, 'selectlist', 'List'),
+			(13, 'countryListMultiple', 'Country List with posibility to select multiple countries'),
+			(14, 'block', 'Will show only value as text'),
+			(15, 'statesList', 'States List'),
+			(16, 'textFieldsDynamicTable', 'Dynamic table - multiple text options set'),
+			(17, 'textarea', 'Textarea'),
+			(18, 'checkboxHiddenVal', 'Checkbox with Hidden field') made by require_once('wp-load.php'), require_once('/var/www/html/wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/ready-backup/backup-ready.php'), installerBup::update, installerBup::init, dbBup::query
+[25-Sep-2013 16:27:27] WordPress database error Duplicate entry 'adminmenu' for key 2 for query INSERT INTO `wp_bup_modules` (id, code, active, type_id, params, has_tab, label, description) VALUES
+		  (NULL, 'adminmenu',1,1,'',0,'Admin Menu',''),
+		  (NULL, 'options',1,1,'',1,'Options',''),
+		  (NULL, 'log', 1, 1, '', 0, 'Log', 'Internal system module to log some actions on server'),
+		  (NULL, 'templates',1,1,'',0,'Templates for Plugin',''),
+		  (NULL, 'backup', 1, 1, '', 1, 'Backup ready!', 'Backup ready!'),
+		  (NULL, 'schedule', 1, 1, '', 1, 'Schedule', 'Schedule'),
+		  (NULL, 'storage', 1, 1, '', 1, 'Storage', 'Storage'); made by require_once('wp-load.php'), require_once('/var/www/html/wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/ready-backup/backup-ready.php'), installerBup::update, installerBup::init, dbBup::query
+[25-Sep-2013 16:27:27] WordPress database error Duplicate entry '1' for key 1 for query INSERT INTO `wp_bup_modules_type` VALUES
+		  (1,'system'),
+		  (2,'addons')
+		   made by require_once('wp-load.php'), require_once('/var/www/html/wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/ready-backup/backup-ready.php'), installerBup::update, installerBup::init, dbBup::query
+[25-Sep-2013 16:27:27] WordPress database error Duplicate entry 'full' for key 2 for query INSERT INTO `wp_bup_options` (`id`,`code`,`value`,`label`,`description`,`htmltype_id`,`params`,`cat_id`,`sort_order`,`value_type`) VALUES 
+			(NULL,'full','1','Full backup','on/off full backup',1,'',0,0,'dest_backup'),
+			(NULL,'plugins','0','Plugins','on/off backup plugins',1,'',0,0,'dest_backup'),
+			(NULL,'themes','0','Themes','on/off backup themes',1,'',0,0,'dest_backup'),
+			(NULL,'uploads','0','Uploads','on/off backup uploads',1,'',0,0,'dest_backup'),
+			(NULL,'database','1','Database','on/off backup database',1,'',0,0,'db_backup'),
+			(NULL,'any_directories','0','Any','Any other directories found inside wp-content',1,'',0,0,'dest_backup'),
+			(NULL,'warehouse','/wp-content/upready/','Warehouse','path to storage',1,'',0,0,''),
+			(NULL,'warehouse_ignore','upready','Warehouse_ignore','Name ignore directory storage',1,'',0,0,''),
+			(NULL,'safe_array','','Safe array','Safe file array',1,'',0,0,''),
+			(NULL,'count_folder','','Count folder','Count folder',1,'',0,0,'')
+			; made by require_once('wp-load.php'), require_once('/var/www/html/wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/ready-backup/backup-ready.php'), installerBup::update, installerBup::init, dbBup::query
+[25-Sep-2013 16:27:27] WordPress database error Duplicate entry '1' for key 1 for query INSERT INTO `wp_bup_options_categories` VALUES
+			(1, 'General'),
+			(2, 'Template'),
+			(3, 'Subscribe'),
+			(4, 'Social'); made by require_once('wp-load.php'), require_once('/var/www/html/wp-config.php'), require_once('wp-settings.php'), include_once('/plugins/ready-backup/backup-ready.php'), installerBup::update, installerBup::init, dbBup::query
