@@ -1,0 +1,4 @@
+0000.002 () Opened log file at time: Thu, 26 Sep 2013 20:43:23 +0000
+0000.002 () UpdraftPlus WordPress backup plugin (http://updraftplus.com): 1.7.20.11 WP: 3.5.2 PHP: 5.3.3 (Linux intra-dev.asynchrony.com 2.6.18-348.1.1.el5 #1 SMP Tue Jan 22 16:19:19 EST 2013 x86_64) MySQL: 5.0.95 Server: Apache/2.2.3 (CentOS) safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 47.6M | 48M) ZipArchive::addFile: Y
+0000.002 () Free space on disk containing Updraft's temporary directory: 31614.4 Mb
+0000.002 () Restore job started. Entities to restore: plugins,themes,uploads,others,db

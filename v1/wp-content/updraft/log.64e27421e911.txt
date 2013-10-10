@@ -1,0 +1,183 @@
+87072.796 (10) Opened log file at time: Thu, 26 Sep 2013 20:46:55 +0000
+87072.797 (10) UpdraftPlus WordPress backup plugin (http://updraftplus.com): 1.7.20 WP: 3.5.2 PHP: 5.3.3 (Linux intra-dev.asynchrony.com 2.6.18-348.1.1.el5 #1 SMP Tue Jan 22 16:19:19 EST 2013 x86_64) MySQL: 5.0.95 Server: Apache/2.2.3 (CentOS) safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 42.6M | 42.8M) ZipArchive::addFile: Y
+87072.798 (10) Free space on disk containing Updraft's temporary directory: 31532.3 Mb
+87072.800 (10) Long time past since expected resumption time: approx expected= 1380145050, now=1380228415.3, diff=83365.3
+87072.802 (10) Your website is visited infrequently and UpdraftPlus is not getting the resources it hoped for; please read this page: http://updraftplus.com/faqs/why-am-i-getting-warnings-about-my-site-not-having-enough-visitors/
+87072.803 (10) Backup run: resumption=10, nonce=64e27421e911, begun at=1380141342 (87073s ago), job type=backup, previous check-in=46.8s
+87072.803 (10) Scheduling a resumption (11) after 300 seconds (1380228715) in case this run gets aborted
+87072.826 (10) Creation of backups of directories: already finished
+87072.827 (10) Saving backup status to database (elements: 8)
+87072.829 (10) Resuming creation of database dump
+87072.837 (10) Table wp_options: Total expected rows (approximate): 487
+87072.910 (10) Table wp_options: Total rows added: 487 in 0.07 seconds
+87072.911 (10) Table wp_options: finishing file (backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_options.table.gz)
+87072.918 (10) Table wp_users: Total expected rows (approximate): 201
+87072.933 (10) Table wp_users: Total rows added: 201 in 0.02 seconds
+87072.935 (10) Table wp_users: finishing file (backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_users.table.gz)
+87072.940 (10) Table wp_usermeta: Total expected rows (approximate): 6080
+87073.114 (10) Table wp_usermeta: Total rows added: 6080 in 0.18 seconds
+87073.116 (10) Table wp_usermeta: finishing file (backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_usermeta.table.gz)
+87073.122 (10) Table wp_commentmeta: Total expected rows (approximate): 0
+87073.123 (10) Table wp_commentmeta: Total rows added: 0 in 0.00 seconds
+87073.124 (10) Table wp_commentmeta: finishing file (backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_commentmeta.table.gz)
+87073.140 (10) Table wp_comments: Total expected rows (approximate): 23
+87073.145 (10) Table wp_comments: Total rows added: 23 in 0.01 seconds
+87073.146 (10) Table wp_comments: finishing file (backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_comments.table.gz)
+87073.152 (10) Table wp_links: Total expected rows (approximate): 0
+87073.154 (10) Table wp_links: Total rows added: 0 in 0.00 seconds
+87073.155 (10) Table wp_links: finishing file (backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_links.table.gz)
+87073.160 (10) Table wp_postmeta: Total expected rows (approximate): 1161
+87073.203 (10) Table wp_postmeta: Total rows added: 1161 in 0.04 seconds
+87073.205 (10) Table wp_postmeta: finishing file (backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_postmeta.table.gz)
+87073.212 (10) Table wp_posts: Total expected rows (approximate): 898
+87073.392 (10) Table wp_posts: Total rows added: 898 in 0.18 seconds
+87073.394 (10) Table wp_posts: finishing file (backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_posts.table.gz)
+87073.401 (10) Table wp_term_relationships: Total expected rows (approximate): 386
+87073.409 (10) Table wp_term_relationships: Total rows added: 386 in 0.01 seconds
+87073.411 (10) Table wp_term_relationships: finishing file (backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_term_relationships.table.gz)
+87073.416 (10) Table wp_term_taxonomy: Total expected rows (approximate): 239
+87073.426 (10) Table wp_term_taxonomy: Total rows added: 239 in 0.01 seconds
+87073.427 (10) Table wp_term_taxonomy: finishing file (backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_term_taxonomy.table.gz)
+87073.433 (10) Table wp_terms: Total expected rows (approximate): 235
+87073.442 (10) Table wp_terms: Total rows added: 235 in 0.01 seconds
+87073.443 (10) Table wp_terms: finishing file (backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_terms.table.gz)
+87073.449 (10) Table wp_adintegration: Total expected rows (approximate): 2
+87073.451 (10) Table wp_adintegration: Total rows added: 2 in 0.00 seconds
+87073.452 (10) Table wp_adintegration: finishing file (backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_adintegration.table.gz)
+87073.458 (10) Table wp_bp_activity: Total expected rows (approximate): 941
+87073.533 (10) Table wp_bp_activity: Total rows added: 941 in 0.08 seconds
+87073.535 (10) Table wp_bp_activity: finishing file (backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_bp_activity.table.gz)
+87073.541 (10) Table wp_bp_activity_meta: Total expected rows (approximate): 12
+87073.543 (10) Table wp_bp_activity_meta: Total rows added: 12 in 0.00 seconds
+87073.544 (10) Table wp_bp_activity_meta: finishing file (backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_bp_activity_meta.table.gz)
+87073.550 (10) Table wp_bp_groups: Total expected rows (approximate): 26
+87073.554 (10) Table wp_bp_groups: Total rows added: 26 in 0.01 seconds
+87073.555 (10) Table wp_bp_groups: finishing file (backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_bp_groups.table.gz)
+87073.561 (10) Table wp_bp_groups_groupmeta: Total expected rows (approximate): 78
+87073.565 (10) Table wp_bp_groups_groupmeta: Total rows added: 78 in 0.01 seconds
+87073.566 (10) Table wp_bp_groups_groupmeta: finishing file (backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_bp_groups_groupmeta.table.gz)
+87073.572 (10) Table wp_bp_groups_members: Total expected rows (approximate): 463
+87073.598 (10) Table wp_bp_groups_members: Total rows added: 463 in 0.03 seconds
+87073.599 (10) Table wp_bp_groups_members: finishing file (backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_bp_groups_members.table.gz)
+87073.605 (10) Table wp_bp_messages_messages: Total expected rows (approximate): 0
+87073.610 (10) Table wp_bp_messages_messages: Total rows added: 0 in 0.01 seconds
+87073.612 (10) Table wp_bp_messages_messages: finishing file (backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_bp_messages_messages.table.gz)
+87073.618 (10) Table wp_bp_messages_notices: Total expected rows (approximate): 0
+87073.619 (10) Table wp_bp_messages_notices: Total rows added: 0 in 0.00 seconds
+87073.621 (10) Table wp_bp_messages_notices: finishing file (backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_bp_messages_notices.table.gz)
+87073.628 (10) Table wp_bp_messages_recipients: Total expected rows (approximate): 0
+87073.630 (10) Table wp_bp_messages_recipients: Total rows added: 0 in 0.00 seconds
+87073.631 (10) Table wp_bp_messages_recipients: finishing file (backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_bp_messages_recipients.table.gz)
+87073.638 (10) Table wp_bp_notifications: Total expected rows (approximate): 53
+87073.644 (10) Table wp_bp_notifications: Total rows added: 53 in 0.01 seconds
+87073.646 (10) Table wp_bp_notifications: finishing file (backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_bp_notifications.table.gz)
+87073.727 (10) Table wp_bp_user_blogs: Total expected rows (approximate): 254
+87073.742 (10) Table wp_bp_user_blogs: Total rows added: 254 in 0.09 seconds
+87073.743 (10) Table wp_bp_user_blogs: finishing file (backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_bp_user_blogs.table.gz)
+87073.752 (10) Table wp_bp_user_blogs_blogmeta: Total expected rows (approximate): 2
+87073.754 (10) Table wp_bp_user_blogs_blogmeta: Total rows added: 2 in 0.00 seconds
+87073.756 (10) Table wp_bp_user_blogs_blogmeta: finishing file (backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_bp_user_blogs_blogmeta.table.gz)
+87073.763 (10) Table wp_bp_xprofile_data: Total expected rows (approximate): 346
+87073.778 (10) Table wp_bp_xprofile_data: Total rows added: 346 in 0.02 seconds
+87073.780 (10) Table wp_bp_xprofile_data: finishing file (backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_bp_xprofile_data.table.gz)
+87073.787 (10) Table wp_bp_xprofile_fields: Total expected rows (approximate): 17
+87073.792 (10) Table wp_bp_xprofile_fields: Total rows added: 17 in 0.01 seconds
+87073.793 (10) Table wp_bp_xprofile_fields: finishing file (backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_bp_xprofile_fields.table.gz)
+87073.799 (10) Table wp_bp_xprofile_groups: Total expected rows (approximate): 1
+87073.802 (10) Table wp_bp_xprofile_groups: Total rows added: 1 in 0.01 seconds
+87073.804 (10) Table wp_bp_xprofile_groups: finishing file (backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_bp_xprofile_groups.table.gz)
+87073.810 (10) Table wp_bp_xprofile_meta: Total expected rows (approximate): 4
+87073.812 (10) Table wp_bp_xprofile_meta: Total rows added: 4 in 0.00 seconds
+87073.814 (10) Table wp_bp_xprofile_meta: finishing file (backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_bp_xprofile_meta.table.gz)
+87073.822 (10) Table wp_bup_files: Total expected rows (approximate): 0
+87073.824 (10) Table wp_bup_files: Total rows added: 0 in 0.00 seconds
+87073.826 (10) Table wp_bup_files: finishing file (backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_bup_files.table.gz)
+87073.832 (10) Table wp_bup_htmltype: Total expected rows (approximate): 18
+87073.835 (10) Table wp_bup_htmltype: Total rows added: 18 in 0.01 seconds
+87073.837 (10) Table wp_bup_htmltype: finishing file (backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_bup_htmltype.table.gz)
+87073.844 (10) Table wp_bup_log: Total expected rows (approximate): 0
+87073.845 (10) Table wp_bup_log: Total rows added: 0 in 0.00 seconds
+87073.847 (10) Table wp_bup_log: finishing file (backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_bup_log.table.gz)
+87073.854 (10) Table wp_bup_modules: Total expected rows (approximate): 7
+87073.857 (10) Table wp_bup_modules: Total rows added: 7 in 0.01 seconds
+87073.859 (10) Table wp_bup_modules: finishing file (backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_bup_modules.table.gz)
+87073.866 (10) Table wp_bup_modules_type: Total expected rows (approximate): 2
+87073.869 (10) Table wp_bup_modules_type: Total rows added: 2 in 0.01 seconds
+87073.870 (10) Table wp_bup_modules_type: finishing file (backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_bup_modules_type.table.gz)
+87073.877 (10) Table wp_bup_options: Total expected rows (approximate): 10
+87073.915 (10) Table wp_bup_options: Total rows added: 10 in 0.04 seconds
+87073.917 (10) Table wp_bup_options: finishing file (backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_bup_options.table.gz)
+87073.924 (10) Table wp_bup_options_categories: Total expected rows (approximate): 4
+87073.926 (10) Table wp_bup_options_categories: Total rows added: 4 in 0.00 seconds
+87073.927 (10) Table wp_bup_options_categories: finishing file (backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_bup_options_categories.table.gz)
+87073.934 (10) Table wp_wpuf_subscription: Total expected rows (approximate): 0
+87073.936 (10) Table wp_wpuf_subscription: Total rows added: 0 in 0.00 seconds
+87073.937 (10) Table wp_wpuf_subscription: finishing file (backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_wpuf_subscription.table.gz)
+87073.945 (10) Table wp_wpuf_transaction: Total expected rows (approximate): 0
+87073.947 (10) Table wp_wpuf_transaction: Total rows added: 0 in 0.01 seconds
+87073.949 (10) Table wp_wpuf_transaction: finishing file (backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_wpuf_transaction.table.gz)
+87073.952 (10) backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_options.table.gz: adding to final database dump
+87073.993 (10) backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_users.table.gz: adding to final database dump
+87073.999 (10) backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_usermeta.table.gz: adding to final database dump
+87074.052 (10) backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_commentmeta.table.gz: adding to final database dump
+87074.054 (10) backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_comments.table.gz: adding to final database dump
+87074.057 (10) backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_links.table.gz: adding to final database dump
+87074.059 (10) backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_postmeta.table.gz: adding to final database dump
+87074.077 (10) backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_posts.table.gz: adding to final database dump
+87074.163 (10) backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_term_relationships.table.gz: adding to final database dump
+87074.167 (10) backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_term_taxonomy.table.gz: adding to final database dump
+87074.171 (10) backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_terms.table.gz: adding to final database dump
+87074.175 (10) backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_adintegration.table.gz: adding to final database dump
+87074.177 (10) backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_bp_activity.table.gz: adding to final database dump
+87074.201 (10) backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_bp_activity_meta.table.gz: adding to final database dump
+87074.203 (10) backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_bp_groups.table.gz: adding to final database dump
+87074.206 (10) backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_bp_groups_groupmeta.table.gz: adding to final database dump
+87074.208 (10) backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_bp_groups_members.table.gz: adding to final database dump
+87074.215 (10) backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_bp_messages_messages.table.gz: adding to final database dump
+87074.218 (10) backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_bp_messages_notices.table.gz: adding to final database dump
+87074.221 (10) backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_bp_messages_recipients.table.gz: adding to final database dump
+87074.223 (10) backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_bp_notifications.table.gz: adding to final database dump
+87074.225 (10) backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_bp_user_blogs.table.gz: adding to final database dump
+87074.228 (10) backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_bp_user_blogs_blogmeta.table.gz: adding to final database dump
+87074.230 (10) backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_bp_xprofile_data.table.gz: adding to final database dump
+87074.236 (10) backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_bp_xprofile_fields.table.gz: adding to final database dump
+87074.238 (10) backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_bp_xprofile_groups.table.gz: adding to final database dump
+87074.240 (10) backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_bp_xprofile_meta.table.gz: adding to final database dump
+87074.242 (10) backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_bup_files.table.gz: adding to final database dump
+87074.243 (10) backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_bup_htmltype.table.gz: adding to final database dump
+87074.246 (10) backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_bup_log.table.gz: adding to final database dump
+87074.247 (10) backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_bup_modules.table.gz: adding to final database dump
+87074.249 (10) backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_bup_modules_type.table.gz: adding to final database dump
+87074.251 (10) backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_bup_options.table.gz: adding to final database dump
+87074.282 (10) backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_bup_options_categories.table.gz: adding to final database dump
+87074.284 (10) backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_wpuf_subscription.table.gz: adding to final database dump
+87074.286 (10) backup_2013-09-25-2035_sync_64e27421e911-db-table-wp_wpuf_transaction.table.gz: adding to final database dump
+87074.288 (10) backup_2013-09-25-2035_sync_64e27421e911-db.gz: finished writing out complete database file (496 Kb)
+87074.292 (10) Total database tables backed up: 36
+87074.295 (10) Saving backup history
+87074.300 (10) backup_2013-09-25-2035_sync_64e27421e911-plugins.zip: plugins: Note: This file was not marked as successfully uploaded, but does not exist on the local filesystem (/var/www/html/wordpress/wp-content/updraft/backup_2013-09-25-2035_sync_64e27421e911-plugins.zip)
+87074.303 (10) Recording as successfully uploaded: backup_2013-09-25-2035_sync_64e27421e911-plugins.zip (686219ebc69a014df67d89641ee3ab80)
+87074.306 (10) backup_2013-09-25-2035_sync_64e27421e911-themes.zip: themes: Note: This file was not marked as successfully uploaded, but does not exist on the local filesystem (/var/www/html/wordpress/wp-content/updraft/backup_2013-09-25-2035_sync_64e27421e911-themes.zip)
+87074.309 (10) Recording as successfully uploaded: backup_2013-09-25-2035_sync_64e27421e911-themes.zip (9c422fa417c2343d1f7ffc0df467581d)
+87074.311 (10) backup_2013-09-25-2035_sync_64e27421e911-uploads.zip: uploads: Note: This file was not marked as successfully uploaded, but does not exist on the local filesystem (/var/www/html/wordpress/wp-content/updraft/backup_2013-09-25-2035_sync_64e27421e911-uploads.zip)
+87074.314 (10) Recording as successfully uploaded: backup_2013-09-25-2035_sync_64e27421e911-uploads.zip (e3f58b3bc315e088b7b17e32c1aecaed)
+87074.317 (10) backup_2013-09-25-2035_sync_64e27421e911-others.zip: others: Note: This file was not marked as successfully uploaded, but does not exist on the local filesystem (/var/www/html/wordpress/wp-content/updraft/backup_2013-09-25-2035_sync_64e27421e911-others.zip)
+87074.319 (10) Recording as successfully uploaded: backup_2013-09-25-2035_sync_64e27421e911-others.zip (d48053b2f633f6097f55766306680f5d)
+87074.322 (10) backup_2013-09-25-2035_sync_64e27421e911-db.gz: db: This file has not yet been successfully uploaded: will queue
+87074.323 (10) Requesting upload of the files that have not yet been successfully uploaded (1)
+87074.328 (10) Cloud backup selection: none
+87074.331 (10) No remote despatch: user chose no remote backup service
+87074.334 (10) Retain: beginning examination of existing backup sets
+87074.335 (10) Retain files: user setting: number to retain = 1
+87074.337 (10) Retain db: user setting: number to retain = 1
+87074.338 (10) Number of backup sets in history: 1
+87074.340 (10) Examining backup set with datestamp: 1380141342
+87074.341 (10) 1380141342: this set includes a database (backup_2013-09-25-2035_sync_64e27421e911-db.gz); db count is now 1
+87074.343 (10) 1380141342: this set includes files; fileset count is now 1
+87074.344 (10) 1380141342: this backup set remains non-empty; will retain in history
+87074.346 (10) Retain: saving new backup history (sets now: 1) and finishing retain operation
+87074.347 (10) Resume backup (64e27421e911, 10): finish run
+87074.350 (10) There were no errors in the uploads, so the 'resume' event (11) is being unscheduled
+87074.358 (10) An email has been scheduled for this job, because we are in debug mode
+87074.360 (10) Sending email ('Files and database') report to: kelly...
+87076.025 (10) The backup apparently succeeded (with warnings) and is now complete
