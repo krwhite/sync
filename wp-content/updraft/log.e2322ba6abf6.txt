@@ -1,5 +1,0 @@
-0000.099 () Opened log file at time: Thu, 26 Sep 2013 20:43:11 +0000
-0000.102 () UpdraftPlus WordPress backup plugin (http://updraftplus.com): 1.7.20.11 WP: 3.5.2 PHP: 5.3.3 (Linux intra-dev.asynchrony.com 2.6.18-348.1.1.el5 #1 SMP Tue Jan 22 16:19:19 EST 2013 x86_64) MySQL: 5.0.95 Server: Apache/2.2.3 (CentOS) safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 47.1M | 47.5M) ZipArchive::addFile: Y
-0000.104 () Free space on disk containing Updraft's temporary directory: 31614.4 Mb
-0000.105 () Requested to obtain file: timestamp=1380141300, type=others, index=0
-0000.107 () The file was found locally and matched the recorded size from the backup history (37486.3 Kb)

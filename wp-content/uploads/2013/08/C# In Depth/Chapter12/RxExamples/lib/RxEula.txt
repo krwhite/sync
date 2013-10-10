@@ -1,2 +1,0 @@
-For the Reactive Extensions End User License Agreement, please see
-http://msdn.microsoft.com/en-us/devlabs/ff394099.aspx
