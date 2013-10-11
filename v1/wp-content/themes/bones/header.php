@@ -186,7 +186,7 @@
 
 						<div class="avatar-container"><!-- size1of6 -->
 
-							<a class="pops" href="#" data-placement="bottom" data-content="<ul class='my-profile-dropdown'><li><a href='<?php echo bp_loggedin_user_domain()?>profile'>My Profile</a></li><li><a href='<?php echo wp_logout_url(); ?>'' title='Logout'>Logout</a></li></ul>"><?php bp_loggedin_user_avatar( "width=30" . "&height=30"); ?></a>
+							<a class="pops" href="#" data-placement="bottom" data-content="<ul class='my-profile-dropdown'><li><a href='<?php echo bp_loggedin_user_domain()?>profile'>My Profile</a></li><li><a href='<?php echo wp_logout_url(); ?>'' title='Log Out'>Log Out</a></li></ul>"><?php bp_loggedin_user_avatar( "width=30" . "&height=30"); ?></a>
 
 
 
