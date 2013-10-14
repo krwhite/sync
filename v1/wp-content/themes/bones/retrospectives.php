@@ -54,7 +54,9 @@ Template Name: Retrospective Index
 								
 
 								<ul class="latest">
-									<li><p>A retrospective is an all-hands team meeting that happens on a regular basis, preferably weekly, where the team comes together to ask the question &ldquo;How are we doing?&rdquo; or in some cases &ldquo;What the heck is going wrong?&rdquo; Here, you might just find answers.</p></li>
+									<li><p>A retrospective is an all-hands team meeting that happens on a regular basis, preferably weekly, where the team comes together to ask the question &ldquo;How are we doing?&rdquo; or in some cases &ldquo;What the heck is going wrong?&rdquo; Here, you might just find answers.</p>
+										<p>Don't see your project? Let <a href="mailto:kelly.white@asynchrony.com">Kelly White</a> know what project needs to be added to the list.</p>
+									</li>
 									<?php
 
 										$args = array( 'post_type' => 'retrospective', 'order' => 'DESC', 'orderby' => 'post_date' );

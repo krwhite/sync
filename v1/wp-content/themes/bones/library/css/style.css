@@ -2895,6 +2895,8 @@ h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5{text-rendering:optimizelegibility;}h1 a,.h1 a
 
 #comments{}
 
+.commentlist li ul.children{list-style:none;}
+
 .commentlist------DELETEME{}.commentlist------DELETEME li{position:relative;clear:both;overflow:hidden;list-style-type:none;margin-bottom:1.5em;padding:0.7335em 10px;}.commentlist------DELETEME li:last-child{margin-bottom:0;}
 
 .commentlist------DELETEME li ul.children{margin:0;}
