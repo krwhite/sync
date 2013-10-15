@@ -2363,9 +2363,20 @@ article img{border-radius:4px;background-clip:padding-box;border:1px solid #777e
 
 .custom-display .alert.info{display:none;}
 
-.custom-display .activity-meta a,.custom-display .acomment-options a{float:left;margin-right:10px;color:#eee;}.custom-display .activity-meta a:hover,.custom-display .acomment-options a:hover{text-decoration:none;}
+.custom-display .activity-meta a,.custom-display .acomment-options a{float:left;margin-right:10px;color:#eee;}
+
+
+.custom-display .activity-meta a:hover,.custom-display .acomment-options a:hover{text-decoration:none;}
 
 .custom-display .activity-meta a span,.custom-display .acomment-options a span{visibility:hidden;}
+
+.custom-display .comment-author:hover .activity-meta a, 
+.custom-display .comment-author:hover .acomment-options a, 
+.custom-display .groups .activity-content:hover .activity-meta a, 
+.custom-display .groups .activity-content:hover .acomment-options a {color:#0088cc;}
+
+.custom-display .activity-item:hover .activity-meta a span, 
+.custom-display .activity-item:hover .acomment-options a span{visibility:visible;}
 
 .custom-display li:first-child{border-top:none;}
 

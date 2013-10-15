@@ -14,7 +14,7 @@
 
 <?php do_action( 'bp_before_activity_entry' ); ?>
 
-<li class="<?php bp_activity_css_class(); ?>" id="activity-<?php bp_activity_id(); ?>">
+<div class="<?php bp_activity_css_class(); ?>" id="activity-<?php bp_activity_id(); ?>">
 	<div class="activity-avatar">
 		<a href="<?php bp_activity_user_link(); ?>">
 
@@ -23,7 +23,7 @@
 		</a>
 	</div>
 
-	<div class="activity-content">
+	<div class="activity-content hover">
 
 		<div class="activity-header">
 
@@ -117,6 +117,6 @@
 
 	<?php do_action( 'bp_after_activity_entry_comments' ); ?>
 
-</li>
+</div>
 
 <?php do_action( 'bp_after_activity_entry' ); ?>
