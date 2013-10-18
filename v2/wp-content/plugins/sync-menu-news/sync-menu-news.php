@@ -1,8 +1,8 @@
 <?php
 /*
-Plugin Name: Sync Menu: News
+Plugin Name: Sync Menu: Add News Button
 Plugin URI: www.asynchrony.com
-Description: Display Subnav for News Pages
+Description: Display Add News Article Button for Admins
 Author: James McKie
 Version: 0.1
 */
@@ -12,8 +12,8 @@ class syncMenuNews extends WP_Widget
 {
   function syncMenuNews()
   {
-    $widget_ops = array('classname' => 'syncMenuNews', 'description' => 'Display Subnav for News Pages.' );
-    $this->WP_Widget('syncMenuNews', 'Sync Menu: News', $widget_ops);
+    $widget_ops = array('classname' => 'syncMenuNews', 'description' => 'Display Add News button for admins.' );
+    $this->WP_Widget('syncMenuNews', 'Sync Menu: Add News Button', $widget_ops);
   }
  
   function form($instance)
@@ -45,10 +45,9 @@ class syncMenuNews extends WP_Widget
     ?>
 	 
 	 
-	<?php wp_nav_menu( array('menu' => 'News', 'container_class' => 'tabs unit', 'menu_class' => 'nav nav-pills')); ?>
 
 	<?php if( current_user_can( 'edit_posts' ) ) { ?>
-	<div class="lastUnit section-actions">
+	<div class="admin-edit section-actions">
 		<a href="<?php echo site_url(); ?>/new-news-article" id="" class="pull-right action btn btn-warning btn-mini"><i class="icon-plus"></i> new article</a>
 	</div>
 	<?php } ?>
