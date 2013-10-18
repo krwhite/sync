@@ -44,9 +44,6 @@ class syncHelpArticleSidebar extends WP_Widget
  
     ?>
 	
-	<div class="lastUnit">
-
-		<div class="sidebar">
 	
 			<h3>Details</h3>
 	
@@ -55,8 +52,23 @@ class syncHelpArticleSidebar extends WP_Widget
 			<div class="section category">
 	
 				<i class="icon-reorder"></i>
-	
-				<?php the_terms($post->ID, 'help-category',  '', ', '); ?>
+				
+				<?php 
+				if( get_post_type() == 'help-article' ) {
+					the_terms($post->ID, 'help-category',  '', ', ');
+				} 
+				
+				if( get_post_type() == 'news-article' ) {
+					the_terms($post->ID, 'news-category',  '', ', ');
+				} 
+				
+				if( get_post_type() == 'retrospective' ) {
+					the_terms($post->ID, 'retrospective-category',  '', ', ');
+				} 
+
+
+				?>
+				
 	
 			</div>
 	
@@ -65,11 +77,9 @@ class syncHelpArticleSidebar extends WP_Widget
 			<div class="section author">
 	
 				<i class="icon-user"></i>
-	
-				<?php $user_id=$post->post_author; ?>
-	
-				<?php echo bp_core_get_userlink( $user_id); ?>
-	
+				
+				<?php the_author_link(); ?>
+					
 			</div>
 	
 			<hr>
@@ -106,9 +116,6 @@ class syncHelpArticleSidebar extends WP_Widget
 	
 			?>
 	
-			</div>
-	
-		</div>
 	
     <?php
  
