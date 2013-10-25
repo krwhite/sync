@@ -1,4 +1,35 @@
 <?php
+
+/****  Set up Widget Areas *****/
+if (function_exists('register_sidebar')) {
+	register_sidebar(array(
+		'name'=> 'Header Widgets',
+		'id' => 'header-widgets',
+		'description' => 'A place for widgets such as search in the page header.',
+		'before_widget' => '<li id="%1$s" class="widget %2$s">',
+		'after_widget' => '</li>',
+		'before_title' => '<h3>',
+		'after_title' => '</h3>',
+	));
+	register_sidebar(array(
+		'name'=> 'Content Widgets Top',
+		'id' => 'content_widgets_top',
+		'description' => 'For widgets that need to go just above the main content.',
+		'before_widget' => '<li id="%1$s" class="widget %2$s">',
+		'after_widget' => '</li>',
+		'before_title' => '<h3>',
+		'after_title' => '</h3>',
+	));
+	register_sidebar(array(
+		'name'=> 'Full Width Footer Widgets',
+		'id' => 'full-footer-widgets',
+		'before_widget' => '<li id="%1$s" class="widget %2$s">',
+		'after_widget' => '</li>',
+		'before_title' => '<h3>',
+		'after_title' => '</h3>',
+	));
+}
+
 /****************************** Unified Search ***************************************/
 ///Unified search
 

@@ -8,3 +8,67 @@ Author URI: www.asynchrony.com
 Template: bp-default
 Tags: sync, buddypress, two-column, grey, dark
 */
+
+/* Layout Styles */
+
+body {
+	width:auto;
+	max-width:none;
+}
+
+#main {
+	background:#FAFCF9;
+	width:960px;
+	margin:0 auto 10px;
+	border: 1px solid #A6ADB4;
+	border-radius:4px;
+	-webkit-background-clip: padding; 
+	-moz-background-clip:    padding; 
+	background-clip:         padding-box;
+	box-shadow: 0 0 10px 0 #999999;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;	
+	position:relative;
+	overflow:hidden;
+}
+#main:before {
+	content:"";
+	width:300px;
+	background:#E3E6E9;
+	position:absolute;
+	right:0;
+	top:0;
+	bottom:0;
+	z-index:1;
+}
+#main:after {
+	content:"";
+	display:block;
+	clear:both;
+}
+
+#pageContent {
+	padding:26px;
+	background:#FAFCF9;
+}
+
+div#sidebar {
+	float:right;
+	width:300px;
+	margin:0;
+	padding:20px;
+	border-radius:0 4px 4px 0;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	background:#E3E6E9;
+	height:100%;
+	position:relative;
+	z-index:5;
+}
+
+#main #sidebar + #pageContent {
+	margin-right:300px;
+	border-radius: 4px 0 0 4px;
+}
