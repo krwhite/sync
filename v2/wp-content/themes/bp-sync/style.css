@@ -16,6 +16,102 @@ body {
 	max-width:none;
 }
 
+#pageHeader {
+	background: #35383B;
+    border-color: #E1780F transparent #777E86 transparent;
+    border-radius: 0;
+    border-style: solid none;
+    border-width: 2px 0 1px;
+    box-shadow: 0 0 10px 0 #999999;
+    margin-bottom: 10px;
+}
+#pageHeader:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+#pageHeader .inner {
+	width:960px;
+	margin:0 auto;
+	padding: 14px 0 8px;
+}
+
+#pageHeader h1 a {
+	display:block;
+	height:28px;
+	width:92px;
+	overflow:hidden;
+	text-indent:-9000px;
+	background:url('images/logo-sync.png') no-repeat 50% 50%;
+	margin-right:30px;
+}
+
+#pageHeader .inner > div,
+#pageHeader .inner > h1 {
+    display: inline-block;
+	vertical-align:baseline;
+	margin:0;
+}
+
+#navigation {
+	width:auto;
+}
+#navigation:after {
+	display:none;
+	content: none;
+}
+
+#nav {margin:0;}
+
+#nav li a {
+	color:#AAAAAA;
+    border-radius: 5px 5px 5px 5px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+	background:transparent;
+	text-transform:uppercase;
+	line-height: 14px;
+    margin-right: 2px;
+    padding-left: 12px;
+    padding-right: 12px;
+	font-size:14px;
+}
+#nav li a:hover {
+	background:#000;
+}
+
+#nav li.selected a,
+#nav > li.current-menu-item a,
+#nav > li.current_page_item a,
+#nav > li.current_page_ancestor a {
+    background: #000;
+    color: #E1780F;
+}
+#pageHeader #search-bar {
+	float:right;
+}
+
+#pageHeader #sidebar-me > a {
+	display:inline-block;
+}
+
+#pageHeader .rightHeader {float:right;}
+
+#sidebar-me img.avatar {
+    border: 1px solid #C2C7CB;
+    border-radius: 4px 4px 4px 4px;
+    display: block;
+    height: 30px;
+    overflow: hidden;
+    width: 30px;
+}
+
+#pageHeader #sidebar-me > h4 {display:none;}
+
+#pageHeader #sidebar-me .logout {display:none;}
+
 #main {
 	background:#FAFCF9;
 	width:960px;
