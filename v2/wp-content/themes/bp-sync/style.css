@@ -9,6 +9,8 @@ Template: bp-default
 Tags: sync, buddypress, two-column, grey, dark
 */
 
+@import url("icons.css");
+
 /* Layout Styles */
 
 body {
