@@ -14,6 +14,7 @@ Tags: sync, buddypress, two-column, grey, dark
 body {
 	width:auto;
 	max-width:none;
+	font-family:'Open Sans';
 }
 
 #pageHeader {
@@ -168,3 +169,67 @@ div#sidebar {
 	margin-right:300px;
 	border-radius: 4px 0 0 4px;
 }
+
+.pull-right{float:right;}
+.pull-left{float:left;}
+
+.dropup, .dropdown{position:relative;}
+/* end Layout Styles */
+
+/* Fonts and Icons */
+h1, h2.pagetitle {
+	font-family:'nexa';
+	color:#999;
+	font-size:2em;
+	margin:0 15px 0 0;
+}
+
+@font-face {
+	font-family:'open sans';
+	font-weight:normal;
+	font-style:normal;
+	src:url('fonts/OpenSans-Regular.eot?v=3.0.1');
+	src:url('fonts/OpenSans-Regular.eot?#iefix&v=3.0.1') format('embedded-opentype'),
+		url('fonts/OpenSans-Regular.woff?v=3.0.1') format('woff'),
+		url('fonts/OpenSans-Regular.ttf?v=3.0.1') format('truetype');
+}
+
+@font-face {
+	font-family:'open sans';
+	font-weight:bold;
+	font-style:normal;
+	src:url('fonts/OpenSans-Bold.eot?v=3.0.1');
+	src:url('fonts/OpenSans-Bold.eot?#iefix&v=3.0.1') format('embedded-opentype'),
+		url('fonts/OpenSans-Bold.woff?v=3.0.1') format('woff'),
+		url('fonts/OpenSans-Bold.ttf?v=3.0.1') format('truetype');
+}
+
+@font-face {
+	font-family:'open sans';
+	font-weight:normal;
+	font-style:italic;
+	src:url('fonts/OpenSans-Italic.eot?v=3.0.1');
+	src:url('fonts/OpenSans-Italic.eot?#iefix&v=3.0.1') format('embedded-opentype'),
+		url('fonts/OpenSans-Italic.woff?v=3.0.1') format('woff'),
+		url('fonts/OpenSans-Italic.ttf?v=3.0.1') format('truetype');
+}
+
+@font-face {
+	font-family:'open sans';
+	font-weight:bold;
+	font-style:italic;
+	src:url('fonts/OpenSans-BoldItalic.eot?v=3.0.1');
+	src:url('fonts/OpenSans-BoldItalic.eot?#iefix&v=3.0.1') format('embedded-opentype'),
+		url('fonts/OpenSans-BoldItalic.woff?v=3.0.1') format('woff'),
+		url('fonts/OpenSans-BoldItalic.ttf?v=3.0.1') format('truetype');
+}
+
+@font-face {
+	font-family:'nexa';
+	src:url('fonts/nexa_light-webfont.eot?v=3.0.1');
+	src:url('fonts/nexa_light-webfont.eot?#iefix&v=3.0.1') format('embedded-opentype'),
+		url('fonts/nexa_light-webfont.woff?v=3.0.1') format('woff'),
+		url('fonts/nexa_light-webfont.ttf?v=3.0.1') format('truetype');
+}
+/* end Fonts and Icons */
+
