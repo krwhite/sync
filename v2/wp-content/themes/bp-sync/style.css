@@ -12,12 +12,30 @@ Tags: sync, buddypress, two-column, grey, dark
 @import url("icons.css");
 
 /* Layout Styles */
+html {
+	font-size:100%;
+	-webkit-text-size-adjust:100%;
+	-ms-text-size-adjust:100%;
+}
 
 body {
 	width:auto;
 	max-width:none;
 	font-family:'Open Sans';
+	font-size:14px;
+	line-height:20px;
+	margin:0;
 }
+
+a {color:#E1780F;}
+
+a:focus{
+	outline:thin dotted #333;
+	outline:5px auto -webkit-focus-ring-color;
+	outline-offset:-2px;
+}
+
+a:active, a:hover{outline:0;}
 
 #pageHeader {
 	background: #35383B;
@@ -28,11 +46,13 @@ body {
     box-shadow: 0 0 10px 0 #999999;
     margin-bottom: 10px;
 }
+
 #pageHeader:after {
     clear: both;
     content: "";
     display: block;
 }
+
 #pageHeader .inner {
 	width:960px;
 	margin:0 auto;
@@ -81,9 +101,8 @@ body {
     padding-right: 12px;
 	font-size:14px;
 }
-#nav li a:hover {
-	background:#000;
-}
+
+#nav li a:hover {background:#000;}
 
 #nav li.selected a,
 #nav > li.current-menu-item a,
@@ -92,14 +111,9 @@ body {
     background: #000;
     color: #E1780F;
 }
-#pageHeader #search-bar {
-	float:right;
-}
 
-#pageHeader #sidebar-me > a {
-	display:inline-block;
-}
-
+#pageHeader #search-bar {float:right;}
+#pageHeader #sidebar-me > a {display:inline-block;}
 #pageHeader .rightHeader {float:right;}
 
 #sidebar-me img.avatar {
@@ -112,7 +126,6 @@ body {
 }
 
 #pageHeader #sidebar-me > h4 {display:none;}
-
 #pageHeader #sidebar-me .logout {display:none;}
 
 #main {
@@ -131,6 +144,7 @@ body {
 	position:relative;
 	overflow:hidden;
 }
+
 #main:before {
 	content:"";
 	width:300px;
@@ -141,6 +155,7 @@ body {
 	bottom:0;
 	z-index:1;
 }
+
 #main:after {
 	content:"";
 	display:block;
@@ -178,13 +193,31 @@ div#sidebar {
 .dropup, .dropdown{position:relative;}
 /* end Layout Styles */
 
-/* Fonts and Icons */
-h1, h2.pagetitle {
-	font-family:'nexa';
+/* Fonts */
+h1 {
+	font-size:2em;
+	margin:0.67em 0;
 	color:#999;
+}
+
+h2{
+	font-size:1.5em;
+	margin:0.83em 0;
+}
+
+h2.pagetitle {
+	font-family:'nexa';
+	color:#E1780F;
 	font-size:2em;
 	margin:0 15px 0 0;
+	text-transform:uppercase;
+	font-weight:normal;
 }
+
+h3{font-size:1.17em;margin:1em 0;}
+h4{font-size:1em;margin:1.33em 0;}
+h5{font-size:0.83em;margin:1.67em 0;}
+h6{font-size:0.75em;margin:2.33em 0;}
 
 @font-face {
 	font-family:'open sans';
@@ -233,5 +266,5 @@ h1, h2.pagetitle {
 		url('fonts/nexa_light-webfont.woff?v=3.0.1') format('woff'),
 		url('fonts/nexa_light-webfont.ttf?v=3.0.1') format('truetype');
 }
-/* end Fonts and Icons */
+/* end Fonts */
 
