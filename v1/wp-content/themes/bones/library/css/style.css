@@ -2144,6 +2144,7 @@ article img{border-radius:4px;background-clip:padding-box;border:1px solid #777e
 
 .sidebar .menu li a .count{border-radius:4px;background-clip:padding-box;float:right;font-weight:bold;font-size:.8em;padding:0 .6em;text-shadow:none;}.sidebar .menu li a .count.action{background:#e1780f;color:#eee;text-shadow:none;}
 
+/* -------------------- extracted to sync v2 ------------------------*/
 .footer{border-radius:4px;background-clip:padding-box;border:1px solid #777e86;-webkit-box-shadow:0px 0px 10px 0px #999;box-shadow:0px 0px 10px 0px #999;background:#35383b;border-radius:0;border-bottom:1px solid #e1780f;border-right:none;border-left:none;}.footer #inner-footer{width:960px;margin:0 auto;padding:20px 40px 20px 25px;}.footer #inner-footer .address{float:left;}.footer #inner-footer .address h2{margin-bottom:0;}.footer #inner-footer .address h2 a{display:block;width:237px;height:45px;text-indent:100%;overflow:hidden;background:url('../images/logo-async.png');}
 
 .footer #inner-footer .address p{font-size:0.7em;line-height:1.8em;margin-left:70px;color:#ccc;}.footer #inner-footer .address p span{color:#e1780f;}
@@ -2151,6 +2152,8 @@ article img{border-radius:4px;background-clip:padding-box;border:1px solid #777e
 .footer #inner-footer .linkroll{margin-top:17px;margin-left:80px;float:left;}.footer #inner-footer .linkroll ul{float:left;list-style-type:none;margin:0;margin-left:70px;padding:0;}.footer #inner-footer .linkroll ul:first-child{margin-left:0;}
 
 .footer #inner-footer .linkroll ul li{font-size:0.87em;margin-bottom:3px;}.footer #inner-footer .linkroll ul li a{color:#ccc;}
+/* -------------------- end extracted to sync v2 ------------------------*/
+
 
 .postList{*zoom:1;zoom:1;margin:0;padding-bottom:20px;}.postList:before,.postList:after{display:table;content:"";line-height:0;}
 
