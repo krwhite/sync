@@ -43,17 +43,22 @@ class syncProfileCard extends WP_Widget
       echo $before_title . $title . $after_title;;
  
     ?>
-	 <div class="profile-card"> <a href="<?php echo bp_loggedin_user_domain() . 'profile'; ?>">
-        <?php bp_loggedin_user_avatar( 'width=60' . '&height=60'); ?>
-        <div class="lastUnit"> <strong>
-          <?php bp_loggedin_user_fullname(); ?>
-          </strong> <span><?php echo xprofile_get_field_data('Job Category', bp_loggedin_user_id() ); ?></span> </div>
-        </a> </div>
-      <ul class="menu">
-        <li><a href="">Notifications</a></li>
-        <li><a href="<?php echo bp_loggedin_user_domain() . 'groups'; ?>">My Groups <span class="count"> <?php echo bp_get_total_group_count_for_user(bp_loggedin_user_id()); ?> </span></a></li>
-      </ul>
-    </div>
+	<div class="profile-card"> 
+		<a href="<?php echo bp_loggedin_user_domain() . 'profile'; ?>">
+			<?php bp_loggedin_user_avatar( 'width=60' . '&height=60'); ?>
+			<div class="lastUnit"> 
+				<strong><?php bp_loggedin_user_fullname(); ?></strong> 
+				<span><?php echo xprofile_get_field_data('Job Category', bp_loggedin_user_id() ); ?></span> 
+			</div>
+		</a> 
+	</div>
+	<ul class="menu">
+		<li><a href="">Notifications</a></li>
+		<li><a href="<?php echo bp_loggedin_user_domain() . 'groups'; ?>">My Groups 
+				<span class="count"> <?php echo bp_get_total_group_count_for_user(bp_loggedin_user_id()); ?> </span>
+			</a>
+		</li>
+	</ul>
     <?php
  
     echo $after_widget;
