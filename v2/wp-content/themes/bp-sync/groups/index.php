@@ -20,7 +20,7 @@ if ($user_ID == '') {
 <?php do_action( 'bp_before_directory_groups_page' ); ?>
 <div id="main">
 	<?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
-	<?php get_sidebar(); ?>
+		<?php get_sidebar(); ?>
 	<?php endif; ?>
 	<div id="pageContent">
 		<?php locate_template('groups/groups-content.php', true, true); ?>

@@ -9,9 +9,15 @@
 </div>
 <div id="main">
   <?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
-	  <?php get_sidebar(); ?>
+	  <?php get_sidebar('sidebar-1'); ?>
   <?php endif; ?>
   <div id="pageContent">
+			<?php if ( is_active_sidebar( 'content_widgets_top' ) ) : ?>
+				<ul id="contentWidgets">
+					<?php dynamic_sidebar( 'content_widgets_top' ); ?>
+				</ul>
+			<?php endif; ?>
+
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
     <h2 class="pagetitle">
       <?php the_title(); ?>
