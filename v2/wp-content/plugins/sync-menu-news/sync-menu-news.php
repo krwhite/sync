@@ -47,8 +47,8 @@ class syncMenuNews extends WP_Widget
 	 
 
 	<?php if( current_user_can( 'edit_posts' ) ) { ?>
-	<div class="admin-edit section-actions">
-		<a href="<?php echo site_url(); ?>/new-news-article" id="" class="pull-right action btn btn-warning btn-mini"><i class="icon-plus"></i> new article</a>
+	<div class="admin-edit">
+		<a href="<?php echo site_url(); ?>/new-news-article" id="" class="" title="Add a news article"><i class="icon-plus"></i> new article</a>
 	</div>
 	<?php } ?>
 	 
