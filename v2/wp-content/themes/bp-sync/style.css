@@ -578,10 +578,12 @@ h2.pagetitle, .widget_nav_menu h3 {
 }
 
 #footer #footer-widgets {
+	margin:0 auto;
 	padding:20px 40px 20px 25px; 
 	border-radius:0;
 	border:0;
 	background:none;
+	width:895px;
 }
 
 #footer .address {
@@ -599,3 +601,9 @@ h2.pagetitle, .widget_nav_menu h3 {
 .footer #inner-footer .linkroll ul li{font-size:0.87em;margin-bottom:3px;}
 .footer #inner-footer .linkroll ul li a{color:#ccc;}
 /* end footer */
+
+@media only screen and (max-width: 768px) {
+	html body {margin-top:0 !important;}
+	#navigation ul#nav {min-width:400px; padding-bottom:0;}
+	#navigation ul#nav li {width:auto;}
+}
