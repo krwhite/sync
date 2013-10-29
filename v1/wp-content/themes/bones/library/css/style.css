@@ -6,6 +6,8 @@ audio:not([controls]){display:none;height:0;}
 
 [hidden]{display:none;}
 
+/* -------------------- extracted to sync v2 ------------------------*/
+
 html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
 
 /* html,button,input,select,textarea{font-family:sans-serif;} */
@@ -27,6 +29,9 @@ h4{font-size:1em;margin:1.33em 0;}
 h5{font-size:0.83em;margin:1.67em 0;}
 
 h6{font-size:0.75em;margin:2.33em 0;}
+
+/* -------------------- end extracted to sync v2 ------------------------*/
+
 
 abbr[title]{border-bottom:1px dotted;}
 
@@ -629,6 +634,8 @@ table td[class*="span"],table th[class*="span"],.row-fluid table td[class*="span
 .table-hover tbody tr.warning:hover>td{background-color:#faf2cc;}
 
 .table-hover tbody tr.info:hover>td{background-color:#c4e3f3;}
+
+/* -------------------- extracted to sync v2 ------------------------*/
 
 @font-face{font-family:'FontAwesome';src:url('../fonts/fontawesome-webfont.eot?v=3.1.0');src:url('../fonts/fontawesome-webfont.eot?#iefix&v=3.1.0') format('embedded-opentype'),url('../fonts/fontawesome-webfont.woff?v=3.1.0') format('woff'),url('../fonts/fontawesome-webfont.ttf?v=3.1.0') format('truetype'),url('../fonts/fontawesome-webfont.svg#fontawesomeregular?v=3.1.0') format('svg');font-weight:normal;font-style:normal;}[class^="icon-"],[class*=" icon-"]{font-family:FontAwesome;font-weight:normal;font-style:normal;text-decoration:inherit;-webkit-font-smoothing:antialiased;*margin-right:.3em;}
 
@@ -1312,6 +1319,8 @@ ul.icons-ul{list-style-type:none;text-indent:-0.7142857142857143em;margin-left:2
 
 @font-face{font-family:'open sans';font-weight:normal;font-style:normal;src:url('../fonts/OpenSans-Regular.eot?v=3.0.1');src:url('../fonts/OpenSans-Regular.eot?#iefix&v=3.0.1') format('embedded-opentype'),url('../fonts/OpenSans-Regular.woff?v=3.0.1') format('woff'),url('../fonts/OpenSans-Regular.ttf?v=3.0.1') format('truetype');}@font-face{font-family:'open sans';font-weight:bold;font-style:normal;src:url('../fonts/OpenSans-Bold.eot?v=3.0.1');src:url('../fonts/OpenSans-Bold.eot?#iefix&v=3.0.1') format('embedded-opentype'),url('../fonts/OpenSans-Bold.woff?v=3.0.1') format('woff'),url('../fonts/OpenSans-Bold.ttf?v=3.0.1') format('truetype');}@font-face{font-family:'open sans';font-weight:normal;font-style:italic;src:url('../fonts/OpenSans-Italic.eot?v=3.0.1');src:url('../fonts/OpenSans-Italic.eot?#iefix&v=3.0.1') format('embedded-opentype'),url('../fonts/OpenSans-Italic.woff?v=3.0.1') format('woff'),url('../fonts/OpenSans-Italic.ttf?v=3.0.1') format('truetype');}@font-face{font-family:'open sans';font-weight:bold;font-style:italic;src:url('../fonts/OpenSans-BoldItalic.eot?v=3.0.1');src:url('../fonts/OpenSans-BoldItalic.eot?#iefix&v=3.0.1') format('embedded-opentype'),url('../fonts/OpenSans-BoldItalic.woff?v=3.0.1') format('woff'),url('../fonts/OpenSans-BoldItalic.ttf?v=3.0.1') format('truetype');}@font-face{font-family:'nexa';src:url('../fonts/nexa_light-webfont.eot?v=3.0.1');src:url('../fonts/nexa_light-webfont.eot?#iefix&v=3.0.1') format('embedded-opentype'),url('../fonts/nexa_light-webfont.woff?v=3.0.1') format('woff'),url('../fonts/nexa_light-webfont.ttf?v=3.0.1') format('truetype');}.dropup,.dropdown{position:relative;}
 
+/* -------------------- end extracted to sync v2 ------------------------*/
+
 .dropdown-toggle{*margin-bottom:-3px;}
 
 .dropdown-toggle:active,.open .dropdown-toggle{outline:0;}
@@ -1406,6 +1415,7 @@ button.close{padding:0;cursor:pointer;background:transparent;border:0;-webkit-ap
 
 input[type="submit"].btn-block,input[type="reset"].btn-block,input[type="button"].btn-block{width:100%;}
 
+/* -------------------- extracted to sync v2 ------------------------*/
 .btn-primary.active,.btn-warning.active,.btn-danger.active,.btn-success.active,.btn-info.active,.btn-inverse.active{color:rgba(255, 255, 255, 0.75);}
 
 .btn-primary{color:#ffffff;text-shadow:0 -1px 0 rgba(0, 0, 0, 0.25);background-color:#006dcc;background-image:-moz-linear-gradient(top, #0088cc, #0044cc);background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc));background-image:-webkit-linear-gradient(top, #0088cc, #0044cc);background-image:-o-linear-gradient(top, #0088cc, #0044cc);background-image:linear-gradient(to bottom, #0088cc, #0044cc);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0044cc', GradientType=0);border-color:#0044cc #0044cc #002a80;border-color:rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);*background-color:#0044cc;filter:progid:DXImageTransform.Microsoft.gradient(enabled = false);}.btn-primary:hover,.btn-primary:focus,.btn-primary:active,.btn-primary.active,.btn-primary.disabled,.btn-primary[disabled]{color:#ffffff;background-color:#0044cc;*background-color:#003bb3;}
@@ -1427,6 +1437,7 @@ input[type="submit"].btn-block,input[type="reset"].btn-block,input[type="button"
 .btn-info{color:#ffffff;text-shadow:0 -1px 0 rgba(0, 0, 0, 0.25);background-color:#49afcd;background-image:-moz-linear-gradient(top, #5bc0de, #2f96b4);background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#5bc0de), to(#2f96b4));background-image:-webkit-linear-gradient(top, #5bc0de, #2f96b4);background-image:-o-linear-gradient(top, #5bc0de, #2f96b4);background-image:linear-gradient(to bottom, #5bc0de, #2f96b4);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5bc0de', endColorstr='#ff2f96b4', GradientType=0);border-color:#2f96b4 #2f96b4 #1f6377;border-color:rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);*background-color:#2f96b4;filter:progid:DXImageTransform.Microsoft.gradient(enabled = false);}.btn-info:hover,.btn-info:focus,.btn-info:active,.btn-info.active,.btn-info.disabled,.btn-info[disabled]{color:#ffffff;background-color:#2f96b4;*background-color:#2a85a0;}
 
 .btn-info:active,.btn-info.active{background-color:#24748c \9;}
+/* -------------------- end extracted to sync v2 ------------------------*/
 
 .btn-inverse{color:#ffffff;text-shadow:0 -1px 0 rgba(0, 0, 0, 0.25);background-color:#363636;background-image:-moz-linear-gradient(top, #444444, #222222);background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#444444), to(#222222));background-image:-webkit-linear-gradient(top, #444444, #222222);background-image:-o-linear-gradient(top, #444444, #222222);background-image:linear-gradient(to bottom, #444444, #222222);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff444444', endColorstr='#ff222222', GradientType=0);border-color:#222222 #222222 #000000;border-color:rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);*background-color:#222222;filter:progid:DXImageTransform.Microsoft.gradient(enabled = false);}.btn-inverse:hover,.btn-inverse:focus,.btn-inverse:active,.btn-inverse.active,.btn-inverse.disabled,.btn-inverse[disabled]{color:#ffffff;background-color:#222222;*background-color:#151515;}
 
@@ -2204,6 +2215,7 @@ article img{border-radius:4px;background-clip:padding-box;border:1px solid #777e
 
 .page_header .item-list-tabs{clear:none !important;}
 
+/* -------------------- extracted to sync v2 ------------------------*/
 .page_header .nav-pills{margin:0;}.page_header .nav-pills>li>a{border-radius:4px;background-clip:padding-box;line-height:30px;padding-top:8px;padding-bottom:8px;margin-top:2px;margin-bottom:2px;color:#aaaaaa;}
 
 .page_header .nav-pills li.current_page_item a{color:#333;font-weight:bold;}
@@ -2211,6 +2223,8 @@ article img{border-radius:4px;background-clip:padding-box;border:1px solid #777e
 .page_header .nav-pills>.active>a,.page_header .nav-pills>.active>a:hover,.page_header .nav-pills>.active>a:focus,.page_header .nav-pills>.selected>a{color:#333;font-weight:bold;background-color:transparent;}
 
 .page_header .section-actions{margin-top:2px;}.page_header .section-actions .action{padding:2px 5px;margin:10px 0 0 10px;}.page_header .section-actions .action.btn{color:#eee;}
+/* -------------------- end extracted to sync v2 ------------------------*/
+
 
 .page_header .section-actions .action .action-menu{width:auto;display:none;}.page_header .section-actions .action .action-menu select{width:auto;margin:0;}
 
