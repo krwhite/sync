@@ -2,7 +2,7 @@
 <?php get_header(); ?>
 
 	<div id="content">
-    	<h2>Hi there</h2>
+    	<h2>Does this show up anywhere? (From single.php)</h2>
 		<div class="padder">
 
 			<?php do_action( 'bp_before_blog_single_post' ); ?>

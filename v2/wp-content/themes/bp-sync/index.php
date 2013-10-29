@@ -16,6 +16,7 @@
 </head>
 
 <body <?php body_class(); ?> id="bp-default">
+<h1>This doesn't show up anywhere?!! (index.php)</h1>
 <div id="pageHeader">
   <?php get_header(); ?>
 </div>
