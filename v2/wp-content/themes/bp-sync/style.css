@@ -65,7 +65,7 @@ a:active, a:hover{outline:0;}
 	overflow: hidden;
 	text-indent: -9000px;
 	background: url('images/logo-sync.png') no-repeat 50% 50%;
-	margin-right: 30px;
+	margin-right: 10px;
 }
 #pageHeader .inner > div, #pageHeader .inner > h1 {
 	display: inline-block;
@@ -98,14 +98,14 @@ a:active, a:hover{outline:0;}
 	font-size: 14px;
 }
 
-#nav li a:hover {background:#000;}
+#nav li a:hover, #nav li a:focus {background:#000;}
 
 #nav li.selected a,
 #nav > li.current-menu-item a,
 #nav > li.current_page_item a,
 #nav > li.current_page_ancestor a {
-    background: #000;
     color: #E1780F;
+	background:none;
 }
 
 #pageHeader #search-bar {float:right;}
@@ -186,24 +186,22 @@ h1 {
 	color:#999;
 }
 
-h2{
-	font-size:1.5em;
-	margin:0.83em 0;
-}
+h2 {font-size:1.5em; margin:0.83em 0;}
+h3 {font-size:1.17em; margin:1em 0;}
+h4 {font-size:1em; margin:1.33em 0;}
+h5 {font-size:0.83em; margin:1.67em 0;}
+h6 {font-size:0.75em; margin:2.33em 0;}
 
-h2.pagetitle {
+h2.pagetitle, .widget_nav_menu h3 {
 	font-family:'nexa';
 	color:#E1780F;
 	font-size:2em;
 	margin:0 15px 0 0;
 	text-transform:uppercase;
 	font-weight:normal;
+	display:inline-block;
+	vertical-align:baseline;
 }
-
-h3{font-size:1.17em;margin:1em 0;}
-h4{font-size:1em;margin:1.33em 0;}
-h5{font-size:0.83em;margin:1.67em 0;}
-h6{font-size:0.75em;margin:2.33em 0;}
 
 @font-face {
 	font-family:'open sans';
@@ -255,15 +253,25 @@ h6{font-size:0.75em;margin:2.33em 0;}
 /* end Fonts */
 
 /* Subnav Menus */
-#Subnav_Menu {position:relative;}
-#Subnav_Menu .widgettitle {display:none;}
-
 .widgets_on_page > ul, 
-#Subnav_Menu ul {margin:0;}
+#contentWidgets {margin:0;}
 
-#Subnav_Menu ul li, #Subnav_Menu ul li a {display:inline-block;}
+#contentWidgets .widget_nav_menu {
+	position:relative;
+	border-bottom:1px solid #E3E6E4;
+	margin-bottom:40px;
+	padding:2px 0;
+}
 
-#Subnav_Menu a {
+#contentWidgets .widget_nav_menu > div {
+	display:inline-block;
+	vertical-align:baseline;
+}
+
+#contentWidgets + .pagetitle {display:none;}
+#contentWidgets .widget_nav_menu li {display:inline-block;}
+
+#contentWidgets .widget_nav_menu a {
 	color:#AAA;
 	border-radius:4px;
 	background-clip:padding-box;
@@ -271,17 +279,22 @@ h6{font-size:0.75em;margin:2.33em 0;}
 	padding:8px 12px;
 	margin-top:2px 2px 2px 0;
 	text-decoration:none;
+	display:inline-block;
 }
 
-#Subnav_Menu a:hover, #Subnav_Menu a:focus, #Subnav_Menu a:active {background-color:#eeeeee;}
-#Subnav_Menu .current-menu-item a {color:#333; font-weight:bold;}
+#contentWidgets .widget_nav_menu a:hover, 
+#contentWidgets .widget_nav_menu a:focus, 
+#contentWidgets .widget_nav_menu a:active {background-color:#eeeeee;}
 
-#Subnav_Menu a[title^="Add"] {
+#contentWidgets .widget_nav_menu .current-menu-item a {color:#333; font-weight:bold;}
+
+#contentWidgets .widget_nav_menu a[title^="Add"] {
 	display:inline-block;
 	*display:inline;
 	*zoom:1;
 	position:absolute;
 	right:0;
+	bottom:10px;
 	text-align:center;
 	vertical-align:middle;
 	cursor:pointer;
@@ -359,7 +372,9 @@ h6{font-size:0.75em;margin:2.33em 0;}
 .btn:active, .btn.active{background-color:#cccccc \9;}
 .btn:first-child {*margin-left:0;}
 
-.btn:hover, .btn:focus, #Subnav_Menu a:hover, #Subnav_Menu a:focus {
+.btn:hover, .btn:focus, 
+#contentWidgets .widget_nav_menu a:hover, 
+#contentWidgets .widget_nav_menu a:focus {
 	color:#333333;
 	text-decoration:none;
 	background-position:0 -15px;
@@ -444,14 +459,18 @@ h6{font-size:0.75em;margin:2.33em 0;}
 
 .btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active, 
 .btn-warning.disabled, .btn-warning[disabled], 
-#Subnav_Menu a[title^="Add"]:hover, #Subnav_Menu a[title^="Add"]:focus, #Subnav_Menu a[title^="Add"]:active, 
-#Subnav_Menu a[title^="Add"].disabled, #Subnav_Menu a[title^="Add"][disabled] {
+#contentWidgets .widget_nav_menu a[title^="Add"]:hover, 
+#contentWidgets .widget_nav_menu a[title^="Add"]:focus, 
+#contentWidgets .widget_nav_menu a[title^="Add"]:active, 
+#contentWidgets .widget_nav_menu a[title^="Add"].disabled, 
+#contentWidgets .widget_nav_menu a[title^="Add"][disabled] {
 	color:#ffffff;
 	background-color:#e1780f;
 	*background-color:#c96c0d;
 }
 
-.btn-warning:active, .btn-warning.active, #Subnav_Menu a[title^="Add"]:active {background-color:#b15f0c \9;}
+.btn-warning:active, .btn-warning.active, 
+#contentWidgets .widget_nav_menu a[title^="Add"]:active {background-color:#b15f0c \9;}
 
 .btn-danger{
 	color:#ffffff;
