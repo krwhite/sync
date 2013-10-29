@@ -141,17 +141,6 @@ a:active, a:hover{outline:0;}
 	overflow: hidden;
 }
 
-#main:before {
-	content:"";
-	width:300px;
-	background:#E3E6E9;
-	position:absolute;
-	right:0;
-	top:0;
-	bottom:0;
-	z-index:1;
-}
-
 #main:after {
 	content: "";
 	display: block;
