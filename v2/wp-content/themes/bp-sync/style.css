@@ -655,13 +655,13 @@ p.comments-closed {display:none;}
 /* end Content */
 
 /* Sidebar */
+#sidebar .padder {padding:0;}
 #sidebar .syncProfileCard .widgettitle {display:none;}
 
 #sidebar .profile-card {
 	border-radius:4px;
 	background-clip:padding-box;
 	background:#eee;
-	width:100%;
 	border:1px solid #cdcdcd;
 	padding:.4em;
 	margin-bottom:8px;
@@ -696,7 +696,6 @@ p.comments-closed {display:none;}
 	border-radius:4px;
 	background-clip:padding-box;
 	margin:0;
-	width:100%;
 	border:1px solid #c4c4c4;
 }
 
