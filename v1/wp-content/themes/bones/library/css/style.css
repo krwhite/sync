@@ -287,6 +287,7 @@ dd{margin-left:10px;}
 
 .dl-horizontal dd{margin-left:180px;}
 
+/* -------------------- extracted to sync v2 ------------------------*/
 hr{margin:20px 0;border:0;border-top:1px solid #eeeeee;border-bottom:1px solid #ffffff;}
 
 abbr[title],abbr[data-original-title]{cursor:help;border-bottom:1px dotted #999999;}
@@ -298,6 +299,8 @@ blockquote{padding:0 0 0 15px;margin:0 0 20px;border-left:5px solid #eeeeee;}blo
 blockquote small{display:block;line-height:20px;color:#999999;}blockquote small:before{content:'\2014 \00A0';}
 
 blockquote.pull-right{float:right;padding-right:15px;padding-left:0;border-right:5px solid #eeeeee;border-left:0;}blockquote.pull-right p,blockquote.pull-right small{text-align:right;}
+/* -------------------- end extracted to sync v2 ------------------------*/
+
 
 blockquote.pull-right small:before{content:'';}
 
@@ -2072,7 +2075,9 @@ p+h2{margin-top:30px;}
 
 .dodson{display:none;}
 
+/* -------------------- extracted to sync v2 ------------------------*/
 article img{border-radius:4px;background-clip:padding-box;border:1px solid #777e86;-webkit-box-shadow:0px 0px 10px 0px #999;box-shadow:0px 0px 10px 0px #999;-webkit-box-shadow:0px 0px 4px 0px #ccc;box-shadow:0px 0px 4px 0px #ccc;}
+/* -------------------- extracted to sync v2 ------------------------*/
 
 #main{min-height:800px;background:#fafcf9;width:70%;padding:25px;padding-bottom:50px;}
 
