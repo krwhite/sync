@@ -11,10 +11,9 @@
   
   <div class="rightHeader">
       <!-- #search-form -->
-      <div id="search-bar" role="search">
-        <?php do_action( 'bp_search_login_bar' ); ?>
+      <ul id="headerWidgets">
         <?php dynamic_sidebar( 'header-widgets' ); ?>
-      </div>
+      </ul>
       <!-- #search-bar -->
       <div class="avatar-container">
         <div id="sidebar-me">
