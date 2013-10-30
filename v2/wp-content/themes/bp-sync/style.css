@@ -64,9 +64,9 @@ hr {
 }
 
 #pageHeader .inner {
-	width: 960px;
+	width: 910px;
 	margin: 0 auto;
-	padding: 14px 0 8px;
+	padding: 14px 25px 8px;
 }
 #pageHeader h1 a {
 	display: block;
@@ -118,9 +118,55 @@ hr {
     color: #E1780F;
 }
 
-#pageHeader #search-bar {float:right;}
+#pageHeader .avatar-container {float:right;}
 #pageHeader #sidebar-me > a {display:inline-block;}
-#pageHeader .rightHeader {float:right;}
+#pageHeader .rightHeader {float:right; width:28%; overflow:hidden; padding-top:5px;}
+#pageHeader .rightHeader h3 {display:none;}
+
+#pageHeader .rightHeader ul, 
+#pageHeader .rightHeader li, 
+#pageHeader .rightHeader form {display:inline-block;}
+
+#search-form #search-terms {
+	display:inline-block;
+	font-size: 14px;
+    background: none repeat scroll 0 0 #4C4F57;
+    border: 0;
+    border-radius: 0 3px 3px 0;
+    box-shadow: none !important;
+    color: #EEEEEE;
+	min-height:20px;
+    height: 23px;
+    overflow: hidden;
+    padding: 5px;
+    margin:0;
+    width: 164px;
+}
+
+#search-form #search-submit {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    float: left;
+    padding: 0;
+    width: 34px;
+    white-space:nowrap;
+    overflow:hidden;
+    color:#AAA;
+    background: #4C4F57;
+    border-color: #4C4F57;
+    border-radius: 3px 0 0 3px;
+    padding:5px 5px 6px 5px;
+    box-shadow: none !important;
+	font-size:16px;
+}
+
+#search-form #search-submit:before {
+    content: "\f002";
+    font-family: 'FontAwesome';
+    font-size:16px;
+    margin-right:9000px;
+    padding-left:8px;
+}
 
 #sidebar-me img.avatar {
 	border: 1px solid #C2C7CB;
@@ -664,7 +710,7 @@ p.comments-closed {display:none;}
 	background:#eee;
 	border:1px solid #cdcdcd;
 	padding:.4em;
-	margin-bottom:8px;
+	margin:55px 0 8px;
 }
 
 #sidebar .profile-card a {

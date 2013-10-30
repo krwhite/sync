@@ -3023,6 +3023,7 @@ h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5{text-rendering:optimizelegibility;}h1 a,.h1 a
 
 }
 
+/* -------------------- extracted to sync v2 ------------------------*/
 #search-bar #search-terms {
 
     float:right !important;
@@ -3049,7 +3050,6 @@ h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5{text-rendering:optimizelegibility;}h1 a,.h1 a
 
     width: 164px;
 }
-
 
 
 #search-form #search-submit {
