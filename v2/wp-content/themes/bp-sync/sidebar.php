@@ -55,4 +55,5 @@
 	</div><!-- .padder -->
 
 <?php do_action( 'bp_after_sidebar' ); ?>
+</div><!-- #sidebar --> <!-- This fixes help, but breaks main page.  I think the issue is a widget on the main page at this point, not sure though. -->
 <!-- End sidebar.php -->
