@@ -605,5 +605,7 @@ h2.pagetitle, .widget_nav_menu h3 {
 @media only screen and (max-width: 768px) {
 	html body {margin-top:0 !important;}
 	#navigation ul#nav {min-width:400px; padding-bottom:0;}
-	#navigation ul#nav li {width:auto;}
+	#navigation ul#nav li {width:auto; margin-bottom:0;}
+	#navigation ul#nav li:nth-child(2n) {margin-left:5px;}
+	#navigation ul#nav li a {margin-bottom:2px;}
 }
