@@ -12,7 +12,7 @@ class syncMenuNews extends WP_Widget
 {
   function syncMenuNews()
   {
-    $widget_ops = array('classname' => 'syncMenuNews', 'description' => 'Display Add News button for admins.' );
+    $widget_ops = array('classname' => 'sync_menu_news', 'description' => 'Display Add News button for admins.' );
     $this->WP_Widget('syncMenuNews', 'Sync Menu: Add News Button', $widget_ops);
   }
  

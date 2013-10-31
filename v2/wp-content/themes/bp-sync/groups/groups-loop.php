@@ -15,56 +15,28 @@
 
 <?php if ( bp_has_groups( bp_ajax_querystring( 'groups' ) ) ) : ?>
 
-	<div id="pag-top" class="pagination">
-
-		<div class="pag-count" id="group-dir-count-top">
-
-			<?php bp_groups_pagination_count(); ?>
-
-		</div>
-
-		<div class="pagination-links" id="group-dir-pag-top">
-
-			<?php bp_groups_pagination_links(); ?>
-
-		</div>
-
-	</div>
 
 	<?php do_action( 'bp_before_directory_groups_list' ); ?>
 
-	<ul id="groups-list" class="item-list" role="main">
+	<ul id="groups-list" class="item-list grid_view" role="main">
 
 	<?php while ( bp_groups() ) : bp_the_group(); ?>
 
-		<li>
-			<div class="item-avatar">
-				<a href="<?php bp_group_permalink(); ?>"><?php bp_group_avatar( 'type=thumb&width=50&height=50' ); ?></a>
-			</div>
+		<li class="item <?php bp_group_type(); ?>">
+			<a href="<?php bp_group_permalink(); ?>">
+				<span class="item-avatar">
+					<?php bp_group_avatar( 'type=full' ); ?>
+				</span>
+				<span class="item-title"><?php bp_group_name(); ?> <?php do_action( 'bp_directory_groups_item' ); ?></span>
+					
+				<span class="meta">
+					<i class="icon-globe tips" title="this group is PUBLIC"></i>
+					<i class="icon-lock tips" title="this group is PRIVATE"></i>
+					<i class="icon-eye-close tips" title="this group is HIDDEN"></i>
 
-			<div class="item">
-				<div class="item-title"><a href="<?php bp_group_permalink(); ?>"><?php bp_group_name(); ?></a></div>
-				<div class="item-meta"><span class="activity"><?php printf( __( 'active %s', 'buddypress' ), bp_get_group_last_active() ); ?></span></div>
-
-				<div class="item-desc"><?php bp_group_description_excerpt(); ?></div>
-
-				<?php do_action( 'bp_directory_groups_item' ); ?>
-
-			</div>
-
-			<div class="action">
-
-				<?php do_action( 'bp_directory_groups_actions' ); ?>
-
-				<div class="meta">
-
-					<?php bp_group_type(); ?> / <?php bp_group_member_count(); ?>
-
-				</div>
-
-			</div>
-
-			<div class="clear"></div>
+					<?php bp_group_member_count(); ?>
+				</span>
+			</a>
 		</li>
 
 	<?php endwhile; ?>

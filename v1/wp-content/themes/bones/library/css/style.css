@@ -2276,7 +2276,7 @@ article img{border-radius:4px;background-clip:padding-box;border:1px solid #777e
 .groups #groups-list.list_view li a .item-desc{float:left;width:50%;color:#555;}
 
 .groups #groups-list.list_view li a .action{overflow:hidden;*overflow:visible;*zoom:1;float:none;width:auto;_position:relative;_left:-3px;_margin-right:-3px;}
-
+/* -------------------- extracted to sync v2 ------------------------*/
 .groups #groups-list.grid_view li{width:23%;padding:0;float:left;display:block;background:#eee;margin:0 2% 2% 0;border:1px solid #ddd;-moz-box-sizing: border-box;box-sizing: border-box;}.groups #groups-list.grid_view li a{padding:10px;border:none;}
 .groups #groups-list.grid_view li a .item-avatar img{width:100%;margin-bottom:8px;display:inline-block;min-height:155px;color:#BBB;white-space:normal;}
 .groups.mygroups #groups-list.grid_view li a .item-avatar img {min-height:125px;}
@@ -2294,7 +2294,7 @@ article img{border-radius:4px;background-clip:padding-box;border:1px solid #777e
 .groups #groups-list.grid_view li a.Public.Group i.icon-globe,.groups #groups-list.grid_view li a.Private.Group i.icon-lock,.groups #groups-list.grid_view li a.Hidden.Group i.icon-eye-close{display:inline-block;}
 
 .groups #groups-list.grid_view li a:hover{text-decoration:none;}
-
+/* -------------------- end extracted to sync v2 ------------------------*/
 .groups .pag-count{float:right;}
 
 .groups .people-list .person a{padding:5px 1%;border:1px solid #ddd;background:#eee;display:block;margin:10px 5px 0;}.groups .people-list .person a img{margin-right:10px;}
