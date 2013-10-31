@@ -268,7 +268,8 @@ h4 {font-size:1em; margin:1.33em 0;}
 h5 {font-size:0.83em; margin:1.67em 0;}
 h6 {font-size:0.75em; margin:2.33em 0;}
 
-h2.pagetitle, .widget_nav_menu h3 {
+h2.pagetitle, .widget_nav_menu h3, 
+.home #menu-news li:first-child a {
  	font-family:'nexa';
  	color:#E1780F;
  	font-size:2em;
@@ -280,7 +281,11 @@ h2.pagetitle, .widget_nav_menu h3 {
 	border-bottom:1px solid #E3E6E4;
  }
  
-.widget_nav_menu h3 {display:inline-block; border:0;}
+.home #menu-news li a, 
+.home .widget_nav_menu h3 {display:none;}
+ 
+.widget_nav_menu h3, 
+.home #menu-news li:first-child a {display:inline-block; border:0; margin-bottom:6px;}
 
 @font-face {
 	font-family:'open sans';
@@ -333,7 +338,7 @@ h2.pagetitle, .widget_nav_menu h3 {
 
 /* Subnav Menus */
 .widgets_on_page > ul, 
-#contentWidgets {margin:0;}
+#contentWidgets {margin:0; position:relative;}
  
 #contentWidgets .widget_nav_menu {
 	position:relative;
@@ -349,6 +354,8 @@ h2.pagetitle, .widget_nav_menu h3 {
  
 #contentWidgets + .pagetitle {display:none;}
 #contentWidgets .widget_nav_menu li {display:inline-block;}
+#contentWidgets .widget_nav_menu #menu-news li:first-child {display:none;}
+.home #contentWidgets .widget_nav_menu #menu-news li:first-child {display:inline-block;}
  
 #contentWidgets .widget_nav_menu a {
 	color:#AAA;
@@ -364,16 +371,17 @@ h2.pagetitle, .widget_nav_menu h3 {
 #contentWidgets .widget_nav_menu a:hover, 
 #contentWidgets .widget_nav_menu a:focus, 
 #contentWidgets .widget_nav_menu a:active {background-color:#eeeeee;}
-
+ 
+.home #contentWidgets #menu-news li:first-child a:hover {background:none; color:#F89029;}
 #contentWidgets .widget_nav_menu .current-menu-item a {color:#333; font-weight:bold;}
 
-#contentWidgets .widget_nav_menu a[title^="Add"] {
+#contentWidgets a[title^="Add"] {
 	display:inline-block;
 	*display:inline;
 	*zoom:1;
 	position:absolute;
 	right:0;
-	bottom:10px;
+	bottom:12px;
 	text-align:center;
 	vertical-align:middle;
 	cursor:pointer;
@@ -533,18 +541,18 @@ h2.pagetitle, .widget_nav_menu h3 {
 
 .btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active, 
 .btn-warning.disabled, .btn-warning[disabled], 
-#contentWidgets .widget_nav_menu a[title^="Add"]:hover, 
-#contentWidgets .widget_nav_menu a[title^="Add"]:focus, 
-#contentWidgets .widget_nav_menu a[title^="Add"]:active, 
-#contentWidgets .widget_nav_menu a[title^="Add"].disabled, 
-#contentWidgets .widget_nav_menu a[title^="Add"][disabled] {
+#contentWidgets a[title^="Add"]:hover, 
+#contentWidgets a[title^="Add"]:focus, 
+#contentWidgets a[title^="Add"]:active, 
+#contentWidgets a[title^="Add"].disabled, 
+#contentWidgets a[title^="Add"][disabled] {
 	color:#ffffff;
 	background-color:#e1780f;
 	*background-color:#c96c0d;
 }
 
 .btn-warning:active, .btn-warning.active, 
-#contentWidgets .widget_nav_menu a[title^="Add"]:active {background-color:#b15f0c \9;}
+#contentWidgets a[title^="Add"]:active {background-color:#b15f0c \9;}
 
 .btn-danger{
 	color:#ffffff;
@@ -633,6 +641,8 @@ h2.pagetitle, .widget_nav_menu h3 {
 /* end Help Callout */
 
 /* Content */
+#pageContent .edit-link {display:none;}
+
 div.page .entry .widgets_on_page > ul, 
 div.page .widgets_on_page > ul {margin:0;}
 .query-field {display:inline;}
