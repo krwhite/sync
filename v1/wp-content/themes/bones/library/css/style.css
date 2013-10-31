@@ -1465,6 +1465,7 @@ button.btn.btn-mini,input[type="submit"].btn.btn-mini{*padding-top:1px;*padding-
 
 .btn-link[disabled]:hover,.btn-link[disabled]:focus{color:#333333;text-decoration:none;}
 
+/* -------------------- extracted to sync v2 ------------------------*/
 .btn-group{position:relative;display:inline-block;*display:inline;*zoom:1;font-size:0;vertical-align:middle;white-space:nowrap;*margin-left:.3em;}.btn-group:first-child{*margin-left:0;}
 
 .btn-group+.btn-group{margin-left:5px;}
@@ -1518,7 +1519,7 @@ button.btn.btn-mini,input[type="submit"].btn.btn-mini{*padding-top:1px;*padding-
 .btn-group.open .btn-info.dropdown-toggle{background-color:#2f96b4;}
 
 .btn-group.open .btn-inverse.dropdown-toggle{background-color:#222222;}
-
+/* -------------------- end extracted to sync v2 ------------------------*/
 .btn .caret{margin-top:8px;margin-left:0;}
 
 .btn-large .caret{margin-top:6px;}
