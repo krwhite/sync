@@ -712,7 +712,9 @@ p.comments-closed {display:none;}
 
 /* Sidebar */
 #sidebar .padder {padding:0;}
-#sidebar .syncProfileCard .widgettitle {display:none;}
+#sidebar .widget {margin-bottom:20px;}
+#sidebar .syncProfileCard .widgettitle, 
+#sidebar .syncTweets .widgettitle {display:none;}
 
 #sidebar .profile-card {
 	border-radius:4px;
