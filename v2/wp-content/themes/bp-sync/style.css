@@ -278,6 +278,7 @@ h2.pagetitle {
 	font-weight:normal;
 }
 
+.post-content h2.pagetitle {text-transform:none; font-size:1.6em; line-height:1.4em;}
 p + h2 {margin-top:30px;}
 
 h3 {font-size:1.17em; margin:1em 0;}
@@ -901,6 +902,7 @@ h2.pagetitle, .widget_nav_menu h3,
 
 /* Content */
 #pageContent .edit-link {display:none;}
+#pageContent div.page {overflow:visible;}
 
 div.page .entry .widgets_on_page > ul, 
 div.page .widgets_on_page > ul, 
@@ -923,6 +925,7 @@ div.page .entry .query-content > ul {margin:0; list-style:none;}
 .query-field-post_date label {font-style:normal;}
 .query-field-post_content, .query-content.post-content {display:block; margin:8px 0 20px;}
 .page div.post-content {margin-left:0;}/* overrides buddypress's 105px */
+.post-content .page-title + .date {display:block; color:#CCC; font-size:12px; margin-bottom:20px;}
 
 #pageContent .entry {margin:0 4%;}
 #sidebar + #pageContent .entry {margin:0;}
@@ -1129,6 +1132,8 @@ p.comments-closed {display:none;}
 	color:#eee;
 	text-shadow:none;
 }
+
+#sidebar .section i[class*="icon-"] {margin-right:5px;}
 
 .help .help-callout .alert {margin:0 0 20px;}
 .alert {
