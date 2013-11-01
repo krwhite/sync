@@ -120,7 +120,7 @@ hr {
 
 #pageHeader .avatar-container {float:right;}
 #pageHeader #sidebar-me > a {display:inline-block;}
-#pageHeader .rightHeader {float:right; width:28%; overflow:hidden; padding-top:5px;}
+#pageHeader .rightHeader {float:right; width:28%; padding-top:5px; position:relative;}
 #pageHeader .rightHeader h3 {display:none;}
 
 #pageHeader .rightHeader ul, 
@@ -139,14 +139,13 @@ hr {
     height: 23px;
     overflow: hidden;
     padding: 5px;
-    margin:0;
+    margin:0 0 0 34px;
     width: 164px;
 }
 
 #search-form #search-submit {
     background: none repeat scroll 0 0 transparent;
     border: medium none;
-    float: left;
     padding: 0;
     width: 34px;
 	height: 33px;
@@ -159,6 +158,9 @@ hr {
     padding:3px 5px 6px 5px;
     box-shadow: none !important;
 	font-size:16px;
+	position:absolute;
+	left:0;
+	bottom:0;
 }
 
 #search-form #search-submit:before {
@@ -221,7 +223,7 @@ div#sidebar {
 	float: right;
 	width: 300px;
 	margin: 0;
-	padding: 20px;
+	padding: 82px 20px 20px;
 	border-radius: 0 4px 4px 0;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -235,6 +237,7 @@ div#sidebar {
 	margin-right: 300px;
 	border-radius: 4px 0 0 4px;
 }
+ul.item-list {width:auto;}
 div.pagination {
 	clear:both; 
 	background:none;
@@ -246,6 +249,7 @@ div.pagination {
 }
 .pagination a {display:inline-block; padding:5px;}
 div.pagination .pagination-links span, div.pagination .pagination-links a {font-size:14px;}
+div.pagination .pagination-links a:hover {font-weight:inherit; color:#F19231;}
 /* end Layout Styles */
 
 /* Fonts */
@@ -642,6 +646,119 @@ h2.pagetitle, .widget_nav_menu h3,
 }
 
 .btn-info:active, .btn-info.active{background-color:#24748c \9;}
+.btn-block {display:block;}
+
+.btn-group {
+	position:relative;
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+	font-size:0;
+	vertical-align:middle;
+	white-space:nowrap;
+	margin-bottom:20px;
+	*margin-left:.3em;
+}
+
+.btn-group:first-child {*margin-left:0;}
+.btn-group + .btn-group{margin-left:5px;}
+
+.btn-toolbar {
+	font-size:0;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+.btn-toolbar > .btn + .btn, 
+.btn-toolbar > .btn-group + .btn, 
+.btn-toolbar > .btn + .btn-group {margin-left:5px;}
+
+.btn-group > .btn {
+	position:relative;
+	-webkit-border-radius:0;
+	-moz-border-radius:0;
+	border-radius:0;
+}
+
+.btn-group > .btn + .btn {margin-left:-1px;}
+.btn-group > .btn, 
+.btn-group > .dropdown-menu, .btn-group > .popover {font-size:14px;}
+
+.btn-group > .btn:first-child {
+	margin-left:0;
+	-webkit-border-top-left-radius:4px;
+	-moz-border-radius-topleft:4px;
+	border-top-left-radius:4px;
+	-webkit-border-bottom-left-radius:4px;
+	-moz-border-radius-bottomleft:4px;
+	border-bottom-left-radius:4px;
+}
+
+.btn-group > .btn:last-child, 
+.btn-group > .dropdown-toggle {
+	-webkit-border-top-right-radius:4px;
+	-moz-border-radius-topright:4px;
+	border-top-right-radius:4px;
+	-webkit-border-bottom-right-radius:4px;
+	-moz-border-radius-bottomright:4px;
+	border-bottom-right-radius:4px;
+}
+
+.btn-group > .btn.large:first-child {
+	margin-left:0;
+	-webkit-border-top-left-radius:6px;
+	-moz-border-radius-topleft:6px;
+	border-top-left-radius:6px;
+	-webkit-border-bottom-left-radius:6px;
+	-moz-border-radius-bottomleft:6px;
+	border-bottom-left-radius:6px;
+}
+
+.btn-group > .btn.large:last-child,.btn-group > .large.dropdown-toggle{-webkit-border-top-right-radius:6px;-moz-border-radius-topright:6px;border-top-right-radius:6px;-webkit-border-bottom-right-radius:6px;-moz-border-radius-bottomright:6px;border-bottom-right-radius:6px;}
+
+.btn-group > .btn:hover,.btn-group > .btn:focus,.btn-group > .btn:active,.btn-group > .btn.active{z-index:2;}
+
+.btn-group .dropdown-toggle:active,.btn-group.open .dropdown-toggle{outline:0;}
+
+.btn-group > .btn + .dropdown-toggle {
+	padding-left:8px;
+	padding-right:8px;
+	-webkit-box-shadow:inset 1px 0 0 rgba(255,255,255,.125), inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+	-moz-box-shadow:inset 1px 0 0 rgba(255,255,255,.125), inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+	box-shadow:inset 1px 0 0 rgba(255,255,255,.125), inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+	*padding-top:5px;
+	*padding-bottom:5px;
+}
+
+.btn-group > .btn-mini + .dropdown-toggle {
+	padding-left:5px;
+	padding-right:5px;
+	*padding-top:2px;
+	*padding-bottom:2px;
+}
+
+.btn-group > .btn-small + .dropdown-toggle {*padding-top:5px; *padding-bottom:4px;}
+.btn-group > .btn-large + .dropdown-toggle {
+	padding-left:12px;
+	padding-right:12px;
+	*padding-top:7px;
+	*padding-bottom:7px;
+}
+
+.btn-group.open .dropdown-toggle {
+	background-image:none;
+	-webkit-box-shadow:inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+	-moz-box-shadow:inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+	box-shadow:inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+}
+
+.btn-group.open .btn.dropdown-toggle{background-color:#e6e6e6;}
+.btn-group.open .btn-primary.dropdown-toggle{background-color:#0044cc;}
+.btn-group.open .btn-warning.dropdown-toggle{background-color:#e1780f;}
+.btn-group.open .btn-danger.dropdown-toggle{background-color:#bd362f;}
+.btn-group.open .btn-success.dropdown-toggle{background-color:#51a351;}
+.btn-group.open .btn-info.dropdown-toggle{background-color:#2f96b4;}
+.btn-group.open .btn-inverse.dropdown-toggle{background-color:#222222;}
 /* end Buttons */
 
 /* Forms */
@@ -651,7 +768,6 @@ h2.pagetitle, .widget_nav_menu h3,
 /* end Forms */
 
 /* Help Callout */
-.help-callout .btn {display:block;}
 /* end Help Callout */
 
 /* Content */
@@ -719,12 +835,31 @@ div.page .entry ul,
 div.page .query-field-post_content ul {list-style:disc outside none; margin: 10px 0 10px 25px;}
 #Index_Page_Content h2 {border-bottom:1px solid #e3e6e4;}
 #Index_Page_Content .query-news h2 {border:0;}
-#Index_Page_Content .widget_bp_core_members_widget #members-list-options {display:none;}
+#Index_Page_Content #members-list-options, 
+#Index_Page_Content #groups-list-options, 
+#Index_Page_Content #members-list .item-meta {display:none;}
+#Index_Page_Content .widget ul.item-list {margin:0;}
+#Index_Page_Content #members-list .vcard {float:left; width:25%; margin-bottom:5px; text-align:center; border:0;}
+#Index_Page_Content #members-list .vcard > div {margin:0 5px;}
+#Index_Page_Content #members-list .vcard .item {clear:both;}
+#Index_Page_Content ul.item-list li img.avatar {
+	float:none; 
+	width:auto; 
+	height:auto; 
+	margin:0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#Index_Page_Content ul.item-list li div.item-title {width:auto;}
+
 .latest .query-footer {text-align:right; margin-bottom:20px;}
 p.comments-closed {display:none;}
 /* end Content */
 
 /* Groups */
+.groups #groups-list {margin:0 -2% 0 auto;}
+
 .groups #groups-list.grid_view li {
 	width:23%;
 	float:left;
@@ -750,6 +885,7 @@ p.comments-closed {display:none;}
 	margin-bottom:8px;
 	display:inline-block;
 	min-height:155px;
+	height:auto;
 	color:#BBB;
 	white-space:normal;
 }
@@ -776,10 +912,13 @@ p.comments-closed {display:none;}
 /* Sidebar */
 #sidebar .padder {padding:0;}
 #sidebar .widget {margin-bottom:20px;}
+#sidebar h2, #sidebar h3 {margin-top:0;}
 
+/* just hide em all! 
 #sidebar .syncProfileCard .widgettitle, 
 #sidebar .syncHelpArticleSidebar .widgettitle, 
-#sidebar .syncTweets .widgettitle {display:none;}
+#sidebar .syncTweets .widgettitle */
+#sidebar h3.widgettitle {display:none}
 
 #sidebar .profile-card {
 	border-radius:4px;
@@ -787,7 +926,7 @@ p.comments-closed {display:none;}
 	background:#eee;
 	border:1px solid #cdcdcd;
 	padding:.4em;
-	margin:55px 0 8px;
+	margin:0 0 8px;
 }
 
 #sidebar .profile-card a {
@@ -856,6 +995,19 @@ p.comments-closed {display:none;}
 	background:#e1780f;
 	color:#eee;
 	text-shadow:none;
+}
+
+.help .help-callout .alert {margin:0 0 20px;}
+.alert {
+	padding:8px 35px 8px 14px;
+	margin-bottom:20px;
+	text-shadow:0 1px 0 rgba(255, 255, 255, 0.5);
+	background-color:#fcf8e3;
+	border:1px solid #fbeed5;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	border-radius:4px;
+	color:#c09853;
 }
 /* end Sidebar */
 
