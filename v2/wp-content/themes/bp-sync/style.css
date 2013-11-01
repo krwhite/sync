@@ -112,8 +112,8 @@ hr {
 
 #nav li.selected a,
 #nav > li.current-menu-item a,
-#nav > li.current_page_item a,
-#nav > li.current_page_ancestor a {
+#nav > li.current-page-item a,
+#nav > li.current-page-ancestor a {
     background: none;
     color: #E1780F;
 }
