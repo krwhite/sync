@@ -1597,7 +1597,7 @@ button.btn.btn-mini,input[type="submit"].btn.btn-mini{*padding-top:1px;*padding-
 .nav-list [class^="icon-"],.nav-list [class*=" icon-"]{margin-right:2px;}
 
 .nav-list .divider{*width:100%;height:1px;margin:9px 1px;*margin:-5px 0 5px;overflow:hidden;background-color:#e5e5e5;border-bottom:1px solid #ffffff;}
-
+/* -------------------- extracted to sync v2 ------------------------*/
 .nav-tabs,.nav-pills{*zoom:1;zoom:1;}.nav-tabs:before,.nav-pills:before,.nav-tabs:after,.nav-pills:after{display:table;content:"";line-height:0;}
 
 .nav-tabs:after,.nav-pills:after{clear:both;}
@@ -1621,7 +1621,7 @@ button.btn.btn-mini,input[type="submit"].btn.btn-mini{*padding-top:1px;*padding-
 .nav-pills>li>a{padding-top:8px;padding-bottom:8px;margin-top:2px;margin-bottom:2px;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;}
 
 .nav-pills>.active>a,.nav-pills>.active>a:hover,.nav-pills>.active>a:focus{color:#ffffff;background-color:#0088cc;}
-
+/* -------------------- end extracted to sync v2 ------------------------*/
 .nav-stacked>li{float:none;}
 
 .nav-stacked>li>a{margin-right:0;}
@@ -2710,11 +2710,11 @@ button#submit{border-radius:4px;background-clip:padding-box;padding:7px 20px;}
 #tabs table tr+tr td{border-top:1px solid #dddddd;}
 
 #wp-post_content-wrap{margin-bottom:15px;}
-
+/* -------------------- extracted to sync v2 ------------------------*/
 .tag-list i{color:#a6adb4;margin-right:6px;font-size:18px;line-height:5px;}
 
 .tag-list a{border-radius:4px;background-clip:padding-box;color:#eee;background-color:#a6adb4;display:inline-block;padding:2px 8px;margin:0 5px 5px 0;font-size:11px;}.tag-list a:hover{color:#eee;background:#e1780f;text-decoration:none;}
-
+/* -------------------- end extracted to sync v2 ------------------------*/
 .wpuf-author{display:none;}
 
 .wpuf-pagination{overflow:hidden;*overflow:visible;*zoom:1;border-left:1px solid #ddd;}.wpuf-pagination a,.wpuf-pagination span{padding:11px 19px;font-size:17.5px;float:left;line-height:20px;text-decoration:none;background-color:#fff;border:1px solid #ddd;border-left-width:0;}
