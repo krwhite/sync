@@ -44,13 +44,9 @@ class syncNewsCategories extends WP_Widget
  
     ?>
 	
-	<div class="lastUnit">
-
-		<div class="sidebar">
-
 			<h2>News Categories</h2>
 
-			<div class="list-wrapper">
+			<div class="categories-list">
 
 				<?php
 
@@ -60,27 +56,14 @@ class syncNewsCategories extends WP_Widget
 
 				?>
 
-					<div class='group-wrapper'><div class='group'>
+					
 
 						<a href="<?php echo site_url(); ?>/news-category/<?php echo $term->slug; ?>"><strong><?php echo $term->name; ?></strong></a>
 
-						<p><?php echo $term->description; ?></p>
-
-				<?php
-
-						echo "</ul>";
-
-						echo "</div></div>";
-
-					}
-
-				?>
+				<?php } ?>
 
 			</div>
 
-		</div>
-
-	</div>
 	
     <?php
  

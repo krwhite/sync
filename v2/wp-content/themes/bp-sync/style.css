@@ -767,14 +767,145 @@ h2.pagetitle, .widget_nav_menu h3,
 .page .wpuf-el.tags {float:none;}
 /* end Forms */
 
-/* Help Callout */
-/* end Help Callout */
+/* News */
+.articles-list .query-row {margin-bottom:20px;}
+
+#sidebar .categories-list {margin-top:10px;}
+#sidebar .categories-list a {
+	display:block;
+	margin-bottom:10px;
+}
+/* end News */
+
+/* Help */
+.list-wrapper .query-content, 
+.group-wrapper {
+	margin-top:10px;
+	margin-bottom:25px;
+	overflow:hidden;
+	*overflow:visible;
+	*zoom:1;
+	border-radius:4px;
+	background-clip:padding-box;
+	padding:20px;
+	border:1px solid #ddd;
+	background:#eee;
+}
+.group-wrapper {padding:0 0 20px;}
+
+.list-wrapper ul[class*="latest"], 
+.group-wrapper .latest {
+	margin:0;
+	padding:0;
+	line-height:1.2em;
+	list-style-type:none;
+}
+.list-wrapper ul[class*="latest"] li, 
+.group-wrapper .latest li {
+	margin:0;
+	padding:0;
+	margin-bottom:8px;
+}
+.list-wrapper ul[class*="latest"] li div, 
+.group-wrapper .latest li div {font-size:.75em;}
+
+.list-wrapper ul[class*="latest"] a, 
+.group-wrapper .latest a {
+	overflow:hidden;
+	*overflow:visible;
+	*zoom:1;
+	font-size:1.5em;
+}
+
+.list-wrapper ul[class*="latest"] .query-field-post_date, 
+.group-wrapper .latest span {color:#999;}
+.list-wrapper ul[class*="latest"] span span, 
+.group-wrapper .latest span span {color:#ccc;}
+
+.group-wrapper .group {
+	float:left;
+	width:44%;
+	margin:3% 3% 0;
+	padding:0;
+	border:none;
+	background-color:transparent;
+}
+
+.list-wrapper .group-wrapper .group a, 
+.group-wrapper .group a {font-size:1.2em; text-transform:capitalize;}
+.list-wrapper .group-wrapper .group p, 
+.group-wrapper .group p {color:#999;}
+.list-wrapper .group-wrapper .group h4, 
+.group-wrapper .group h4 {
+	margin:0 0 5px 0;
+	text-transform:capitalize;
+	line-height:36px;
+}
+.list-wrapper .group-wrapper .group h4 a, 
+.group-wrapper .group h4 a {color:#666; display:block;}
+
+.list-wrapper .group-wrapper .group h4 a span, 
+.group-wrapper .group h4 a span {
+	color:#ccc;
+	font-weight:normal;
+	font-size:14px;
+}
+
+.list-wrapper .group-wrapper .group ul, 
+.group-wrapper .group ul {list-style:disc;}
+.list-wrapper .group-wrapper .group ul li, 
+.group-wrapper .group ul li {line-height:30px;}
+
+/* not sure if groups-wrapper is needed 
+.help .groups-wrapper .group-wrapper {
+	overflow:hidden;
+	*overflow:visible;
+	*zoom:1;
+	margin:0;
+	padding:0;
+	border:none;
+	background-color:transparent;
+}
+.help .groups-wrapper .group-wrapper .group {
+	background:#eee;
+	margin:10px 0 10px 0;
+	border:1px solid #ddd;
+	padding:20px;
+}
+.help .groups-wrapper .group-wrapper .group > a {
+	font-size:1.3em;
+	text-transform:capitalize;
+}
+
+.help .groups-wrapper .group-wrapper .group > span {color:#a6adb4;}
+.help .groups-wrapper .group-wrapper .group p {color:#999;}
+
+.help .groups-wrapper .group-wrapper .group h4 {
+	margin:0 0 5px 0;
+	text-transform:capitalize;
+	line-height:36px;
+}
+.help .groups-wrapper .group-wrapper .group h4 a {
+	color:#666;
+	display:block;
+}
+.help .groups-wrapper .group-wrapper .group h4 a span {
+	color:#ccc;
+	font-weight:normal;
+	font-size:14px;
+}
+
+.help .groups-wrapper .group-wrapper .group ul {list-style-type:disc;}
+.help .groups-wrapper .group-wrapper .group ul li {line-height:1.6em; font-size:0.9em;} */
+/* end Help */
 
 /* Content */
 #pageContent .edit-link {display:none;}
 
 div.page .entry .widgets_on_page > ul, 
-div.page .widgets_on_page > ul {margin:0;}
+div.page .widgets_on_page > ul, 
+div.page .entry .query-content > ul {margin:0; list-style:none;}
+
 .query-field {display:inline;}
 
 #pageContent .query-title, 
@@ -787,7 +918,9 @@ div.page .widgets_on_page > ul {margin:0;}
 }
 
 .query-field-post_author {font-weight:bold;}
+.query-field-post_author label {font-weight:normal;}
 .query-field-post_date {font-style:italic;}
+.query-field-post_date label {font-style:normal;}
 .query-field-post_content, .query-content.post-content {display:block; margin:8px 0 20px;}
 .page div.post-content {margin-left:0;}/* overrides buddypress's 105px */
 
