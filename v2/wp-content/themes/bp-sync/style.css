@@ -293,7 +293,7 @@ h2.pagetitle {
 .post-content h2.pagetitle {text-transform:none; font-size:1.6em; line-height:1.4em;}
 p + h2 {margin-top:30px;}
 
-h3 {font-size:1.17em; margin:1em 0;}
+h3 {font-size:1.17em; margin:1em 0; font-weight:normal;}
 h4 {font-size:1em; margin:1.33em 0;}
 h5 {font-size:0.83em; margin:1.67em 0;}
 h6 {font-size:0.75em; margin:2.33em 0;}
@@ -1129,6 +1129,10 @@ div#item-header div.generic-button, div#item-header a.button {float:none; margin
 
 .nav-tabs>.active>a,.nav-tabs>.active>a:hover,.nav-tabs>.active>a:focus{color:#555555;background-color:#ffffff;border:1px solid #ddd;border-bottom-color:transparent;cursor:default;}
 
+.groups #item-header-avatar img.avatar {float:none;}
+.groups .column #item-meta p {color:#AAA;}
+.groups .column #item-meta #item-buttons {margin-bottom:10px;}
+.groups span.activity {background:none; padding:0; border:0; display:inline; font-size:14px;}
 /* end Groups */
 
 /* Comments */
