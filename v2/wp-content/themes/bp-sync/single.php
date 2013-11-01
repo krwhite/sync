@@ -9,11 +9,16 @@
   <?php get_header(); ?>
 </div>
 <div id="main">
-  <?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
-	  <?php get_sidebar('sidebar-1'); ?>
-  <?php endif; ?>
-  <div id="pageContent">
-			<?php do_action( 'bp_before_blog_single_post' ); ?>
+	<?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
+	<?php get_sidebar('sidebar-1'); ?>
+	<?php endif; ?>
+	<div id="pageContent">
+		<?php if ( is_active_sidebar( 'content_widgets_top' ) ) : ?>
+		<ul id="contentWidgets">
+		<?php dynamic_sidebar( 'content_widgets_top' ); ?>
+		</ul>
+		<?php endif; ?>
+		<?php do_action( 'bp_before_blog_single_post' ); ?>
 			<div class="page" id="blog-single" role="main">
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 				<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -23,15 +28,6 @@
 						<div class="entry">
 							<?php the_content( __( 'Read the rest of this entry &rarr;', 'buddypress' ) ); ?>
 							<?php wp_link_pages( array( 'before' => '<div class="page-link"><p>' . __( 'Pages: ', 'buddypress' ), 'after' => '</p></div>', 'next_or_number' => 'number' ) ); ?>
-						</div>
-						<p class="postmetadata">
-							<?php the_tags( '<span class="tags">' . __( 'Tags: ', 'buddypress' ), ', ', '</span>' ); ?>
-							&nbsp;</p>
-						<div class="alignleft">
-							<?php previous_post_link( '%link', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'buddypress' ) . '</span> %title' ); ?>
-						</div>
-						<div class="alignright">
-							<?php next_post_link( '%link', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'buddypress' ) . '</span>' ); ?>
 						</div>
 					</div>
 				</div>
