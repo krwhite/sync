@@ -46,16 +46,14 @@ class syncHelpCategories extends WP_Widget
 	
 
 	<h1>Categories</h1>
-	<div class="list-wrapper">
+	<div class="group-wrapper">
 		<?php
 			$terms = get_terms('help-category', array('hide_empty' => 0));
 			foreach ($terms as $term) {
 		?>
-			<div class='group-wrapper'>
-				<div class='group'> 
-					<a href="<?php echo site_url(); ?>/help-category/<?php echo $term->slug; ?>"><?php echo $term->slug; ?></a>
-					<p><?php echo $term->description; ?></p>
-				</div>
+			<div class='group'> 
+				<a href="<?php echo site_url(); ?>/help-category/<?php echo $term->slug; ?>"><?php echo $term->slug; ?></a>
+				<p><?php echo $term->description; ?></p>
 			</div>
 		<?php } ?>
 	</div>
