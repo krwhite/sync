@@ -1284,7 +1284,8 @@ div.activity-comments div.acomment-content,
 div.activity-comments #reply-title small a, 
 div.activity-comments a.bp-secondary-action, 
 div.activity-comments a.bp-primary-action {font-size:1em; line-height:20px;}
-div.activity-meta a {
+div.activity-meta a, div.activity-meta a.button, 
+div.activity-meta a.button.loading {
 	background:none;
 	border:0 none;
     display:inline;
@@ -1294,13 +1295,29 @@ div.activity-meta a {
 	color:#E1780F;
 	font-size:1em;
 }
-div.activity-meta a:hover {
+div.activity-meta a:hover, div.activity-meta a.button:hover, 
+div.activity-meta a.button.laoding:hover {
 	padding:0;
 	border:0;
 	background:none;
 	color:#888;
 }
 div.activity-meta a.acomment-reply span {display:none;}
+
+.acomment-reply:before, 
+.activity-meta .fav, 
+.acomment-delete:before, 
+.delete-activity:before {
+    font-family: 'FontAwesome';
+    font-size:16px;
+    margin-right:9000px;
+    padding-left:8px;
+}
+
+.acomment-reply:before {content: "\f112";}
+.acomment-delete:before, .delete-activity:before {content: "\f014";}
+.activity-meta .fav:before {content: "\f005";}
+
 /* end Comments */
 
 /* Sidebar */
