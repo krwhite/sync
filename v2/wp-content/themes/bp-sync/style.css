@@ -234,7 +234,7 @@ textarea, form#whats-new-form textarea {min-height:80px;}
 	overflow: hidden;
 }
 
-#main:after {
+#main:after, #pageContent:after {
 	content: "";
 	display: block;
 	clear: both;
@@ -1082,6 +1082,7 @@ div.page .query-field-post_content ul {list-style:disc outside none; margin: 10p
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
+#Index_Page_Content #groups-list {list-style:none;}
 #Index_Page_Content ul.item-list li div.item-title {width:auto;}
 
 .latest .query-footer {text-align:right; margin-bottom:20px;}
@@ -1305,18 +1306,21 @@ div.activity-meta a.button.laoding:hover {
 div.activity-meta a.acomment-reply span {display:none;}
 
 .acomment-reply:before, 
-.activity-meta .fav, 
+.activity-meta .fav:before, 
+.activity-meta .unfav:before, 
 .acomment-delete:before, 
 .delete-activity:before {
     font-family: 'FontAwesome';
     font-size:16px;
-    margin-right:9000px;
+    margin-right:5px;
     padding-left:8px;
 }
 
 .acomment-reply:before {content: "\f112";}
 .acomment-delete:before, .delete-activity:before {content: "\f014";}
-.activity-meta .fav:before {content: "\f005";}
+.activity-meta .fav:before {content: "\f006";}
+.activity-meta .unfav:before {content: "\f005";}
+
 
 /* end Comments */
 
