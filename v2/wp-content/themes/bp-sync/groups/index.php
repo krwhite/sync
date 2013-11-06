@@ -1,13 +1,4 @@
-<?php
-// Require login for site
-get_currentuserinfo();
-global $user_ID;
-if ($user_ID == '') {
-	$currentPath = $_SERVER['REQUEST_URI'];
-	$loginPath = get_settings('home') . 'wp-login.php';
-	header('Location: ' . $loginPath . '?redirect_to=' . $currentPath); exit(); 
-} ?>
-
+<?php locate_template( array( 'force-login.php' ), true ); ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- start page.php (before <!DOCTYPE>) -->
 <html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
