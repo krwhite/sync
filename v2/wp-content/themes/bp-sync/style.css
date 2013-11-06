@@ -732,6 +732,7 @@ h2.pagetitle, .widget_nav_menu h3,
 
 .btn-info:active, .btn-info.active{background-color:#24748c \9;}
 .btn-block {display:block;}
+div.generic-button {display:inline-block;}
 
 .btn-group {
 	position:relative;
@@ -852,6 +853,7 @@ h2.pagetitle, .widget_nav_menu h3,
 .page .wpuf-el.tags {float:none;}
 .standard-form div.checkbox label, .standard-form div.radio label {color:#555;}
 .group-create textarea {min-height:50px;}
+div#message p {background:none; border:0; padding-left:0;}
 /* end Forms */
 
 /* News */
@@ -1013,7 +1015,7 @@ h2.pagetitle, .widget_nav_menu h3,
 
 .post-list .row {border-top:1px solid #DDD; padding:10px 0;}
 .post-list .hentry:first-child .row {border-top:0; padding-top:5px;}
-.post-list .post-content.row:after {content:""; clear:both; display:table;}
+.post-list .post-content.row:after {content:""; clear:left; display:table;}
 .post-list .article-link {display:block;}
 .post-list .date {color:#CCC; display:block;}
 /* end Help */
@@ -1112,6 +1114,54 @@ div.page .query-field-post_content ul {list-style:disc outside none; margin: 10p
 p.comments-closed {display:none;}
 /* end Content */
 
+/* People */
+.members #members-list {margin-right:-2%;}
+.members #members-list .person {
+	display:block;
+	border:1px solid #DDD;
+	background:#EEE;
+	width:18%;
+	float:left;
+	margin:0 2% 2% 0;
+	padding:0;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+.members #members-list a {
+	display:block;
+	padding:5px 5%;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+
+.members #members-list .item-avatar img.avatar {
+	display:inline-block;
+	min-height:144px;
+	height:auto;
+	width:100%;
+	color:#BBB;
+	white-space:normal;
+	float:none;
+}
+
+.members #members-list span {display:block;}
+
+.nav-tabs li a#user-activity:before {content: "\f0e7";} /* icon-bolt */
+.nav-tabs li a#user-xprofile:before {content: "\f0ca";} /* icon-list-ul */
+.nav-tabs li a#user-groups:before {content: "\f0c0";} /* icon-group */
+.nav-tabs li a#user-messages:before {content: "\f086";} /* icon-comments */
+.nav-tabs li a#user-settings:before {content: "\f085";} /* icon-cogs */
+
+.nav-tabs li a#user-activity {max-width:12px;}
+.bp-user #subnav #activity-filter-select, .bp-user #groups-order-select, 
+.bp-user #item-body .profile h4:first-child, .bp-user #item-body .profile h4 + .button-nav, 
+.bp-user #change-avatar-personal-li {display:none;}
+@media only screen and (max-width:400px){.bp-user #change-avatar-personal-li {display:inline;}}
+#item-buttons #post-mention {display:none;}
+/* end People */
+
 /* Groups */
 .widget_nav_menu a.group-button {
 	position:absolute;
@@ -1153,7 +1203,7 @@ div#item-header div.generic-button, div#item-header a.button {float:none; margin
 	white-space:normal;
 }
 
-.groups.mygroups #groups-list.grid_view li a .item-avatar img {min-height:125px;}
+.groups.mygroups #groups-list.grid_view li a .item-avatar img {min-height:114px;}
 
 .groups #groups-list.grid_view li .item-title {
 	font-size:1.1em;
@@ -1202,7 +1252,25 @@ div#item-header div.generic-button, div#item-header a.button {float:none; margin
 	color:#979797;
 }
 
-div.item-list-tabs ul li.selected a, div.item-list-tabs ul li.current a {background:none; color:#E75500;}
+div#subnav.item-list-tabs ul li a {
+	max-width:none; 
+	color:#333;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+}
+
+div#subnav.item-list-tabs ul li.current a {
+    background: none repeat scroll 0 0 #E1780F;
+    color: #EEEEEE;
+	border-radius:5px;
+}
+
+div.item-list-tabs ul li.selected a, div.item-list-tabs ul li.current a {background-color:transparent; color:#E75500;}
 .nav-tabs li > a:hover, .nav-tabs > li > a:focus, 
 div.item-list-tabs ul li.selected a:hover, div.item-list-tabs ul li.current a:focus {background:#EEE;}
 
@@ -1223,9 +1291,9 @@ div.item-list-tabs ul li.selected a:hover, div.item-list-tabs ul li.current a:fo
 	font-size:24px;
 }
 
-.nav-tabs li a#home:before {content: "\f086";}
-.nav-tabs li a#members:before {content: "\f0c0";}
-.nav-tabs li a#admin:before {content: "\f085";}
+.nav-tabs li a#home:before {content: "\f086";} /* icon-comments */
+.nav-tabs li a#members:before {content: "\f0c0";} /* icon-group */
+.nav-tabs li a#admin:before {content: "\f085";} /* icon-cogs */
 
 
 .nav-tabs li.selected:after {
@@ -1252,17 +1320,18 @@ div.item-list-tabs ul.workflow li span {
 }
 
 div.item-list-tabs ul.workflow li.current a {font-weight:normal;}
-.nav-tabs li#admin-groups-li, .nav-tbas li#settings-personal-li {float:right;}
+.nav-tabs li#admin-groups-li, .nav-tabs li#settings-personal-li {float:right;}
 div.item-list-tabs, div#subnav.item-list-tabs {margin:0; background:none;}
+div#subnav.item-list-tabs {padding-bottom:10px; border-color:#DDD;}
 div.item-list-tabs ul li:first-child {margin-left:0;}
-.groups #item-body #subnav, .group-content #item-body #pag-top {display:none;}
+.group-content #item-body #pag-top {display:none;}
 
-.groups #item-header-avatar img.avatar, #group-create-body .left-menu img.avatar {float:none; box-shadow:none;}
+#item-header-avatar img.avatar, #group-create-body .left-menu img.avatar {float:none; box-shadow:none;}
 .groups #item-header-content h3 {margin-top:0;}
 .groups .column #item-meta p {color:#AAA;}
 .groups .column #item-meta #item-buttons {margin-bottom:10px;}
 .groups span.activity {background:none; padding:0; border:0; display:inline; font-size:14px;}
-.groups #item-body, .groups .item-body, .post-list {
+.groups #item-body, .groups .item-body, .post-list, .bp-user #item-body {
 	border:1px solid #C4C4C4; 
 	background:#EEE; 
 	padding:10px; 
@@ -1385,7 +1454,10 @@ div.activity-meta a.acomment-reply span {display:none;}
 .activity-meta .fav:before {content: "\f006";}
 .activity-meta .unfav:before {content: "\f005";}
 
-
+.activity-list li.mini .activity-avatar img.avatar, 
+.activity-list li.mini .activity-avatar img.FB_profile_pic {height:auto; width:auto; margin-left:0;}
+.activity-list li.mini {font-size:1em;}
+ul.item-list li {border-color:#DDD;}
 /* end Comments */
 
 /* Sidebar */

@@ -37,7 +37,7 @@
 							<div class="post-content row">
 								<div class="column size3of5">
 									<a class="article-link" href="<?php the_permalink(); ?>" rel="bookmark" title="<?php _e( 'Permanent Link to', 'buddypress' ); ?> <?php the_title_attribute(); ?>"><strong class="posttitle"><?php the_title(); ?></strong>
-										<span class="date"><?php printf( __( '%1$s <span>in %2$s</span>', 'buddypress' ), get_the_date(), get_the_category_list( ', ' ) ); ?></span>
+										<span class="date"><?php printf( __( '%1$s', 'buddypress' ), get_the_date(), get_the_category_list( ', ' ) ); ?></span>
 									</a>
 								</div>
 								<div class="tag-list column size2of5">

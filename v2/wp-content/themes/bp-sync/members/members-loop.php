@@ -15,21 +15,6 @@
 
 <?php if ( bp_has_members( bp_ajax_querystring( 'members' ) ) ) : ?>
 
-	<div id="pag-top" class="pagination">
-
-		<div class="pag-count" id="member-dir-count-top">
-
-			<?php bp_members_pagination_count(); ?>
-
-		</div>
-
-		<div class="pagination-links" id="member-dir-pag-top">
-
-			<?php bp_members_pagination_links(); ?>
-
-		</div>
-
-	</div>
 
 	<?php do_action( 'bp_before_directory_members_list' ); ?>
 
@@ -37,45 +22,27 @@
 
 	<?php while ( bp_members() ) : bp_the_member(); ?>
 
-		<li>
-			<div class="item-avatar">
-				<a href="<?php bp_member_permalink(); ?>"><?php bp_member_avatar(); ?></a>
-			</div>
-
-			<div class="item">
-				<div class="item-title">
-					<a href="<?php bp_member_permalink(); ?>"><?php bp_member_name(); ?></a>
-
-					<?php if ( bp_get_member_latest_update() ) : ?>
-
-						<span class="update"> <?php bp_member_latest_update(); ?></span>
-
-					<?php endif; ?>
-
-				</div>
-
-				<div class="item-meta"><span class="activity"><?php bp_member_last_active(); ?></span></div>
-
-				<?php do_action( 'bp_directory_members_item' ); ?>
-
-				<?php
-				 /***
-				  * If you want to show specific profile fields here you can,
-				  * but it'll add an extra query for each member in the loop
-				  * (only one regardless of the number of fields you show):
-				  *
-				  * bp_member_profile_data( 'field=the field name' );
-				  */
-				?>
-			</div>
-
-			<div class="action">
-
-				<?php do_action( 'bp_directory_members_actions' ); ?>
-
-			</div>
-
-			<div class="clear"></div>
+		<li class="person">
+			<a href="<?php bp_member_permalink(); ?>">
+				<span class="item-avatar"><?php bp_member_avatar( 'type=full&width=280&height=280' ); ?></span>
+	
+				<span class="item">
+					<span class="item-title"><?php bp_member_name(); ?></span>
+	
+	
+					<?php do_action( 'bp_directory_members_item' ); ?>
+	
+					<?php
+					 /***
+					  * If you want to show specific profile fields here you can,
+					  * but it'll add an extra query for each member in the loop
+					  * (only one regardless of the number of fields you show):
+					  *
+					  * bp_member_profile_data( 'field=the field name' );
+					  */
+					?>
+				</span>
+			</a>
 		</li>
 
 	<?php endwhile; ?>
@@ -105,7 +72,7 @@
 <?php else: ?>
 
 	<div id="message" class="info">
-		<p><?php _e( "Sorry, no members were found.", 'buddypress' ); ?></p>
+		<p><?php _e( "Nobody&rsquo;s here. Where is everybody?", 'buddypress' ); ?></p>
 	</div>
 
 <?php endif; ?>
