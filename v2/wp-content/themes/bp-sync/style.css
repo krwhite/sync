@@ -58,6 +58,7 @@ form#whats-new-form textarea {
 	padding:4px 6px;
 	margin-bottom:10px;
 	font-size:14px;
+	font-family:'Open Sans';
 	line-height:20px;
 	color:#555555;
 	-webkit-border-radius:4px;
@@ -329,7 +330,7 @@ h2.pagetitle {
 p + h2 {margin-top:30px;}
 
 h3 {font-size:1.17em; margin:1em 0; font-weight:normal;}
-h4 {font-size:1em; margin:1.33em 0;}
+h4 {font-size:1.1em; margin:1.33em 0; font-weight:normal; color:#666;}
 h5 {font-size:0.83em; margin:1.67em 0;}
 h6 {font-size:0.75em; margin:2.33em 0;}
 
@@ -670,7 +671,8 @@ h2.pagetitle, .widget_nav_menu h3,
 [class*="menu"] div.generic-button a.leave-group:active  
 {background-color:#942a25 \9;}
 
-.btn-success {
+.btn-success, .create .submit input[type="submit"], 
+.create .submit button {
 	color:#ffffff;
 	text-shadow:0 -1px 0 rgba(0, 0, 0, 0.25);
 	background-color:#5bb75b;
@@ -685,14 +687,25 @@ h2.pagetitle, .widget_nav_menu h3,
 	*background-color:#51a351;filter:progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 
+.create .submit input[type="submit"], 
+.create .submit input[type="button"], 
+.create .submit button {border-radius:6px; font-size:17.5px; padding:11px 19px;}
+
 .btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .btn-success.disabled, 
-.btn-success[disabled] {
+.btn-success[disabled], .create .submit input[type="submit"]:hover, .create .submit input[type="submit"]:focus, 
+.create .submit input[type="submit"]:active, .create .submit input[type="submit"][disabled] {
 	color:#ffffff;
 	background-color:#51a351;
 	*background-color:#499249;
+	background-position:0 -15px;
+	-webkit-transition:background-position 0.1s linear 0.2s ease-in-out;
+	-moz-transition:background-position 0.1s linear 0.2s ease-in-out;
+	-ms-transition:background-position 0.1s linear 0.2s ease-in-out;
+	-o-transition:background-position 0.1s linear 0.2s ease-in-out;
+	transition:background-position 0.1s linear 0.2s ease-in-out;
 }
 
-.btn-success:active, .btn-success.active {background-color:#408140 \9;}
+.btn-success:active, .btn-success.active, .create .submit input[type="submit"]:active {background-color:#408140 \9;}
 
 .btn-info {
 	color:#ffffff;
@@ -837,6 +850,8 @@ h2.pagetitle, .widget_nav_menu h3,
 .wpuf-help {display:block;}
 .wpuf-submit {clear:both;}
 .page .wpuf-el.tags {float:none;}
+.standard-form div.checkbox label, .standard-form div.radio label {color:#555;}
+.group-create textarea {min-height:50px;}
 /* end Forms */
 
 /* News */
@@ -870,6 +885,9 @@ h2.pagetitle, .widget_nav_menu h3,
 	color:#eee;
 	background:#e1780f;
 }
+
+.archive .hentry {clear:left; margin:20px 0 10px;}
+.page .tags, .post .tags {display:inline-block;}
 /* end News */
 
 /* Help */
@@ -1179,8 +1197,6 @@ div#item-header div.generic-button, div#item-header a.button {float:none; margin
 	color:#979797;
 }
 
-
-
 div.item-list-tabs ul li.selected a, div.item-list-tabs ul li.current a {background:none; color:#E75500;}
 .nav-tabs li > a:hover, .nav-tabs > li > a:focus, 
 div.item-list-tabs ul li.selected a:hover, div.item-list-tabs ul li.current a:focus {background:#EEE;}
@@ -1222,17 +1238,26 @@ div.item-list-tabs ul li.selected a:hover, div.item-list-tabs ul li.current a:fo
 	display:block;
 }
 
+div.item-list-tabs ul.workflow li a, 
+div.item-list-tabs ul.workflow li span {
+	max-width:none;
+	font-family:'Open Sans';
+	line-height:20px;
+	padding:0 0 5px;
+}
+
+div.item-list-tabs ul.workflow li.current a {font-weight:normal;}
 .nav-tabs li#admin-groups-li, .nav-tbas li#settings-personal-li {float:right;}
 div.item-list-tabs, div#subnav.item-list-tabs {margin:0; background:none;}
 div.item-list-tabs ul li:first-child {margin-left:0;}
 .groups #item-body #subnav, .group-content #item-body #pag-top {display:none;}
 
-.groups #item-header-avatar img.avatar {float:none; box-shadow:none;}
+.groups #item-header-avatar img.avatar, #group-create-body .left-menu img.avatar {float:none; box-shadow:none;}
 .groups #item-header-content h3 {margin-top:0;}
 .groups .column #item-meta p {color:#AAA;}
 .groups .column #item-meta #item-buttons {margin-bottom:10px;}
 .groups span.activity {background:none; padding:0; border:0; display:inline; font-size:14px;}
-.groups #item-body {
+.groups #item-body, .groups .item-body {
 	border:1px solid #C4C4C4; 
 	background:#EEE; 
 	padding:10px; 
@@ -1241,6 +1266,7 @@ div.item-list-tabs ul li:first-child {margin-left:0;}
 	border-radius:4px;
 }
 
+.groups.group-create .item-body {padding-bottom:40px;}
 .groups ul.item-list#member-list {margin-right:-2%;}
 .groups ul.item-list#member-list li {
 	padding:8px 0;
@@ -1262,11 +1288,44 @@ div.item-list-tabs ul li:first-child {margin-left:0;}
 
 .groups.group-home .activity .activity-item.mini {display:none;} /* hiding non-posts on group home */
 .groups .activity .activity-item a[href*="/groups/"] {display:none;}  /* hiding "in group" on group page */
+
+.workflow {
+	padding:8px 15px;
+	margin:0 0 20px;
+	list-style:none;
+	background-color:#f5f5f5;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	border-radius:4px;
+	display:table;
+}
+
+.workflow > li { 
+	display:inline-block;
+	*zoom:1;
+	text-shadow:0 1px 0 #FFF;
+	font-size:1.5em;
+	font-weight:normal;
+	vertical-align:middle;
+}
+
+.workflow > li *:before {
+	content:"\203A"; 
+	font-size:2em;
+	line-height:12px;
+	padding:0 10px 0 0; 
+	color:#ccc; 
+	vertical-align:top;
+}
+
+.workflow > li:first-child *:before {content:normal;}
+.workflow > .active{color:#999;}
 /* end Groups */
 
 /* Comments */
 form#whats-new-form #whats-new-submit {margin-top:0;}
 #comments {border-top:1px solid #EEEEEE;}
+#respond {margin-top:40px;}
 #comments ol.commentlist {border:0;}
 ol.commentlist > li.comment:first-child {border-top:0;}
 .comment-entry p {color:#777e86;}
