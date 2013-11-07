@@ -1322,9 +1322,10 @@ div.item-list-tabs ul.workflow li span {
 div.item-list-tabs ul.workflow li.current a {font-weight:normal;}
 .nav-tabs li#admin-groups-li, .nav-tabs li#settings-personal-li {float:right;}
 div.item-list-tabs, div#subnav.item-list-tabs {margin:0; background:none;}
-div#subnav.item-list-tabs {padding-bottom:10px; border-color:#DDD;}
+div#subnav.item-list-tabs {padding-bottom:10px; margin-bottom:10px; border-color:#DDD;}
 div.item-list-tabs ul li:first-child {margin-left:0;}
-.group-content #item-body #pag-top {display:none;}
+.group-content #item-body #pag-top, .group-content #item-body #subnav {display:none;}
+.admin .group-content #item-body #subnav {display:block;}
 
 #item-header-avatar img.avatar, #group-create-body .left-menu img.avatar {float:none; box-shadow:none;}
 .groups #item-header-content h3 {margin-top:0;}
