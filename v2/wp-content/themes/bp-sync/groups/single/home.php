@@ -30,11 +30,9 @@
 				</div><!-- #item-header-avatar -->
 				<div id="item-header-content">
 					<h3 class="<?php bp_group_type(); ?> icon">
-						<a href="http://codex.buddypress.org/user/setting-up-a-new-installation/group-settings-and-roles/">
-							<i class="icon-globe tips" title="this group is PUBLIC"></i> 
-							<i class="icon-lock tips" title="this group is PRIVATE"></i> 
-							<i class="icon-eye-close tips" title="this group is HIDDEN"></i> 
-						</a>
+						<i class="icon-globe tips" title="this group is PUBLIC"></i> 
+						<i class="icon-lock tips" title="this group is PRIVATE"></i> 
+						<i class="icon-eye-close tips" title="this group is HIDDEN"></i> 
 						<?php bp_group_name(); ?></h3>
 					<?php do_action( 'bp_before_group_header_meta' ); ?>
 				
