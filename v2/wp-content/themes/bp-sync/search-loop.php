@@ -17,15 +17,14 @@
 			<?php do_action( 'bp_before_blog_post' ) ?>
                 <div class="post"> <!-- Post goes here... --> 
                 	<div class="post-content"> 
-                    	<h3 class="post-title"><?php the_title();?></h3>
+                    	<h3 class="post-title"><a href="<?php the_permalink();?>"><?php the_title();?></a></h3>
                         <div> 
                         	<?php the_excerpt();?>                           
                         </div>                       
                         <div class="clear"> </div>
                     </div>
                     <div class="postmetadata"> 
-                    	<span><?php the_time('F j, Y') ?>  | <?php the_category(', ') ?> | <?php comments_popup_link( __( 'No Comments &#187;', 'bpmag' ), __( '1 Comment &#187;', 'bpmag' ), __( '% Comments &#187;', 'bpmag' ) ); ?></span>
-                        <div class="readmore"><a href="<?php the_permalink();?>"><?php _e("Read more...","bpmag");?></a></div>
+                    	<span class="date"><?php the_time('F j, Y') ?></span> <span class="category"><?php the_category(', ') ?></span>
                     </div>
 					
                 </div><!-- Post ends here... -->

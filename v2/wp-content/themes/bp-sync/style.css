@@ -851,10 +851,18 @@ div.generic-button {display:inline-block;}
 /* Forms */
 .wpuf-help {display:block;}
 .wpuf-submit {clear:both;}
+.wpuf-submit .btn, ul.wpuf-form .wpuf-submit input[type="submit"] {
+	vertical-align:middle; 
+	padding:6px 15px; 
+	min-height:22px;
+	line-height:22px;
+}
 .page .wpuf-el.tags {float:none;}
 .standard-form div.checkbox label, .standard-form div.radio label {color:#555;}
 .group-create textarea {min-height:50px;}
 div#message p {background:none; border:0; padding-left:0;}
+ul.ac_results {background:#FFF;}
+ul.ac_results li:hover, ul.ac_results li.ac_over {background:#3875D7; color:#FFF;}
 /* end Forms */
 
 /* News */
@@ -1126,8 +1134,8 @@ div.page .entry .wpuf_customs {list-style:none; margin-left:0;}
 /* end Content */
 
 /* People */
-.members #members-list {margin-right:-2%;}
-.members #members-list .person {
+#members-list {margin-right:-2%;}
+#members-list .person {
 	display:block;
 	border:1px solid #DDD;
 	background:#EEE;
@@ -1139,7 +1147,7 @@ div.page .entry .wpuf_customs {list-style:none; margin-left:0;}
 	box-sizing:border-box;
 }
 
-.members #members-list a {
+#members-list a {
 	display:block;
 	padding:5px 5%;
 	overflow:hidden;
@@ -1147,7 +1155,7 @@ div.page .entry .wpuf_customs {list-style:none; margin-left:0;}
 	white-space:nowrap;
 }
 
-.members #members-list .item-avatar img.avatar {
+#members-list .item-avatar img.avatar {
 	display:inline-block;
 	min-height:144px;
 	height:auto;
@@ -1157,7 +1165,7 @@ div.page .entry .wpuf_customs {list-style:none; margin-left:0;}
 	float:none;
 }
 
-.members #members-list span {display:block;}
+#members-list span {display:block;}
 
 .nav-tabs li a#user-activity:before {content: "\f0e7";} /* icon-bolt */
 .nav-tabs li a#user-xprofile:before {content: "\f0ca";} /* icon-list-ul */
@@ -1182,9 +1190,9 @@ div.page .entry .wpuf_customs {list-style:none; margin-left:0;}
 	margin:0;
 }
 div#item-header div.generic-button, div#item-header a.button {float:none; margin:0;}
-.groups #groups-list {margin:0 -2% 0 auto;}
+#groups-list {margin:0 -2% 0 auto;}
 
-.groups #groups-list.grid_view li {
+#groups-list.grid_view li {
 	width:23%;
 	float:left;
 	display:block;
@@ -1193,7 +1201,7 @@ div#item-header div.generic-button, div#item-header a.button {float:none; margin
 	border:0;
 }
 
-.groups #groups-list.grid_view li a {
+#groups-list.grid_view li a {
 	padding:10px;
 	border:none;
 	display:block;
@@ -1202,9 +1210,9 @@ div#item-header div.generic-button, div#item-header a.button {float:none; margin
 	border-radius:6px;
 }
 
-.groups #groups-list.grid_view li a .meta {color:#BDBDBD;}
+#groups-list.grid_view li a .meta {color:#BDBDBD;}
 
-.groups #groups-list.grid_view li a .item-avatar img {
+#groups-list.grid_view li a .item-avatar img {
 	width:100%;
 	margin-bottom:8px;
 	display:inline-block;
@@ -1216,7 +1224,7 @@ div#item-header div.generic-button, div#item-header a.button {float:none; margin
 
 .groups.mygroups #groups-list.grid_view li a .item-avatar img {min-height:114px;}
 
-.groups #groups-list.grid_view li .item-title {
+#groups-list.grid_view li .item-title {
 	font-size:1.1em;
 	white-space:nowrap;
 	overflow:hidden;
@@ -1224,13 +1232,13 @@ div#item-header div.generic-button, div#item-header a.button {float:none; margin
 	display:block;
 }
 
-.groups #groups-list.grid_view li a:hover .item-title {color:#F19231;}
+#groups-list.grid_view li a:hover .item-title {color:#F19231;}
 
-.groups #groups-list.grid_view .meta i {display:none;}
+#groups-list.grid_view .meta i {display:none;}
 
-.groups #groups-list.grid_view .Public.Group .meta i.icon-globe, 
-.groups #groups-list.grid_view .Private.Group .meta i.icon-lock, 
-.groups #groups-list.grid_view .Hidden.Group .meta i.icon-eye-close {display:inline-block;}
+#groups-list.grid_view .Public.Group .meta i.icon-globe, 
+#groups-list.grid_view .Private.Group .meta i.icon-lock, 
+#groups-list.grid_view .Hidden.Group .meta i.icon-eye-close {display:inline-block;}
 
 .nav-tabs {zoom:1; margin:0;}
 .nav-tabs:before, .nav-tabs:after {display:table; content:""; line-height:0;}
@@ -1471,6 +1479,19 @@ div.activity-meta a.acomment-reply span {display:none;}
 .activity-list li.mini {font-size:1em;}
 ul.item-list li {border-color:#DDD;}
 /* end Comments */
+
+/* Search */
+.search-result {margin-bottom:30px;}
+.search-result div.post-content {margin-left:0;}
+.search-result h3 {margin-bottom:0;}
+.search-result .date {color:#CCC; font-style:italic;}
+.search-result.blog-search-result h2.content-title { /* can we replace the Blog Search title text? */
+    overflow: hidden;
+    white-space: nowrap;
+    word-spacing: 1000px;
+}
+.search-result.blog-search-result h2.content-title:before {content:'Articles ';}
+/* end Search */
 
 /* Sidebar */
 #sidebar .padder {padding:0;}

@@ -30,7 +30,9 @@
         <?php edit_post_link( __( 'Edit this page.', 'buddypress' ), '<p class="edit-link">', '</p>'); ?>
       </div>
     </div>
-    <?php comments_template(); ?>
+	<?php if (!is_front_page() ) : ?>
+	<?php comments_template(); ?>
+	<?php endif; ?>
     <?php endwhile; endif; ?>
   </div><!-- End #pageContent -->
 </div><!-- End #main -->

@@ -12,18 +12,23 @@
 	  <?php get_sidebar('sidebar-1'); ?>
   <?php endif; ?>
   <div id="pageContent">
-			<?php if ( is_active_sidebar( 'content_widgets_top' ) ) : ?>
-				<ul id="contentWidgets">
-					<?php dynamic_sidebar( 'content_widgets_top' ); ?>
-				</ul>
-			<?php endif; ?>
+	<?php if ( is_active_sidebar( 'content_widgets_top' ) ) : ?>
+		<ul id="contentWidgets">
+			<?php dynamic_sidebar( 'content_widgets_top' ); ?>
+		</ul>
+	<?php endif; ?>
 
+	<?php global $wp_query;
+		$wp_query->is_search=true;
+		$search_term=$_REQUEST['search-terms'];
+		if(empty($search_term))
+			$search_term=$_REQUEST['s'];
+		$wp_query->query("s=".$search_term);?>
 
     <h2 class="pagetitle">
-      <?php the_title(); ?>
+		Search Results for <?php echo sprintf(__("'%s'","bpmag"),$search_term);?>
     </h2>
-		<?php do_action("advance-search");//this is the only line you need?>
-    <?php comments_template(); ?>
+	<?php do_action("advance-search");//this is the only line you need?>
   </div><!-- End #pageContent -->
 </div><!-- End #main -->
 <div id="footer">

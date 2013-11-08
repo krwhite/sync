@@ -78,8 +78,14 @@ class syncHelpArticleSidebar extends WP_Widget
 	
 				<i class="icon-user"></i>
 				
-				<?php the_author_link(); ?>
-					
+				<?php
+					global $post;
+					$author_id=$post->post_author;
+				?>
+				
+				<a href="/members/<?php the_author_meta( 'user_nicename', $author_id ); ?>">
+					<?php the_author_meta( 'first_name', $author_id ); ?> <?php the_author_meta( 'last_name', $author_id ); ?>
+				</a>	
 			</div>
 	
 			<hr>
