@@ -91,7 +91,7 @@ class syncHelpArticleSidebar extends WP_Widget
 				<?php the_tags('', '', ''); ?>
 	
 			</div>
-	
+
 			<?php
 	
 				$images = get_post_meta( $post->ID, 'attach_file' );

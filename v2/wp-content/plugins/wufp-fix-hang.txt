@@ -1,0 +1,7 @@
+find the three commented lines below in frontend-form-post.php and comment them out
+
+            // find our if any images in post content and associate them - CAUSES FORM HANG
+            if ( !empty( $postarr['post_content'] ) ) {
+//                $dom = new DOMDocument();
+//                $dom->loadHTML( $postarr['post_content'] );
+//                $images = $dom->getElementsByTagName( 'img' );
