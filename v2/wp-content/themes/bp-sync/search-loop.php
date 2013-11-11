@@ -41,10 +41,10 @@
 				<?php else : ?>
 				<div class="post">
 					<div class="post-content 404">
-					<?php echo sprintf(__("We are sorry, but we could not find anything for the search term '%s'","bpmag"),$search_term);?>
+					<?php echo sprintf(__("Man, we looked everywhere but nothing matches '%s'","bpmag"),$search_term);?>
 
-				<?php locate_template( array( 'searchform.php' ), true ) ?>
-				</div>
+					<?php locate_template( array( 'searchform.php' ), true ) ?>
+					</div>
 				</div>
 				
 

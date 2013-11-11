@@ -1105,7 +1105,6 @@ div.page .query-field-post_content ul {list-style:disc outside none; margin: 10p
 #Index_Page_Content #members-list .item-meta {display:none;}
 #Index_Page_Content .widget ul.item-list {margin:0;}
 #Index_Page_Content #members-list .vcard {float:left; width:25%; margin-bottom:5px; text-align:center; border:0;}
-#Index_Page_Content #members-list .vcard > div {margin:0 5px;}
 #Index_Page_Content #members-list .vcard .item {clear:both;}
 #Index_Page_Content ul.item-list li img.avatar {
 	float:none; 
@@ -1271,7 +1270,8 @@ div#item-header div.generic-button, div#item-header a.button {float:none; margin
 	color:#979797;
 }
 
-div#subnav.item-list-tabs ul li a {
+div#subnav.item-list-tabs ul li a, 
+div.item-list-tabs.activity-type-tabs ul li a {
 	max-width:none; 
 	color:#333;
     margin-bottom: 2px;
@@ -1478,6 +1478,10 @@ div.activity-meta a.acomment-reply span {display:none;}
 .activity-list li.mini .activity-avatar img.FB_profile_pic {height:auto; width:auto; margin-left:0;}
 .activity-list li.mini {font-size:1em;}
 ul.item-list li {border-color:#DDD;}
+.activity-list li.load-more {padding:0 !important;}
+.search .activity-list li.load-more {display:none;}
+.activity-list li.load-more a {display:block; padding:10px 15px;}
+.activity-list li.load-more a:hover {color:#222;}
 /* end Comments */
 
 /* Search */
@@ -1491,6 +1495,7 @@ ul.item-list li {border-color:#DDD;}
     word-spacing: 1000px;
 }
 .search-result.blog-search-result h2.content-title:before {content:'Articles ';}
+.search h2.pagetitle em {color:#888; display:block; font-size: 0.5em; text-transform:lowercase;}
 /* end Search */
 
 /* Sidebar */
