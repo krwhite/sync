@@ -88,7 +88,7 @@ function bpmag_show_site_blog_search(){
   }
 
 //Hook Blog Post results to search page
- add_action('advance-search',"bpmag_show_site_blog_search",25);
+ add_action('advance-search',"bpmag_show_site_blog_search",20);
 
 
 //show blogs search result
@@ -124,7 +124,7 @@ function bpmag_show_activity_search(){
 
 //Hook Groups results to search page
  if(bp_is_active( 'activity' ))
-    add_action('advance-search','bpmag_show_activity_search',20);
+    add_action('advance-search','bpmag_show_activity_search',25);
 
 
 

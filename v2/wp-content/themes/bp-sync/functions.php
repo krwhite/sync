@@ -74,7 +74,7 @@ return false;
 function bpmag_show_member_search(){
     ?>
    <div class="members-search-result search-result">
-   <h2 class="content-title"><?php _e('Members Results',"bpmag");?></h2>
+   <h2 class="content-title"><?php _e('Members',"bpmag");?></h2>
   <?php locate_template( array( 'members/members-loop.php' ), true ) ;  ?>
   <?php global $members_template;
 	if($members_template->total_member_count>1):?>
@@ -90,10 +90,10 @@ add_action('advance-search','bpmag_show_member_search',10); //the priority defin
 function bpmag_show_groups_search(){
     ?>
 <div class="groups-search-result search-result">
- 	<h2 class="content-title"><?php _e('Group Search','bpmag');?></h2>
+ 	<h2 class="content-title"><?php _e('Groups','bpmag');?></h2>
 	<?php locate_template( array('groups/groups-loop.php' ), true ) ;  ?>
 	
-        <a href="<?php echo bp_get_root_domain().'/'.  bp_get_groups_slug().'/?s='.$_REQUEST['search-terms']?>" ><?php _e("View All matched Groups","bpmag");?></a>
+        <a href="<?php echo bp_get_root_domain().'/'.  bp_get_groups_slug().'/?s='.$_REQUEST['search-terms']?>" ><?php _e("View all matched groups","bpmag");?></a>
 </div>
 	<?php
  //endif;
@@ -103,12 +103,49 @@ function bpmag_show_groups_search(){
  if(bp_is_active( 'groups' ))
     add_action('advance-search','bpmag_show_groups_search',15);
 
+/**
+ *
+ * Show blog posts in search
+ */
+function bpmag_show_site_blog_search(){
+    ?>
+ <div class="blog-search-result search-result">
+ 
+  <h2 class="content-title"><?php _e('Articles','bpmag');?></h2>
+   
+   <?php locate_template( array( 'search-loop.php' ), true ) ;  ?>
+   <a href="<?php echo bp_get_root_domain().'/?s='.$_REQUEST['search-terms']?>" ><?php _e("View all matched articles","bpmag");?></a>
+</div>
+   <?php
+  }
+
+//Hook Blog Post results to search page
+ add_action('advance-search',"bpmag_show_site_blog_search",20);
+
+
+//show blogs search result
+
+function bpmag_show_blogs_search(){
+
+    ?>
+  <div class="blogs-search-result search-result">
+  <h2 class="content-title"><?php _e('Articles',"bpmag");?></h2>
+  <?php locate_template( array( 'blogs/blogs-loop.php' ), true ) ;  ?>
+  <a href="<?php echo bp_get_root_domain().'/'. bp_get_blogs_slug().'/?s='.$_REQUEST['search-terms']?>" ><?php _e("View all matched articles","bpmag");?></a>
+ </div>
+  <?php
+  }
+
+//Hook Blogs results to search page if blogs comonent is active
+ if(is_multisite()&&bp_is_active( 'blogs' ))
+    add_action('advance-search','bpmag_show_blogs_search',10);
+
  /**activity update search*/
  //Group search
 function bpmag_show_activity_search(){
     ?>
 <div class="activity-search-result search-result">
- 	<h2 class="content-title"><?php _e('Activity Updates','bpmag');?></h2>
+ 	<h2 class="content-title"><?php _e('Discussions and Activity','bpmag');?></h2>
 	<?php locate_template( array('activity/activity-loop.php' ), true ) ;  ?>
 	
         <a href="<?php echo bp_get_root_domain().'/'.  bp_get_activity_slug().'/?s='.$_REQUEST['search-terms']?>" ><?php _e("View all matched updates","bpmag");?></a>
@@ -119,44 +156,9 @@ function bpmag_show_activity_search(){
 
 //Hook Groups results to search page
  if(bp_is_active( 'activity' ))
-    add_action('advance-search','bpmag_show_activity_search',20);
-
-/**
- *
- * Show blog posts in search
- */
-function bpmag_show_site_blog_search(){
-    ?>
- <div class="blog-search-result search-result">
- 
-  <h2 class="content-title"><?php _e('Blog Search','bpmag');?></h2>
-   
-   <?php locate_template( array( 'search-loop.php' ), true ) ;  ?>
-   <a href="<?php echo bp_get_root_domain().'/?s='.$_REQUEST['search-terms']?>" ><?php _e("View All matched Posts","bpmag");?></a>
-</div>
-   <?php
-  }
-
-//Hook Blog Post results to search page
- add_action('advance-search',"bpmag_show_site_blog_search",25);
+    add_action('advance-search','bpmag_show_activity_search',25);
 
 
-//show blogs search result
-
-function bpmag_show_blogs_search(){
-
-    ?>
-  <div class="blogs-search-result search-result">
-  <h2 class="content-title"><?php _e('Blogs Search',"bpmag");?></h2>
-  <?php locate_template( array( 'blogs/blogs-loop.php' ), true ) ;  ?>
-  <a href="<?php echo bp_get_root_domain().'/'. bp_get_blogs_slug().'/?s='.$_REQUEST['search-terms']?>" ><?php _e("View All matched Blogs","bpmag");?></a>
- </div>
-  <?php
-  }
-
-//Hook Blogs results to search page if blogs comonent is active
- if(is_multisite()&&bp_is_active( 'blogs' ))
-    add_action('advance-search','bpmag_show_blogs_search',10);
 
  //show forums search
 function bpmag_show_forums_search(){
@@ -164,7 +166,7 @@ function bpmag_show_forums_search(){
  <div class="forums-search-result search-result">
    <h2 class="content-title"><?php _e("Forums Search","bpmag");?></h2>
   <?php locate_template( array( 'forums/forums-loop.php' ), true ) ;  ?>
-   <a href="<?php echo bp_get_root_domain().'/'.  bp_get_forums_slug().'/?s='.$_REQUEST['search-terms']?>" ><?php _e("View All matched forum posts","bpmag");?></a>
+   <a href="<?php echo bp_get_root_domain().'/'.  bp_get_forums_slug().'/?s='.$_REQUEST['search-terms']?>" ><?php _e("View all matched forum posts","bpmag");?></a>
 </div>
   <?php
   }
@@ -186,7 +188,7 @@ if ( bp_is_active( 'forums' ) && bp_forums_is_installed_correctly() && bp_forums
     $page = bbp_get_page_by_path( $bbp->root_slug );
     
   ?>
-  <a href="<?php echo get_permalink($page).'?ts='.$_REQUEST['search-terms']?>" ><?php _e("View All matched topics","bpmag");?></a>
+  <a href="<?php echo get_permalink($page).'?ts='.$_REQUEST['search-terms']?>" ><?php _e("View all matched topics","bpmag");?></a>
  </div>
   <?php
   }

@@ -22,7 +22,7 @@
 
 		<div class="page" id="blog-archives" role="main">
 
-			<h1><?php printf( __( '%s', 'buddypress' ), wp_title( false, false ) ); ?></h1>
+			<h1><?php printf( __( '%1$s', 'buddypress' ), wp_title( false, false ) ); ?></h1>
 			<p><?php echo category_description( $category_id ); ?></p>
 			<div class="post-list">
 				<?php if ( have_posts() ) : ?>

@@ -308,13 +308,14 @@ h1, .query-header {
 	font-weight:normal;
 }
 
-h2 {
+h2, div#sidebar h3.widgettitle {
 	color:#E1780F;
 	font-weight:normal;
  	font-size:1.5em;
 	line-height:1em;
 	padding-bottom:10px;
 	margin-bottom:0;
+	background:none;
 }
 
 h2.pagetitle {
@@ -616,11 +617,11 @@ h2.pagetitle, .widget_nav_menu h3,
 [class*="menu"] a[title^="Add"]:active, 
 [class*="menu"] a[title^="Add"].disabled, 
 [class*="menu"] a[title^="Add"][disabled], 
-[class*="menu"] div.generic-button a.join-group:hover, 
-[class*="menu"] div.generic-button a.join-group:focus, 
-[class*="menu"] div.generic-button a.join-group:active, 
-[class*="menu"] div.generic-button a.join-group.disabled, 
-[class*="menu"] div.generic-button a.join-group[disabled] {
+[class*="menu"] div.generic-button a:hover, 
+[class*="menu"] div.generic-button a:focus, 
+[class*="menu"] div.generic-button a:active, 
+[class*="menu"] div.generic-button a.disabled, 
+[class*="menu"] div.generic-button a[disabled] {
 	color:#ffffff;
 	background-color:#e1780f;
 	*background-color:#c96c0d;
@@ -634,7 +635,7 @@ h2.pagetitle, .widget_nav_menu h3,
 
 .btn-warning:active, .btn-warning.active, 
 [class*="menu"] a[title^="Add"]:active, 
-[class*="menu"] div.generic-button a.join-group:active {background-color:#b15f0c \9;}
+[class*="menu"] div.generic-button a:active {background-color:#b15f0c \9;}
 
 .btn-danger, [class*="menu"] div.generic-button a.leave-group {
 	color:#ffffff;
@@ -733,7 +734,6 @@ h2.pagetitle, .widget_nav_menu h3,
 
 .btn-info:active, .btn-info.active{background-color:#24748c \9;}
 .btn-block {display:block;}
-div.generic-button {display:inline-block;}
 
 .btn-group {
 	position:relative;
@@ -868,8 +868,11 @@ ul.ac_results li:hover, ul.ac_results li.ac_over {background:#3875D7; color:#FFF
 /* News */
 .articles-list .query-row {margin-bottom:20px;}
 
-#sidebar .categories-list {margin-top:10px;}
-#sidebar .categories-list a {
+#sidebar .tagcloud {margin-top:10px;}
+#sidebar .tagcloud a[href*="/news-category/"], 
+#sidebar .tagcloud a[href*="/retrospective-category/"] {
+	font-size:1em !important; 
+	font-weight:bold;
 	display:block;
 	margin-bottom:10px;
 }
@@ -1502,6 +1505,7 @@ ul.item-list li {border-color:#DDD;}
 #sidebar .syncHelpArticleSidebar .widgettitle, 
 #sidebar .syncTweets .widgettitle */
 #sidebar h3.widgettitle {display:none}
+#sidebar .widget_tag_cloud h3.widgettitle {display:block;}
 
 #sidebar .profile-card {
 	border-radius:4px;
