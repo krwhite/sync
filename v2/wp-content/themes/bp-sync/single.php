@@ -16,6 +16,13 @@
 		<?php if ( is_active_sidebar( 'content_widgets_top' ) ) : ?>
 		<ul id="contentWidgets">
 		<?php dynamic_sidebar( 'content_widgets_top' ); ?>
+			<?php if( is_single() ) { ?>
+				<?php if( current_user_can( 'edit_posts' ) ) { ?>
+					<li class="admin-edit menu">
+						<span class="generic-button"><?php edit_post_link( __( 'Edit', 'buddypress' ) ); ?></span>
+					</li>
+				<?php } ?>
+			<?php } ?>
 		</ul>
 		<?php endif; ?>
 		<?php do_action( 'bp_before_blog_single_post' ); ?>

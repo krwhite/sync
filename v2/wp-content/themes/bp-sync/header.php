@@ -20,11 +20,14 @@
           <a href="<?php echo bp_loggedin_user_domain(); ?>">
           	<?php bp_loggedin_user_avatar( 'type=thumb&width=40&height=40' ); ?>
           </a>
-          <h4><?php echo bp_core_get_userlink( bp_loggedin_user_id() ); ?></h4>
-          <a class="button logout" href="<?php echo wp_logout_url( wp_guess_url() ); ?>">
-	          <?php _e( 'Log Out', 'buddypress' ); ?>
-          </a>
-
+			<div class="popover bottom">
+				<div class="arrow"></div>
+				<ul>
+				<li><a class="myProfileLink" href="<?php echo bp_loggedin_user_domain()?>profile">My Profile</a></li>
+				<li>
+					<a class="logout" href="<?php echo wp_logout_url( wp_guess_url() ); ?>"><?php _e( 'Log Out', 'buddypress' ); ?></a>
+				</li>
+			</div>
           <?php do_action( 'bp_sidebar_me' ); ?>
         </div>
       </div>
