@@ -9,6 +9,7 @@
     	<?php wp_title( '|', true, 'right' ); bloginfo( 'name' ); ?>
     </title>
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+	<script type="text/javascript" src="/wp-content/themes/bp-sync/js/libs/select2/select2.min.js"></script>
     <?php bp_head(); ?>
     <?php wp_head(); ?>
 </head>
