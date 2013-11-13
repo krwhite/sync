@@ -1151,6 +1151,7 @@ div.page .entry .wpuf_customs {list-style:none; margin-left:0;}
 	font-family:FontAwesome; /* icon-paper-clip */
 	margin-right:5px;
 }
+.wpuf-author {display:none;}
 /* end Content */
 
 /* People */

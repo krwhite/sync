@@ -246,4 +246,15 @@ function bp_dtheme_custom_background_style() {
 <?php
 }
 endif;
+
+
+/******************** Types Plugin: Set Tags for Custom Post Types *****************/
+function namespace_add_custom_types( $query ) {
+    if( is_category() || is_tag() && empty( $query->query_vars['suppress_filters'] ) ) {
+        $post_types = get_post_types( '', 'names' ); 
+        $query->set( 'post_type', $post_types);
+        return $query;
+    }
+}
+add_filter( 'pre_get_posts', 'namespace_add_custom_types');
 ?>
