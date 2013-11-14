@@ -1753,9 +1753,79 @@ ul.item-list li {border-color:#DDD;}
 #footer .address span{color:#e1780f;}
 /* end Footer */
 
-/* Login page */
-#login {background:red;}
-/* End Login Page */
+/* Login Page */
+html body.login {background:#35383B !important;}
+body.login label {color:#eee !important;}
+#login {
+	border-top:2px solid #EF8010;
+	padding-top:85px;
+	padding-bottom:200px !important;
+}
+.login h1 {margin-bottom:25px;}
+.login h1 a {
+	background:url('images/logo-sync-login.png') no-repeat;
+	background-size:240px 73px;
+	display:block;
+	text-indent:100%;
+	overflow:hidden;
+	width:240px;
+	margin:0 auto
+}
+.login p.message,
+.login #login_error {
+	color:#000 !important;
+	background:#CCC;
+}
+.login form {
+	background:#75787B;
+	background-color:#75787B;
+	border:1px solid #777E86;
+	-webkit-box-shadow:0px 0px 10px 0px #222;
+	box-shadow:0px 0px 10px 0px #222;
+	border-radius:3px;
+}
+.login form p label {
+	margin-left:7px;
+}
+.login form p label input {
+	margin-top:7px !important;
+}
+.login form input[type="text"],
+.login form input[type="password"] {
+	background:#e5e7f0;
+	background-color:	#e5e7f0;
+	outline:none !important;
+	font-size:1.4em;
+	padding:5px 7px;
+}
+.forgetmenot {
+	margin-top:10px;
+}
+.forgetmenot label {
+	margin-left:0 !important;
+}
+.forgetmenot label input {
+	vertical-align:baseline;
+	margin-right:3px;
+}
+.submit {
+	margin-top:8px;
+}
+.login .submit .button {
+	background:#ef8010; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ef8010 0%, #ba690d 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ef8010), color-stop(100%,#ba690d)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ef8010 0%,#ba690d 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ef8010 0%,#ba690d 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ef8010 0%,#ba690d 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ef8010 0%,#ba690d 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef8010', endColorstr='#ba690d',GradientType=0 ); /* IE6-9 */
+	border-color:#ba690d;
+	-webkit-box-shadow:	0px 1px 2px 0px #555;
+	box-shadow:0px 1px 2px 0px #555;
+}
+#nav, #backtoblog {display:none;}
+/* end Login Page */
 
 @media only screen and (max-width: 768px) {
 	html body {margin-top:0 !important;}
