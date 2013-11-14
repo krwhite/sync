@@ -257,4 +257,10 @@ function namespace_add_custom_types( $query ) {
     }
 }
 add_filter( 'pre_get_posts', 'namespace_add_custom_types');
+
+/*********** Login Styles *********************/
+function my_login_stylesheet() { ?>
+    <link rel="stylesheet" id="custom_wp_admin_css"  href="<?php echo get_bloginfo('url'); ?>/wp-content/themes/bp-sync/style.css" type="text/css" media="all" />
+<?php }
+add_action( 'login_enqueue_scripts', 'my_login_stylesheet' );
 ?>

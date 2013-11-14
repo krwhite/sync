@@ -1753,6 +1753,10 @@ ul.item-list li {border-color:#DDD;}
 #footer .address span{color:#e1780f;}
 /* end Footer */
 
+/* Login page */
+#login {background:red;}
+/* End Login Page */
+
 @media only screen and (max-width: 768px) {
 	html body {margin-top:0 !important;}
 	#navigation ul#nav {min-width:400px; padding-bottom:0;}
