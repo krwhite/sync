@@ -23,7 +23,7 @@ if ( function_exists( 'bp_post_get_permalink' ) ) { // ugly ugly ugly hack to ch
 			<?php endif; ?>
 
 				<div class="left-menu">
-FARTS!!
+
 					<p><?php _e("Search for members to invite:", 'bp-invite-anyone') ?></span></p>
 
 					<ul class="first acfb-holder">
@@ -134,7 +134,7 @@ FARTS!!
 	<div class="main-column">
 
 		<div id="message" class="info">
-			<p><?php _e('Select people to invite.', 'buddypress'); ?></p>
+			<p><?php _e('Select people to invite from your friends list.', 'buddypress'); ?></p>
 		</div>
 
 		<?php do_action( 'bp_before_group_send_invites_list' ) ?>

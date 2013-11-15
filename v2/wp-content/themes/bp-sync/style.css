@@ -1334,6 +1334,7 @@ div.item-list-tabs ul li.selected a:hover, div.item-list-tabs ul li.current a:fo
 
 .nav-tabs li a#home:before {content: "\f086";} /* icon-comments */
 .nav-tabs li a#members:before {content: "\f0c0";} /* icon-group */
+.nav-tabs li a#nav-invite-anyone:before {content: "\f145";} /* icon-ticket */
 .nav-tabs li a#admin:before {content: "\f085";} /* icon-cogs */
 
 
@@ -1399,6 +1400,7 @@ div.item-list-tabs ul li:first-child {margin-left:0;}
 }
 
 .groups #pageContent .group-content ul.item-list#member-list li img {margin-left:8px; margin-bottom:0;}
+.invite-anyone .left-menu {float:left;}
 .groups ul.item-list li h5 {margin:0 8px 3px 0; font-size:1em;}
 .groups ul.item-list#member-list li span {margin-right:8px;}
 
