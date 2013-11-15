@@ -1438,6 +1438,9 @@ div.item-list-tabs ul li:first-child {margin-left:0;}
 
 .workflow > li:first-child *:before {content:normal;}
 .workflow > .active{color:#999;}
+
+#bp-default.invite-anyone #item-body > p:first-child {display:none;}
+
 /* end Groups */
 
 /* Comments */
