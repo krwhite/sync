@@ -83,13 +83,13 @@ form#whats-new-form textarea {
 textarea, form#whats-new-form textarea {min-height:80px;}
 
 #pageHeader {
-	background: #35383B;
-	border-color: #E1780F transparent #777E86 transparent;
-	border-radius: 0;
-	border-style: solid none;
-	border-width: 2px 0 1px;
-	box-shadow: 0 0 10px 0 #999999;
-	margin: 0 10px 10px 0;
+	background:#35383B;
+	border-color:#E1780F transparent #777E86 transparent;
+	border-radius:0;
+	border-style:solid none;
+	border-width:2px 0 1px;
+	box-shadow:0 0 10px 0 #999999;
+	margin:0 0 10px 0;
 }
 
 #pageHeader:after {
@@ -155,7 +155,7 @@ textarea, form#whats-new-form textarea {min-height:80px;}
 
 #pageHeader .avatar-container {float:right;}
 #pageHeader #sidebar-me > a {display:inline-block;}
-#pageHeader .rightHeader {float:right; width:28%; padding-top:5px; position:relative;}
+#pageHeader .rightHeader {float:right; width:28%; position:relative;}
 #pageHeader .rightHeader h3 {display:none;}
 
 #pageHeader .rightHeader ul, 
@@ -1334,6 +1334,7 @@ div.item-list-tabs ul li.selected a:hover, div.item-list-tabs ul li.current a:fo
 
 .nav-tabs li a#home:before {content: "\f086";} /* icon-comments */
 .nav-tabs li a#members:before {content: "\f0c0";} /* icon-group */
+.nav-tabs li a#nav-invite-anyone:before {content: "\f145";} /* icon-ticket */
 .nav-tabs li a#admin:before {content: "\f085";} /* icon-cogs */
 
 
@@ -1399,6 +1400,7 @@ div.item-list-tabs ul li:first-child {margin-left:0;}
 }
 
 .groups #pageContent .group-content ul.item-list#member-list li img {margin-left:8px; margin-bottom:0;}
+.invite-anyone .left-menu {float:left;}
 .groups ul.item-list li h5 {margin:0 8px 3px 0; font-size:1em;}
 .groups ul.item-list#member-list li span {margin-right:8px;}
 
@@ -1753,9 +1755,73 @@ ul.item-list li {border-color:#DDD;}
 #footer .address span{color:#e1780f;}
 /* end Footer */
 
-/* Login page */
-#login {background:red;}
-/* End Login Page */
+/* Login Page */
+html, body.login {background-color:#35383B;}
+body.login #login label {color:#EEE !important;}
+body.login #login {
+	border-top:2px solid #EF8010;
+	padding-top:85px;
+	padding-bottom:200px !important;
+}
+body.login #login h1 {margin-bottom:25px;}
+body.login #login h1 a {
+	background:url('images/logo-sync-login.png') no-repeat;
+	background-size:240px 73px;
+	display:block;
+	text-indent:100%;
+	overflow:hidden;
+	width:240px;
+	margin:0 auto
+}
+body.login #login p.message,
+body.login #login #login_error {
+	color:#000 !important;
+	background:#CCC;
+}
+body.login #login form {
+	background:#75787B;
+	background-color:#75787B;
+	border:1px solid #777E86;
+	-webkit-box-shadow:0px 0px 10px 0px #222;
+	box-shadow:0px 0px 10px 0px #222;
+	border-radius:3px;
+}
+body.login #login form p label {margin-left:7px;}
+body.login #login form p label input {margin-top:7px !important;}
+body.login #login form input[type="text"],
+body.login #login  form input[type="password"] {
+	background:#e5e7f0;
+	background-color:	#e5e7f0;
+	outline:none !important;
+	font-size:1.4em;
+	padding:5px 7px;
+}
+body.login #login .forgetmenot {margin-top:10px;}
+body.login #login .forgetmenot label {
+	margin-left:0 !important;
+}
+body.login #login .forgetmenot label input {
+	vertical-align:baseline;
+	margin-right:3px;
+}
+body.login #login .submit {
+	margin-top:8px;
+}
+body.login #login .submit .button {
+	background:#ef8010; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ef8010 0%, #ba690d 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ef8010), color-stop(100%,#ba690d)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ef8010 0%,#ba690d 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ef8010 0%,#ba690d 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ef8010 0%,#ba690d 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ef8010 0%,#ba690d 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef8010', endColorstr='#ba690d',GradientType=0 ); /* IE6-9 */
+	border-color:#ba690d;
+	-webkit-box-shadow:	0px 1px 2px 0px #555;
+	box-shadow:0px 1px 2px 0px #555;
+}
+body.login #login #nav, #login #backtoblog {display:none;}
+/* end Login Page */
 
 @media only screen and (max-width: 768px) {
 	html body {margin-top:0 !important;}
