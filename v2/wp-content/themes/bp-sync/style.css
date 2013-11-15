@@ -1197,7 +1197,7 @@ div.page .entry .wpuf_customs {list-style:none; margin-left:0;}
 .nav-tabs li a#user-activity {max-width:12px;}
 .bp-user #subnav #activity-filter-select, .bp-user #groups-order-select, 
 .bp-user #item-body .profile h4:first-child, .bp-user #item-body .profile h4 + .button-nav, 
-.bp-user #change-avatar-personal-li {display:none;}
+.bp-user #change-avatar-personal-li, .bp-user #invite-anyone-personal-li {display:none;}
 @media only screen and (max-width:400px){.bp-user #change-avatar-personal-li {display:inline;}}
 #item-buttons #post-mention {display:none;}
 /* end People */
