@@ -15,7 +15,7 @@
 		<div id="pageContent">
 			<?php do_action( 'bp_before_directory_members' ); ?>
 			<form action="" method="post" id="members-directory-form" class="dir-form">
-				<div class="widget_nav_menu"><h3><?php _e( 'People', 'buddypress' ); ?></h3></div>
+				<div class="widget_nav_menu"><h3><?php _e( 'People', 'buddypress' ); ?> <i><?php echo bp_get_total_member_count();?></i></h3></div>
 				<?php do_action( 'bp_before_directory_members_content' ); ?>
 				<!-- #members-dir-search -->
 				<!-- .item-list-tabs -->

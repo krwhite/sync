@@ -14,7 +14,7 @@
 			</div>						
 					
 			<section class="entry-content">
-				<p><img src="/wp-content/themes/bp-sync/bp_default_avatar.png" /></p>
+				<p><img src="/wp-content/themes/bp-sync/images/404.gif" /></p>
 				<p><?php _e("You&rsquo;ve stumbled upon an area we didn&rsquo;t think you&rsquo;d find.", "buddypress"); ?></p>
 				<p><?php _e("Perhaps you could use some", "buddypress"); ?> <a href="/help"><?php _e("help?", "buddypress"); ?></a></p>
 				<p><?php _e("Or try using that search up there. Trust me, it's good.", "buddypress"); ?></p>

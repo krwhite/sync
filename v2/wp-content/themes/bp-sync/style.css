@@ -1001,48 +1001,6 @@ ul.ac_results li:hover, ul.ac_results li.ac_over {background:#3875D7; color:#FFF
 .list-wrapper .group-wrapper .group ul li, 
 .group-wrapper .group ul li {line-height:30px;}
 
-/* not sure if groups-wrapper is needed 
-.help .groups-wrapper .group-wrapper {
-	overflow:hidden;
-	*overflow:visible;
-	*zoom:1;
-	margin:0;
-	padding:0;
-	border:none;
-	background-color:transparent;
-}
-.help .groups-wrapper .group-wrapper .group {
-	background:#eee;
-	margin:10px 0 10px 0;
-	border:1px solid #ddd;
-	padding:20px;
-}
-.help .groups-wrapper .group-wrapper .group > a {
-	font-size:1.3em;
-	text-transform:capitalize;
-}
-
-.help .groups-wrapper .group-wrapper .group > span {color:#a6adb4;}
-.help .groups-wrapper .group-wrapper .group p {color:#999;}
-
-.help .groups-wrapper .group-wrapper .group h4 {
-	margin:0 0 5px 0;
-	text-transform:capitalize;
-	line-height:36px;
-}
-.help .groups-wrapper .group-wrapper .group h4 a {
-	color:#666;
-	display:block;
-}
-.help .groups-wrapper .group-wrapper .group h4 a span {
-	color:#ccc;
-	font-weight:normal;
-	font-size:14px;
-}
-
-.help .groups-wrapper .group-wrapper .group ul {list-style-type:disc;}
-.help .groups-wrapper .group-wrapper .group ul li {line-height:1.6em; font-size:0.9em;} */
-
 .post-list .row {border-top:1px solid #DDD; padding:10px 0;}
 .post-list .hentry:first-child .row {border-top:0; padding-top:5px;}
 .post-list .post-content.row:after {content:""; clear:left; display:table;}
@@ -1129,7 +1087,7 @@ div.page .query-field-post_content ul {list-style:disc outside none; margin: 10p
 #Index_Page_Content #members-list .vcard .item {clear:both;}
 #Index_Page_Content ul.item-list li img.avatar {
 	float:none; 
-	width:auto; 
+	width:140px; 
 	height:auto; 
 	margin:0;
 	-moz-box-sizing: border-box;
@@ -1371,6 +1329,10 @@ div.item-list-tabs ul li:first-child {margin-left:0;}
 
 #item-header-avatar img.avatar, #group-create-body .left-menu img.avatar {float:none; box-shadow:none;}
 .groups #item-header-content h3 {margin-top:0;}
+.groups #item-header-content h3 .publicity {display:none;}
+.groups #item-header-content h3.Hidden.Group .icon-eye-close {display:inline;}
+.groups #item-header-content h3.Private.Group .icon-lock {display:inline;}
+.groups #item-header-content h3.Public.Group .icon-globe {display:inline;}
 .groups .column #item-meta p {color:#AAA;}
 .groups .column #item-meta #item-buttons {margin-bottom:10px;}
 .groups span.activity {background:none; padding:0; border:0; display:inline; font-size:14px;}
@@ -1447,6 +1409,7 @@ div.item-list-tabs ul li:first-child {margin-left:0;}
 form#whats-new-form #whats-new-submit {margin-top:0;}
 #comments {border-top:1px solid #EEEEEE;}
 #respond {margin-top:40px;}
+#respond .form-allowed-tags {display:none;} /* To Do: make info popup */
 #comments ol.commentlist {border:0;}
 ol.commentlist > li.comment:first-child {border-top:0;}
 .comment-entry p {color:#777e86;}
@@ -1517,6 +1480,7 @@ ul.item-list li {border-color:#DDD;}
 .search-result h3 {margin-bottom:0;}
 .search-result .date {color:#CCC; font-style:italic;}
 .search h2.pagetitle em {color:#888; display:block; font-size: 0.5em; text-transform:lowercase;}
+.search-result.activity-search-result .activity-read-more {display:none;} /* bug causes entire site to load after link */
 /* end Search */
 
 /* Sidebar */
@@ -1756,6 +1720,9 @@ ul.item-list li {border-color:#DDD;}
 }
 
 #footer .address span{color:#e1780f;}
+#footer .widget_nav_menu {border:0; padding:0;}
+#footer .widget_nav_menu a {padding:0; line-height:20px;}
+
 /* end Footer */
 
 /* Login Page */
