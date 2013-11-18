@@ -24,15 +24,15 @@
 		<div class="column size1of3">
 			<div class="inner">
 				<div id="item-header-avatar" class="cutout">
-					<a class="image-wrap" href="<?php bp_group_permalink(); ?>" title="<?php bp_group_name(); ?>">
+					<a class="image-wrap" href="<?php bp_group_permalink(); ?>home" title="<?php bp_group_name(); ?>">
 						<?php bp_group_avatar( 'type=full&width=100%&height=' ); ?>
 					</a>
 				</div><!-- #item-header-avatar -->
 				<div id="item-header-content">
-					<h3 class="<?php bp_group_type(); ?> icon">
-						<i class="icon-globe tips" title="this group is PUBLIC"></i> 
-						<i class="icon-lock tips" title="this group is PRIVATE"></i> 
-						<i class="icon-eye-close tips" title="this group is HIDDEN"></i> 
+					<h3 class="<?php bp_group_type(); ?>">
+						<i class="icon-globe publicity" title="this group is PUBLIC"></i> 
+						<i class="icon-lock publicity" title="this group is PRIVATE"></i> 
+						<i class="icon-eye-close publicity" title="this group is HIDDEN"></i> 
 						<?php bp_group_name(); ?></h3>
 					<?php do_action( 'bp_before_group_header_meta' ); ?>
 				
