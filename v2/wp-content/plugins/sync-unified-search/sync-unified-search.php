@@ -54,7 +54,7 @@ class syncUnifiedSearch extends WP_Widget
       </label>
       <input type="text" id="search-terms" name="search-terms" placeholder="Search sync" value="<?php echo isset( $_REQUEST['s'] ) ? esc_attr( $_REQUEST['s'] ) : ''; ?>" />
       <?php echo bp_search_form_type_select(); ?>
-      <button type="submit" name="search-submit" id="search-submit" value="<?php _e( 'Search', 'buddypress' ); ?>" />
+      <button type="submit" name="search-submit" id="search-submit" value="<?php _e( 'Search', 'buddypress' ); ?>" ></button>
       <?php wp_nonce_field( 'bp_search_form' ); ?>
     </form>
 <?php

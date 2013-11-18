@@ -1,0 +1,11 @@
+/* Sync "Styles" for Internet Explorer */
+
+/* superfluous clearfixes */
+#pageHeader .inner:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#search-form #search-submit {filter:none;}
+#item-header-avatar img.avatar, #group-create-body .left-menu img.avatar {height:auto;}

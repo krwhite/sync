@@ -1113,6 +1113,7 @@ div.page .entry .wpuf_customs {list-style:none; margin-left:0;}
 /* end Content */
 
 /* People */
+.widget_nav_menu h3 i {color:#888;}
 #members-list {margin-right:-2%;}
 #members-list .person {
 	display:block;
