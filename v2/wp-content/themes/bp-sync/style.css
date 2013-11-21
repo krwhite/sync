@@ -21,7 +21,7 @@ html {
 body {
 	width:auto;
 	max-width:none;
-	font-family:'open sans';
+	font-family:'Open Sans';
 	font-size:14px;
 	line-height:20px;
 	margin:0;
@@ -58,7 +58,7 @@ form#whats-new-form textarea {
 	padding:4px 6px;
 	margin-bottom:10px;
 	font-size:14px;
-	font-family:'open sans';
+	font-family:'Open Sans';
 	line-height:20px;
 	color:#555555;
 	-webkit-border-radius:4px;
@@ -352,7 +352,7 @@ h2.pagetitle, .widget_nav_menu h3,
 .home-page #menu-news li:first-child a {display:inline-block; border:0; margin-bottom:6px;}
 
 @font-face {
-	font-family:'open sans';
+	font-family:'Open Sans';
 	font-weight:normal;
 	font-style:normal;
 	src:url('fonts/OpenSans-Regular.eot?v=3.0.1');
@@ -362,7 +362,7 @@ h2.pagetitle, .widget_nav_menu h3,
 }
 
 @font-face {
-	font-family:'open sans';
+	font-family:'Open Sans';
 	font-weight:bold;
 	font-style:normal;
 	src:url('fonts/OpenSans-Bold.eot?v=3.0.1');
@@ -372,7 +372,7 @@ h2.pagetitle, .widget_nav_menu h3,
 }
 
 @font-face {
-	font-family:'open sans';
+	font-family:'Open Sans';
 	font-weight:normal;
 	font-style:italic;
 	src:url('fonts/OpenSans-Italic.eot?v=3.0.1');
@@ -382,7 +382,7 @@ h2.pagetitle, .widget_nav_menu h3,
 }
 
 @font-face {
-	font-family:'open sans';
+	font-family:'Open Sans';
 	font-weight:bold;
 	font-style:italic;
 	src:url('fonts/OpenSans-BoldItalic.eot?v=3.0.1');
@@ -1083,8 +1083,8 @@ div.page .query-field-post_content ul {list-style:disc outside none; margin: 10p
 #Index_Page_Content #groups-list-options, 
 #Index_Page_Content #members-list .item-meta {display:none;}
 #Index_Page_Content .widget ul.item-list {margin:0;}
-#Index_Page_Content #members-list .vcard {float:left; width:25%; margin-bottom:5px; text-align:center; border:0;}
-#Index_Page_Content #members-list .vcard .item {clear:both;}
+#Index_Page_Content #members-list li {float:left; width:25%; margin-bottom:5px; text-align:center; border:0;}
+#Index_Page_Content #members-list li .item {clear:both;}
 #Index_Page_Content ul.item-list li img.avatar {
 	float:none; 
 	width:140px; 
@@ -1315,7 +1315,7 @@ div.item-list-tabs ul li.selected a:hover, div.item-list-tabs ul li.current a:fo
 div.item-list-tabs ul.workflow li a, 
 div.item-list-tabs ul.workflow li span {
 	max-width:none;
-	font-family:'open sans';
+	font-family:'Open Sans';
 	line-height:20px;
 	padding:0 0 5px;
 }
@@ -1433,7 +1433,7 @@ div.activity-meta a, div.activity-meta a.button, div.activity-meta a.button.load
 	background:none;
 	border:0 none;
     display:inline;
-	font-family:'open sans';
+	font-family:'Open Sans';
     margin-right:25px;
     padding:0;
 	color:#E1780F;
