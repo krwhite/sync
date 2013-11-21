@@ -53,7 +53,8 @@ class syncProfileCard extends WP_Widget
 		</a> 
 	</div>
 	<ul class="menu">
-		<li><a href="">Notifications</a></li>
+		<?php bp_adminbar_notifications_menu(); ?>	<!-- This is added as an li -->	
+		
 		<li><a href="<?php echo bp_loggedin_user_domain() . 'groups'; ?>">My Groups 
 				<span class="count"> <?php echo bp_get_total_group_count_for_user(bp_loggedin_user_id()); ?> </span>
 			</a>

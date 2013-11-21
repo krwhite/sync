@@ -1552,7 +1552,7 @@ ul.item-list li {border-color:#DDD;}
 	text-shadow:#eee 1px 1px 0;
 	padding:10px;
 	display:block;
-	border-top:1px solid #eee;
+	border-top:1px solid #EEE;
 	border-bottom:1px solid #c4c4c4;
 	font-size:1.2em;
 	line-height:1.5em;
@@ -1560,7 +1560,8 @@ ul.item-list li {border-color:#DDD;}
 
 #sidebar .menu li a:hover {text-decoration:none; background:#f1f2f2;}
 
-#sidebar .menu li a .count {
+#sidebar .menu li a .count, 
+#sidebar .menu li#bp-adminbar-notifications-menu > a span {
 	border-radius:4px;
 	background-clip:padding-box;
 	float:right;
@@ -1575,6 +1576,11 @@ ul.item-list li {border-color:#DDD;}
 	color:#eee;
 	text-shadow:none;
 }
+
+#sidebar .syncProfileCard .menu li ul {display:none; border-bottom:1px solid #C4C4C4; font-size:.75em;}
+#sidebar .syncProfileCard .menu li ul a {background:#DDD;}
+#sidebar .syncProfileCard .menu li ul a:hover {color:#E1780F;}
+#sidebar .syncProfileCard .menu li:hover ul {display:block;}
 
 #sidebar .section i[class*="icon-"] {margin-right:5px;}
 
@@ -1592,6 +1598,16 @@ ul.item-list li {border-color:#DDD;}
 }
 
 #sidebar .attachment-list .btn {display:block; margin-bottom:5px;}
+
+#sidebar .form-wrapper {
+	border-radius:4px;
+	padding:5px;
+	border:1px solid #DDD;
+	background:#EEE;
+}
+
+#sidebar .form-wrapper select {max-width:100%;}
+#sidebar #retroProjectFilter {margin-bottom:0; width:100%;}
 /* end Sidebar */
 
 /* Popover */
