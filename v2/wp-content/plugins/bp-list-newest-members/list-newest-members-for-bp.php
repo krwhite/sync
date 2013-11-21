@@ -66,15 +66,15 @@ function widget($args, $instance) {
          <div class="clear"></div></div>
 	<?php endwhile; ?>
          </div>
-		
+		</li>
 	<?php else: ?>
 
 	<div class="widget-error">
 	<?php _e( 'Sorry no newest member ', 'bp-list-newest-members' ) ?>
-	</ul></div>
+	</div>
 
 	<?php endif; ?>
-
+</ul>
 <?php echo $after_widget; ?>
 
 <?php
