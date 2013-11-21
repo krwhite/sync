@@ -21,7 +21,7 @@ html {
 body {
 	width:auto;
 	max-width:none;
-	font-family:'Open Sans';
+	font-family:'open sans';
 	font-size:14px;
 	line-height:20px;
 	margin:0;
@@ -58,7 +58,7 @@ form#whats-new-form textarea {
 	padding:4px 6px;
 	margin-bottom:10px;
 	font-size:14px;
-	font-family:'Open Sans';
+	font-family:'open sans';
 	line-height:20px;
 	color:#555555;
 	-webkit-border-radius:4px;
@@ -1315,7 +1315,7 @@ div.item-list-tabs ul li.selected a:hover, div.item-list-tabs ul li.current a:fo
 div.item-list-tabs ul.workflow li a, 
 div.item-list-tabs ul.workflow li span {
 	max-width:none;
-	font-family:'Open Sans';
+	font-family:'open sans';
 	line-height:20px;
 	padding:0 0 5px;
 }
@@ -1433,7 +1433,7 @@ div.activity-meta a, div.activity-meta a.button, div.activity-meta a.button.load
 	background:none;
 	border:0 none;
     display:inline;
-	font-family:'Open Sans';
+	font-family:'open sans';
     margin-right:25px;
     padding:0;
 	color:#E1780F;
