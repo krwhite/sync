@@ -1077,11 +1077,8 @@ blockquote.pull-right p, blockquote.pull-right small {text-align:right;}
 
 div.page .entry ul, 
 div.page .query-field-post_content ul {list-style:disc outside none; margin: 10px 0 10px 25px;}
-#Index_Page_Content h2 {border-bottom:1px solid #e3e6e4;}
+#Index_Page_Content h2 {border-bottom:1px solid #e3e6e4; clear:both; padding-top:2em;}
 #Index_Page_Content .query-news h2 {border:0;}
-#Index_Page_Content #members-list-options, 
-#Index_Page_Content #groups-list-options, 
-#Index_Page_Content #members-list .item-meta {display:none;}
 #Index_Page_Content .widget ul.item-list {margin:0;}
 #Index_Page_Content #members-list li {float:left; width:25%; margin-bottom:5px; text-align:center; border:0;}
 #Index_Page_Content #members-list li .item {clear:both;}
@@ -1095,6 +1092,11 @@ div.page .query-field-post_content ul {list-style:disc outside none; margin: 10p
 	box-sizing: border-box;
 }
 #Index_Page_Content #groups-list {list-style:none;}
+#Index_Page_Content ul#groups-list li .item-avatar {float:left; margin:0 18px 10px 0;}
+#Index_Page_Content ul#groups-list a {display:block;}
+#Index_Page_Content ul#groups-list .item-title {display:block; margin-top:18px; font-size:1.5em; line-height:1.25;}
+#Index_Page_Content ul#groups-list li p {color:#BBB;}
+#Index_Page_Content ul#groups-list li:after {content:""; clear:left; display:table;}
 #Index_Page_Content ul.item-list li div.item-title {width:auto;}
 
 .latest .query-footer {text-align:right; margin-bottom:20px;}

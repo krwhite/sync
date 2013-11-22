@@ -53,23 +53,23 @@ function widget($args, $instance) {
                    . $after_title; ?>
 
 <?php if ( bp_has_groups( 'user_id=0&type=newest&max='. $instance['max_num'] .'&populate_extras=0' ) ) : ?>
-<ul id="groups-list" class="item-list">
+<ul id="groups-list" class="item-list groups">
 	 <?php while ( bp_groups() ) : bp_the_group(); ?>
-         <li>
-         <div class="item-avatar">
-         <a href="<?php bp_group_permalink() ?>"><?php bp_group_avatar('type=full&width=40&height=40') ?></a></div>
-         <div class="item">
-         <div class="item-title">
-	 <a href="<?php bp_group_permalink() ?>"><?php bp_group_name() ?></a>
-         <div class="clear"></div></div>
-	<?php endwhile; ?>
-         </div>
+         <li class="item">
+		 <a href="<?php bp_group_permalink() ?>">
+			 <span class="item-avatar"><?php bp_group_avatar('type=full') ?></span>
+			 <span class="item-meta">
+				 <span class="item-title"><?php bp_group_name() ?></span>
+				 <p><?php bp_group_description(); ?></p>
+			 </span>
+		</a>
 		</li>
+	<?php endwhile; ?>
 	<?php else: ?>
 
-	<div class="widget-error">
+	<span class="widget-error">
 	<?php _e( 'All the groups are old, or there are none. ', 'bp-list-newest-groups' ) ?>
-	</div>
+	</span>
 
 	<?php endif; ?>
 </ul>
