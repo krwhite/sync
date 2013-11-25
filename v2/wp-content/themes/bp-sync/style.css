@@ -878,7 +878,7 @@ h2.pagetitle, .widget_nav_menu h3,
 .page .wpuf-el.tags {float:none;}
 .standard-form div.checkbox label, .standard-form div.radio label {color:#555;}
 .group-create textarea {min-height:50px;}
-div#message p {background:none; border:0; padding-left:0;}
+/* div#message p {background:none; border:0; padding-left:0;} */
 ul.ac_results {background:#FFF;}
 ul.ac_results li:hover, ul.ac_results li.ac_over {background:#3875D7; color:#FFF;}
 /* end Forms */
@@ -1038,7 +1038,7 @@ div.page .entry .query-content > ul {margin:0; list-style:none;}
 #pageContent .entry {margin:0 4%;}
 #sidebar + #pageContent .entry {margin:0;}
 
-#pageContent img {
+#pageContent img, .group-subscription-options {
 	margin-bottom:15px;
 	border-radius:4px;
 	background-clip:padding-box;
@@ -1077,8 +1077,9 @@ blockquote.pull-right p, blockquote.pull-right small {text-align:right;}
 
 div.page .entry ul, 
 div.page .query-field-post_content ul {list-style:disc outside none; margin: 10px 0 10px 25px;}
-#Index_Page_Content h2 {border-bottom:1px solid #e3e6e4; clear:both; padding-top:2em;}
+#Index_Page_Content h2 {border-bottom:1px solid #e3e6e4; padding-top:2em;}
 #Index_Page_Content .query-news h2 {border:0; font-size:1.5em; padding-top:0;}
+#Index_Page_Content .widget_list_newest_groups h2 {clear:both;}
 #Index_Page_Content .widget ul.item-list {margin:0;}
 #Index_Page_Content #members-list li {float:left; width:25%; margin-bottom:5px; text-align:center; border:0;}
 #Index_Page_Content #members-list li .item {clear:both;}
@@ -1117,6 +1118,7 @@ div.page .entry .wpuf_customs {list-style:none; margin-left:0;}
 /* People */
 .widget_nav_menu h3 i {color:#888;}
 #members-list {margin-right:-2%;}
+#members-list.single-line {margin-right:0;}
 #members-list .person {
 	display:block;
 	border:1px solid #DDD;
@@ -1148,6 +1150,9 @@ div.page .entry .wpuf_customs {list-style:none; margin-left:0;}
 }
 
 #members-list span {display:block;}
+.item-list.single-line li {border-bottom:1px solid #DDD;}
+#members-list.single-line a {display:inline; padding:0;}
+#members-list .small a {padding:4px 10px;}
 
 .nav-tabs li a#user-activity:before {content: "\f0e7";} /* icon-bolt */
 .nav-tabs li a#user-xprofile:before {content: "\f0ca";} /* icon-list-ul */
@@ -1296,6 +1301,7 @@ div.item-list-tabs ul li.selected a:hover, div.item-list-tabs ul li.current a:fo
 .nav-tabs li a#home:before {content: "\f086";} /* icon-comments */
 .nav-tabs li a#members:before {content: "\f0c0";} /* icon-group */
 .nav-tabs li a#nav-invite-anyone:before {content: "\f145";} /* icon-ticket */
+.nav-tabs li a#nav-notifications:before {content: "\f0e0";} /* icon-envelope-alt */
 .nav-tabs li a#admin:before {content: "\f085";} /* icon-cogs */
 
 
@@ -1404,8 +1410,13 @@ div.item-list-tabs ul li:first-child {margin-left:0;}
 .workflow > li:first-child *:before {content:normal;}
 .workflow > .active{color:#999;}
 
-#bp-default.invite-anyone #item-body > p:first-child {display:none;}
-
+#bp-default.invite-anyone #item-body > p:first-child, 
+.group-subscription-status-desc {display:none;}
+.group-subscription-div .gemail_icon {background:none !important; padding-left:0 !important;}
+.group-subscription-div .gemail_icon:before {content: "\f0e0"; padding:0;}
+.single-item .group-subscription-div {padding:0 0 18px;}
+.group-subscription-options {background:#FFF !important; border-color:#C4C4C4; width:auto !important;}
+.group-subscription-options .group-sub {width:100px; display:inline-block; margin-right:5px;}
 /* end Groups */
 
 /* Comments */
@@ -1430,6 +1441,7 @@ div.activity-comments div.acomment-meta, .activity-list .activity-content .activ
 div.activity-comments #reply-title small a, div.activity-comments a.bp-secondary-action, 
 div.activity-comments a.bp-primary-action, .comment-options .comment-reply-link, 
 div.comment-meta {font-size:1em; line-height:20px;}
+div.activity-comments form textarea {box-shadow:none;-webkit-box-shadow:none;-moz-box-shadow:none;margin:0;}
 div.activity-meta a, div.activity-meta a.button, div.activity-meta a.button.loading, 
 .comment-options .comment-reply-link, .comment-options .comment-edit-link {
 	background:none;
@@ -1457,7 +1469,8 @@ div.activity-meta a.acomment-reply span {display:none;}
 .activity-meta .fav:before, 
 .activity-meta .unfav:before, 
 .acomment-delete:before, 
-.delete-activity:before {
+.delete-activity:before, 
+.gemail_icon:before {
     font-family: 'FontAwesome';
     font-size:16px;
     margin-right:5px;
@@ -1478,6 +1491,9 @@ ul.item-list li {border-color:#DDD;}
 .search .activity-list li.load-more {display:none;}
 .activity-list li.load-more a {display:block; padding:10px 15px;}
 .activity-list li.load-more a:hover {color:#222;}
+body.activity-permalink .activity-list li .activity-avatar img {width:150px; height:auto;}
+body.activity-permalink .activity-list li .activity-header > p {background:none;}
+body.activity-permalink .activity-list li .activity-content {min-height:122px;}
 /* end Comments */
 
 /* Search */
