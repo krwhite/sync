@@ -878,16 +878,17 @@ h2.pagetitle, .widget_nav_menu h3,
 .page .wpuf-el.tags {float:none;}
 .standard-form div.checkbox label, .standard-form div.radio label {color:#555;}
 .group-create textarea {min-height:50px;}
-/* div#message p {background:none; border:0; padding-left:0;} */
 ul.ac_results {background:#FFF;}
 ul.ac_results li:hover, ul.ac_results li.ac_over {background:#3875D7; color:#FFF;}
 /* end Forms */
 
 /* News */
+.articles-list {clear:left; margin-bottom:4em;}
 .articles-list .query-row {margin-bottom:20px;}
 
 #sidebar .tagcloud {margin-top:10px;}
 #sidebar .tagcloud a[href*="/news-category/"], 
+#sidebar .tagcloud a[href*="/help-category/"], 
 #sidebar .tagcloud a[href*="/retrospective-category/"] {
 	font-size:1em !important; 
 	font-weight:bold;
@@ -922,6 +923,7 @@ ul.ac_results li:hover, ul.ac_results li.ac_over {background:#3875D7; color:#FFF
 /* end News */
 
 /* Help */
+.page h1 + p {margin-top:10px;}
 .list-wrapper .query-content, 
 .group-wrapper {
 	margin-top:20px;
@@ -1005,7 +1007,10 @@ ul.ac_results li:hover, ul.ac_results li.ac_over {background:#3875D7; color:#FFF
 .post-list .hentry:first-child .row {border-top:0; padding-top:5px;}
 .post-list .post-content.row:after {content:""; clear:left; display:table;}
 .post-list .article-link {display:block;}
-.post-list .date {color:#CCC; display:block;}
+.post-list .date, .articles-list .date {color:#CCC; display:block;}
+
+div.page .entry .articles-list ul {list-style:none; margin-left:0;}
+.articles-list .article a:first-child {font-size:1.2em;}
 /* end Help */
 
 /* Content */
