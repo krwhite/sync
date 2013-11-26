@@ -2,7 +2,7 @@
 /*
 Plugin Name: Sync Help Categories
 Plugin URI: www.asynchrony.com
-Description: Display latest posts and categories for help section
+Description: Display categories with descriptions for help section
 Author: James McKie
 Version: 0.1
 */
@@ -12,7 +12,7 @@ class syncHelpCategories extends WP_Widget
 {
   function syncHelpCategories()
   {
-    $widget_ops = array('classname' => 'syncHelpCategories', 'description' => 'Display categories for help section.' );
+    $widget_ops = array('classname' => 'syncHelpCategories', 'description' => 'Display categories with descriptions for help section.' );
     $this->WP_Widget('syncHelpCategories', 'Sync Help Categories', $widget_ops);
   }
  
@@ -52,7 +52,7 @@ class syncHelpCategories extends WP_Widget
 			foreach ($terms as $term) {
 		?>
 			<div class='group'> 
-				<a href="<?php echo site_url(); ?>/help-category/<?php echo $term->slug; ?>"><?php echo $term->slug; ?></a>
+				<a href="<?php echo site_url(); ?>/help-category/<?php echo $term->slug; ?>"><?php echo $term->name; ?></a>
 				<p><?php echo $term->description; ?></p>
 			</div>
 		<?php } ?>
