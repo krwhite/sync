@@ -53,7 +53,7 @@ class syncHelpArticles extends WP_Widget
 
 				foreach ($terms as $term) {
 
-					$wpq = array('posts_per_page'=> 1000,'taxonomy'=>'help-category','term'=>$term->slug);
+					$wpq = array('posts_per_page'=> 1000,'taxonomy'=>'help-category','term'=>$term->slug, 'orderby'=>'title', 'order'=>'ASC');
 
 					$myquery = new WP_Query ($wpq);
 
