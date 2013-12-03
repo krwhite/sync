@@ -24,7 +24,7 @@
 		<div class="column size1of3">
 			<div class="inner">
 				<div id="item-header-avatar" class="cutout">
-					<a class="image-wrap" href="<?php bp_group_permalink(); ?>home" title="<?php bp_group_name(); ?>">
+					<a class="image-wrap" href="<?php bp_group_permalink(); ?>" title="<?php bp_group_name(); ?>">
 						<?php bp_group_avatar( 'type=full&width=100%&height=' ); ?>
 					</a>
 				</div><!-- #item-header-avatar -->

@@ -27,6 +27,21 @@
 				<?php printf( __( '%1$s', 'buddypress' ), wp_title( false, false ) ); ?>
 			</h1>
 			<p><?php echo category_description( $category_id ); ?></p>
+
+
+
+
+<div class="sort-menu">
+<?php global $wp;
+$current_url = home_url( $wp->request );
+ ?>
+<a href="<?php echo ($current_url) ?>?&orderby=date&order=ASC">Date Ascending</a>
+<a href="<?php echo ($current_url) ?>?&orderby=date&order=DESC">Date Descending</a>
+<a href="<?php echo ($current_url) ?>?&orderby=title&order=ASC">Title Ascending</a>
+<a href="<?php echo ($current_url) ?>?&orderby=title&order=DESC">Title Descending</a>
+</div><!-- .sort-menu -->
+
+			
 			<div class="post-list">
 				<?php if ( have_posts() ) : ?>
 	

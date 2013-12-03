@@ -23,7 +23,7 @@
 	<?php while ( bp_groups() ) : bp_the_group(); ?>
 
 		<li class="item <?php bp_group_type(); ?>">
-			<a href="<?php bp_group_permalink(); ?>home">
+			<a href="<?php bp_group_permalink(); ?>">
 				<span class="item-avatar">
 					<?php bp_group_avatar( 'type=full' ); ?>
 				</span>

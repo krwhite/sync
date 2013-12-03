@@ -121,14 +121,15 @@ function bp_group_discussions() {
                             </div>
 
 
-
                             <div class="activity-content">
 
                                 <div class="activity-header line">
 
                                     <a href="<?php bp_activity_user_link(); ?>" class="unit">
 
-                                        <strong><?php bp_activity_user_name(); ?></strong>
+                                        <strong><?php global $activities_template;
+										echo $activities_template->activity->user_nicename; 
+										?></strong>
 
                                     </a>
 									
@@ -194,7 +195,7 @@ function bp_group_discussions() {
 
 
 
-                                        <?php if ( bp_activity_user_can_delete() ) bp_delete_link_custom(); ?>
+                                        <?php if ( bp_activity_user_can_delete() ) bp_activity_delete_link(); ?>
 
                                         <?php do_action( 'bp_activity_entry_meta' ); ?>
 
