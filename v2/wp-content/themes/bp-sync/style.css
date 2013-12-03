@@ -621,7 +621,8 @@ h2.pagetitle, .widget_nav_menu h3,
 	background-image:-webkit-linear-gradient(top, #f39e49, #e1780f);
 	background-image:-o-linear-gradient(top, #f39e49, #e1780f);
 	background-image:linear-gradient(to bottom, #f39e49, #e1780f);
-	background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff39e49', endColorstr='#ffe1780f', GradientType=0);
+	background-repeat:repeat-x;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff39e49', endColorstr='#ffe1780f', GradientType=0);
 	border-color:#e1780f #e1780f #99520a;
 	border-color:rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 	*background-color:#e1780f;
@@ -642,6 +643,15 @@ h2.pagetitle, .widget_nav_menu h3,
 [class*="menu"] .generic-button a[disabled] {
 	color:#ffffff;
 	background-color:#e1780f;
+	background-image:-moz-linear-gradient(top, #f39e49, #e1780f);
+	background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#f39e49), to(#e1780f));
+	background-image:-webkit-linear-gradient(top, #f39e49, #e1780f);
+	background-image:-o-linear-gradient(top, #f39e49, #e1780f);
+	background-image:linear-gradient(to bottom, #f39e49, #e1780f);
+	background-repeat:repeat-x;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff39e49', endColorstr='#ffe1780f', GradientType=0);
+	border-color:#e1780f #e1780f #99520a;
+	border-color:rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 	*background-color:#c96c0d;
 	background-position:0 -15px;
 	-webkit-transition:background-position 0.1s linear 0.2s ease-in-out;
@@ -1222,6 +1232,7 @@ div#item-header .generic-button, div#item-header a.button {float:none; margin:0;
 	overflow:hidden;
 	text-overflow:ellipsis;
 	display:block;
+	clear:both;
 }
 
 #groups-list.grid_view li a:hover .item-title {color:#F19231;}
@@ -1349,6 +1360,7 @@ div.item-list-tabs ul li:first-child {margin-left:0;}
 .groups #item-header-content h3.Public.Group .icon-globe {display:inline;}
 .groups .column #item-meta p {color:#AAA;}
 .groups .column #item-meta #item-buttons {margin-bottom:10px;}
+.groups .column #item-actions h4 {clear:both;}
 .groups span.activity {background:none; padding:0; border:0; display:inline; font-size:14px;}
 .groups #item-body, .groups .item-body, .post-list, .bp-user #item-body {
 	border:1px solid #C4C4C4; 
