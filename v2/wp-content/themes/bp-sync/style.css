@@ -1092,6 +1092,7 @@ blockquote.pull-right p, blockquote.pull-right small {text-align:right;}
 
 div.page .entry ul, 
 div.page .query-field-post_content ul {list-style:disc outside none; margin: 10px 0 10px 25px;}
+div.page .entry ol, div.page .query-field-post_content ol {margin: 10px 0 10px 25px;}
 #Index_Page_Content h2 {border-bottom:1px solid #e3e6e4; padding-top:2em;}
 #Index_Page_Content .query-news h2 {border:0; font-size:1.5em; padding-top:0;}
 #Index_Page_Content .widget_list_newest_groups h2 {clear:both;}
