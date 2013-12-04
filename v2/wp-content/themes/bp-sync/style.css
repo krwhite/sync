@@ -1064,6 +1064,7 @@ div.page .entry .query-content > ul {margin:0; list-style:none;}
 
 #pageContent img.full-width {width:100%;}
 #pageContent p img {margin-bottom:0;}
+#sidebar + #pageContent p img {max-width:600px;}
 #pageContent img.avatar {border-color:#C2C7CB;}
 abbr[title], abbr[data-original-title] {cursor:help; border-bottom:1px dotted #999999;}
 
@@ -1166,7 +1167,7 @@ div.page .entry .wpuf_customs {list-style:none; margin-left:0;}
 }
 
 #members-list span {display:block;}
-.item-list.single-line li {border-bottom:1px solid #DDD;}
+.item-list.single-line li {border-bottom:1px solid #DDD; clear:both;}
 #members-list.single-line a {display:inline; padding:0;}
 #members-list .small a {padding:4px 10px;}
 

@@ -29,19 +29,30 @@
 			<p><?php echo category_description( $category_id ); ?></p>
 
 
-
-
-<div class="sort-menu">
-<?php global $wp;
-$current_url = home_url( $wp->request );
- ?>
-<a href="<?php echo ($current_url) ?>?&orderby=date&order=ASC">Date Ascending</a>
-<a href="<?php echo ($current_url) ?>?&orderby=date&order=DESC">Date Descending</a>
-<a href="<?php echo ($current_url) ?>?&orderby=title&order=ASC">Title Ascending</a>
-<a href="<?php echo ($current_url) ?>?&orderby=title&order=DESC">Title Descending</a>
-</div><!-- .sort-menu -->
-
-			
+			<div class="sort-menu" >
+				<select id="changeSortOrder">
+					<option value="">Sort by</option>
+						<option value="<?php echo ($current_url) ?>?&orderby=date&order=ASC" title="Sort by creation date - oldest first" 
+							<?php if (isset($_GET['orderby=date']) && in_array($_GET['order'], array('ASC'))) {
+								echo "selected=selected"; }	?>>Date Ascending</option>
+						<option value="<?php echo ($current_url) ?>?&orderby=date&order=DESC" title="Sort by creation date - newest first"
+							<?php if (isset($_GET['order']) && in_array($_GET['order'], array('DESC'))) {
+								echo "selected=selected"; }	?>>Date Descending</option>
+						<option value="<?php echo ($current_url) ?>?&orderby=title&order=ASC" title="Sort by title A - Z"
+							<?php if (isset($_GET['order']) && in_array($_GET['title'], array('ASC'))) {
+								echo "selected=selected"; }	?>>Title Ascending</option>
+						<option value="<?php echo ($current_url) ?>?&orderby=title&order=DESC" title="Sort by title Z - A"
+							<?php if (isset($_GET['order']) && in_array($_GET['title'], array('DESC'))) {
+								echo "selected=selected"; }	?>>Title Descending</option>
+				</select>
+				<script>
+					document.getElementById("changeSortOrder").onchange = function() {
+						if (this.selectedIndex!==0) {
+							window.location.href = this.value;
+						}        
+					};
+				</script>
+			</div><!-- .sort-menu -->
 			<div class="post-list">
 				<?php if ( have_posts() ) : ?>
 	
