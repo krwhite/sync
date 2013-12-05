@@ -94,7 +94,7 @@ class syncHelpArticleSidebar extends WP_Widget
 	
 				<i class="icon-tags"></i>
 	
-				<?php the_tags('', '', ''); ?>
+				<span class="tags"><?php the_tags('', '', ''); ?></span>
 	
 			</div>
 

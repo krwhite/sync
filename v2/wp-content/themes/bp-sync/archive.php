@@ -21,38 +21,38 @@
 		<?php do_action( 'bp_before_archive' ); ?>
 
 		<div class="page" id="blog-archives" role="main">
-
-			<h1>
-			<?php if( is_tag() ) { ?> Articles Tagged with <i class="icon-tags"></i><?php } ?>
-				<?php printf( __( '%1$s', 'buddypress' ), wp_title( false, false ) ); ?>
-			</h1>
-			<p><?php echo category_description( $category_id ); ?></p>
-
-
-			<div class="sort-menu" >
-				<select id="changeSortOrder">
-					<option value="">Sort by</option>
-						<option value="<?php echo ($current_url) ?>?&orderby=date&order=ASC" title="Sort by creation date - oldest first" 
-							<?php if (isset($_GET['orderby=date']) && in_array($_GET['order'], array('ASC'))) {
-								echo "selected=selected"; }	?>>Date Ascending</option>
-						<option value="<?php echo ($current_url) ?>?&orderby=date&order=DESC" title="Sort by creation date - newest first"
-							<?php if (isset($_GET['order']) && in_array($_GET['order'], array('DESC'))) {
-								echo "selected=selected"; }	?>>Date Descending</option>
-						<option value="<?php echo ($current_url) ?>?&orderby=title&order=ASC" title="Sort by title A - Z"
-							<?php if (isset($_GET['order']) && in_array($_GET['title'], array('ASC'))) {
-								echo "selected=selected"; }	?>>Title Ascending</option>
-						<option value="<?php echo ($current_url) ?>?&orderby=title&order=DESC" title="Sort by title Z - A"
-							<?php if (isset($_GET['order']) && in_array($_GET['title'], array('DESC'))) {
-								echo "selected=selected"; }	?>>Title Descending</option>
-				</select>
-				<script>
-					document.getElementById("changeSortOrder").onchange = function() {
-						if (this.selectedIndex!==0) {
-							window.location.href = this.value;
-						}        
-					};
-				</script>
-			</div><!-- .sort-menu -->
+			<div class="archive-header">
+				<h1 class="<?php if (category_description( $category ) == '') : ?>no-description<?php endif; ?>">
+				<?php if( is_tag() ) { ?> Articles Tagged with <i class="icon-tags"></i><?php } ?>
+					<?php printf( __( '%1$s', 'buddypress' ), wp_title( false, false ) ); ?>
+				</h1>
+				<div class="archive-description"><?php echo category_description( $category_id ); ?></div>	
+				<div class="sort-menu" >
+					<select id="changeSortOrder">
+						<option value="">Sort by</option>
+							<option value="<?php echo ($current_url) ?>?&orderby=date&order=ASC" title="Sort by creation date - oldest first" 
+								<?php if($_GET['orderby'] == 'date' && $_GET['order'] == 'ASC') {
+									echo "selected=selected"; }	?>>Oldest First</option>
+							<option value="<?php echo ($current_url) ?>?&orderby=date&order=DESC" title="Sort by creation date - newest first"
+								<?php if(!$_GET['orderby'] == 'date' && $_GET['order'] == 'DESC') {
+									echo ""; } else { echo "selected=selected"; }	?>>Newest First</option>
+							<option value="<?php echo ($current_url) ?>?&orderby=title&order=ASC" title="Sort by title alphabetical"
+								<?php if($_GET['orderby'] == 'title' && $_GET['order'] == 'ASC') {
+									echo "selected=selected"; }	?>>Title A - Z</option>
+							<option value="<?php echo ($current_url) ?>?&orderby=title&order=DESC" title="Sort by title reverse alphabetical"
+								<?php if($_GET['orderby'] == 'title' && $_GET['order'] == 'DESC') {
+									echo "selected=selected"; }	?>>Title Z - A</option>
+					</select>
+					<script>
+						document.getElementById("changeSortOrder").onchange = function() {
+							if (this.selectedIndex!==0) {
+								window.location.href = this.value;
+							}        
+						};
+					</script>
+				</div><!-- .sort-menu -->
+			</div><!-- .archive-header -->
+				
 			<div class="post-list">
 				<?php if ( have_posts() ) : ?>
 	
@@ -69,8 +69,10 @@
 										<span class="date"><?php printf( __( '%1$s', 'buddypress' ), get_the_date(), get_the_category_list( ', ' ) ); ?></span>
 									</a>
 								</div>
-								<div class="tag-list column size2of5">
-									<i class="icon-tags"></i> <?php the_tags( '<span class="tags">' . __( '', 'buddypress' ), ' ', '</span>' ); ?> 
+								<div class="column size2of5">
+									<div class="tag-list">
+										<i class="icon-tags"></i> <?php the_tags( '<span class="tags">' . __( '', 'buddypress' ), ' ', '</span>' ); ?> 
+									</div>
 								</div>
 							</div>
 	

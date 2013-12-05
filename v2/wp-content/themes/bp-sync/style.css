@@ -232,7 +232,7 @@ textarea, form#whats-new-form textarea {min-height:80px;}
 	overflow: hidden;
 }
 
-#main:after, #pageContent:after {
+#main:after, #pageContent:after, #pageContent div.page:after {
 	content: "";
 	display: block;
 	clear: both;
@@ -906,9 +906,13 @@ ul.ac_results li:hover, ul.ac_results li.ac_over {background:#3875D7; color:#FFF
 	margin-bottom:10px;
 }
 
+.page .tags, .post .tags {float:none;}
+.tag-list {text-indent:-14px; padding-left:26px;}
+.tag-list .tags {text-indent:0;}
+
 .tag-list i {
 	color:#a6adb4;
-	margin-right:6px;
+	margin:0 6px 0 0;
 	font-size:18px;
 	line-height:5px;
 }
@@ -928,8 +932,6 @@ ul.ac_results li:hover, ul.ac_results li.ac_over {background:#3875D7; color:#FFF
 	color:#eee;
 	background:#e1780f;
 }
-
-.page .tags, .post .tags {float:none;}
 /* end News */
 
 /* Help */
@@ -1015,12 +1017,17 @@ ul.ac_results li:hover, ul.ac_results li.ac_over {background:#3875D7; color:#FFF
 
 .post-list .row {border-top:1px solid #DDD; padding:10px 0;}
 .post-list .hentry:first-child .row {border-top:0; padding-top:5px;}
-.post-list .post-content.row:after {content:""; clear:left; display:table;}
-.post-list .article-link {display:block;}
+.post-list .post-content.row:after, .archive-header:after {content:""; clear:left; display:table;}
+.post-list .article-link {display:block; margin-right:30px;}
 .post-list .date, .articles-list .date {color:#CCC; display:block;}
 
 div.page .entry .articles-list ul {list-style:none; margin-left:0;}
 .articles-list .article a:first-child {font-size:1.2em;}
+h1.no-description, .archive-description {float:left; margin:10px 0 16px;}
+h1.no-description + .archive-description {display:none;}
+#pageContent .sort-menu {float:right;}
+.archive-header + .post-list {clear:left;}
+#sidebar + #pageContent .archive-header + .post-list {clear:none;}
 /* end Help */
 
 /* Content */
@@ -1387,6 +1394,8 @@ div.item-list-tabs ul li:first-child {margin-left:0;}
 	-webkit-box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	box-sizing:border-box;
+	max-height:70px;
+	overflow:hidden;
 }
 
 .groups #pageContent .group-content ul.item-list#member-list li img {margin-left:8px; margin-bottom:0;}
