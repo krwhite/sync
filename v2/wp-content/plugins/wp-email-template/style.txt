@@ -1,5 +1,0 @@
-Header
-- remove body background image, add border-top:2px solid #E1780F;
-- #templateHeader background-color #FFF
-- .headerContent color: #E1780F font-weight:normal
-- content td (last) border-top:1px solid #E3E6E4; padding-top:10px;
