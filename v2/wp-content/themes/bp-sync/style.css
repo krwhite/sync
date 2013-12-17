@@ -1367,7 +1367,7 @@ div.item-list-tabs ul li:first-child {margin-left:0;}
 .groups #item-header-content h3.Hidden.Group .icon-eye-close {display:inline;}
 .groups #item-header-content h3.Private.Group .icon-lock {display:inline;}
 .groups #item-header-content h3.Public.Group .icon-globe {display:inline;}
-.groups .column #item-meta p {color:#AAA;}
+.groups .column #item-meta p {color:#AAA; overflow:hidden; text-overflow:ellipsis;}
 .groups .column #item-meta #item-buttons {margin-bottom:10px;}
 .groups .column #item-actions h4 {clear:both;}
 .groups span.activity {background:none; padding:0; border:0; display:inline; font-size:14px;}
