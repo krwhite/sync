@@ -92,7 +92,7 @@ textarea, form#whats-new-form textarea {min-height:80px;}
 	margin:0 0 10px 0;
 }
 
-#pageHeader:after {
+#pageHeader:after, .pagination:after {
 	clear: both;
 	content: "";
 	display: block;
@@ -1515,7 +1515,7 @@ div.activity-meta a.acomment-reply span {display:none;}
 .activity-list li.mini .activity-avatar img.FB_profile_pic {height:auto; width:auto; margin-left:0;}
 .activity-list li.mini {font-size:1em;}
 ul.item-list li {border-color:#DDD;}
-.activity-list li.load-more {padding:0 !important;}
+.activity-list li.load-more {padding:0 !important; display:none; /* hiding until fixed */}
 .search .activity-list li.load-more {display:none;}
 .activity-list li.load-more a {display:block; padding:10px 15px;}
 .activity-list li.load-more a:hover {color:#222;}
