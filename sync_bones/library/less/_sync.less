@@ -1,0 +1,35 @@
+// import variables
+@import "_variables.less";
+
+
+
+html,
+body,
+body.login {
+    background-color: @color-background;
+		font-size:100%;
+		-webkit-text-size-adjust:100%;
+		-ms-text-size-adjust:100%;
+}
+
+body {
+	width:auto;
+	max-width:none;
+	font-family:'Open Sans';
+	font-size:@baseFontSize;
+	line-height:@baseFontSize * 1.4286;
+	margin:0;
+	color:@color-darkGray;
+}
+
+a {
+	&, &:visited, &:hover {
+		color:@color-orange;
+	}
+	
+	&:focus {
+		outline:thin dotted #333;
+		outline:5px auto -webkit-focus-ring-color;
+		outline-offset:-2px;
+	}
+}
