@@ -297,7 +297,8 @@ div.pagination .pagination-links a:hover {font-weight:inherit; color:#F19231;}
 /* end Layout Styles */
 
 /* Fonts */
-h1, .query-header {
+h1,
+.query-header {
 	font-family:'nexa';
 	font-size:2em;
 	margin:0 15px 0 0;
@@ -305,7 +306,9 @@ h1, .query-header {
 	font-weight:normal;
 }
 
-h2, div#sidebar h3.widgettitle {
+h2,
+div#sidebar h3.widgettitle,
+.home-page #main .widget h3 {
 	color:#E1780F;
 	font-weight:normal;
  	font-size:1.5em;
@@ -1101,8 +1104,8 @@ blockquote.pull-right p, blockquote.pull-right small {text-align:right;}
 div.page .entry ul, 
 div.page .query-field-post_content ul {list-style:disc outside none; margin: 10px 0 10px 25px;}
 div.page .entry ol, div.page .query-field-post_content ol {margin: 10px 0 10px 25px;}
-.widget_list_newest_members h2 {border-bottom:1px solid #e3e6e4; padding-top:2em;}
-.widget_list_newest_members .query-news h2 {border:0; font-size:1.5em; padding-top:0;}
+.home-page #main .widget h3 {border-bottom:1px solid #e3e6e4; padding-top:2em;}
+.home-page #main .query-news h2 {border:0; font-size:1.5em; padding-top:0;}
 .widget_list_newest_members .widget_list_newest_groups h2 {clear:both;}
 .widget_list_newest_members .widget ul.item-list {margin:0;}
 .widget_list_newest_members #members-list li {float:left; width:25%; margin-bottom:5px; text-align:center; border:0;}
