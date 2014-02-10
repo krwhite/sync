@@ -78,19 +78,20 @@ function getInactiveUsers () {
 	}
 }
 
-add_action('bp_ajax_querystring','sync_exclude_users',20,2);
-function sync_exclude_users($qs=false,$object=false){
+add_action('bp_ajax_querystring','bpdev_exclude_users',20,2);
+function bpdev_exclude_users($qs=false,$object=false){
  //list of users to exclude
  
 	$user_ids = getInactiveUsers();
 	$prefix = '';
 	foreach ($user_ids as $user_id)
 	{
-		$idList .= $prefix . '"' . $user_id . '"';
+		$idList .= $prefix . $user_id;
 		$prefix = ', ';
 	}
  
  $excluded_user=$idList;
+
  
  if($object!='members')//hide for members only
  return $qs;
@@ -98,10 +99,9 @@ function sync_exclude_users($qs=false,$object=false){
  $args=wp_parse_args($qs);
  
  //check if we are listing friends?, do not exclude in this case
- /*
  if(!empty($args['user_id']))
  return $qs;
- */
+ 
  if(!empty($args['exclude']))
  $args['exclude']=$args['exclude'].','.$excluded_user;
  else
@@ -112,5 +112,7 @@ function sync_exclude_users($qs=false,$object=false){
  return $qs;
  
 }
+
+
 
 ?>
