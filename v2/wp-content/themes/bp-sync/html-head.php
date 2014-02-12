@@ -8,6 +8,7 @@
     <title>
     	<?php wp_title( '|', true, 'right' ); bloginfo( 'name' ); ?>
     </title>
+    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 	<!--[if lt IE 10]> <link rel="stylesheet" type="text/css" href="/wp-content/themes/bp-sync/style-ie.css" /> <![endif]-->
     <?php bp_head(); ?>
