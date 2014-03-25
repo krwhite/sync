@@ -13,7 +13,7 @@
 
 <?php /* Sets sort order to alphabetical, breaks sort option */
 function my_query_filter_new ( $query_string ) {
-$query_string .= '&per_page=20&type=alphabetical';
+$query_string .= '&per_page=0&type=alphabetical';
 return $query_string;
 }
 add_filter( 'bp_ajax_querystring', 'my_query_filter_new' );
@@ -61,7 +61,7 @@ add_filter( 'bp_ajax_querystring', 'my_query_filter_new' );
 
 	<?php bp_member_hidden_fields(); ?>
 
-	<div id="pag-bottom" class="pagination">
+	<div id="pag-bottom" class="pagination" style="display:none;">
 
 		<div class="pag-count" id="member-dir-count-bottom">
 
