@@ -48,6 +48,8 @@ hr {
 	border-bottom:1px solid #FFF;
 }
 
+#main #sidebar + #pageContent hr {clear:left;}
+
 select, textarea, input[type="text"], input[type="password"], input[type="datetime"], 
 input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], 
 input[type="week"], input[type="number"], input[type="email"], input[type="url"], 
@@ -279,6 +281,7 @@ div.pagination {
 	margin:20px 0;
 	font-size:14px;
 }
+.members div.pagination {display:none;} /* show all on people page */
 .pagination a {display:inline-block; padding:5px;}
 div.pagination .pagination-links span, div.pagination .pagination-links a {font-size:14px;}
 div.pagination .pagination-links a:hover {font-weight:inherit; color:#F19231;}
@@ -1159,6 +1162,15 @@ div.page .entry .wpuf_customs {list-style:none; margin-left:0;}
 	-moz-box-sizing:border-box;
 	box-sizing:border-box;
 }
+
+/* hiding specific dev and inactive accounts */
+#members-list .person#sync-member-1, 
+#members-list .person#sync-member-163, 
+#members-list .person#sync-member-219, 
+#members-list .person#sync-member-250, 
+#members-list .person#sync-member-255, 
+#members-list .person#sync-member-260 {display:none;}
+/* end hiding */
 
 #members-list a {
 	display:block;

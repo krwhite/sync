@@ -30,7 +30,7 @@ add_filter( 'bp_ajax_querystring', 'my_query_filter_new' );
 
 	<?php while ( bp_members() ) : bp_the_member(); ?>
 
-		<li class="person">
+		<li class="person" id="sync-member-<?php bp_member_user_id(); ?>">
 			<a href="<?php bp_member_permalink(); ?>">
 				<span class="item-avatar"><?php bp_member_avatar( 'type=full&width=280&height=280' ); ?></span>
 	
@@ -61,7 +61,7 @@ add_filter( 'bp_ajax_querystring', 'my_query_filter_new' );
 
 	<?php bp_member_hidden_fields(); ?>
 
-	<div id="pag-bottom" class="pagination" style="display:none;">
+	<div id="pag-bottom" class="pagination">
 
 		<div class="pag-count" id="member-dir-count-bottom">
 

@@ -49,7 +49,7 @@ class syncHelpArticleSidebar extends WP_Widget
 	
 			<hr>
 	
-			<div class="section category">
+			<div class="section category" title="Article category">
 	
 				<i class="icon-reorder"></i>
 				
@@ -74,7 +74,7 @@ class syncHelpArticleSidebar extends WP_Widget
 	
 			<hr>
 	
-			<div class="section author">
+			<div class="section author" title="Article author">
 	
 				<i class="icon-user"></i>
 				
@@ -90,7 +90,7 @@ class syncHelpArticleSidebar extends WP_Widget
 	
 			<hr>
 	
-			<div class="section tag-list">
+			<div class="section tag-list" title="Article tags">
 	
 				<i class="icon-tags"></i>
 	
