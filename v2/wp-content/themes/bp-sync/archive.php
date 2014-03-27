@@ -30,6 +30,10 @@
 				<div class="sort-menu" >
 					<select id="changeSortOrder">
 						<option value="">Sort by</option>
+							<option value="<?php echo ($current_url) ?>?&orderby=modified" title="Sort by latest modified"
+								<?php if($_GET['orderby'] == 'modified') {
+									echo "selected=selected"; }	?>>Latest Modified</option>
+									
 							<option value="<?php echo ($current_url) ?>?&orderby=date&order=ASC" title="Sort by creation date - oldest first" 
 								<?php if($_GET['orderby'] == 'date' && $_GET['order'] == 'ASC') {
 									echo "selected=selected"; }	?>>Oldest First</option>
@@ -42,6 +46,8 @@
 							<option value="<?php echo ($current_url) ?>?&orderby=title&order=DESC" title="Sort by title reverse alphabetical"
 								<?php if($_GET['orderby'] == 'title' && $_GET['order'] == 'DESC') {
 									echo "selected=selected"; }	?>>Title Z - A</option>
+									
+									
 					</select>
 					<script>
 						document.getElementById("changeSortOrder").onchange = function() {
@@ -66,7 +72,7 @@
 							<div class="post-content row">
 								<div class="column size3of5">
 									<a class="article-link" href="<?php the_permalink(); ?>" rel="bookmark" title="<?php _e( 'Permanent Link to', 'buddypress' ); ?> <?php the_title_attribute(); ?>"><strong class="posttitle"><?php the_title(); ?></strong>
-										<span class="date"><?php printf( __( '%1$s', 'buddypress' ), get_the_date(), get_the_category_list( ', ' ) ); ?></span>
+										<span class="date"><?php printf( __( '%1$s', 'buddypress' ), get_the_modified_date(), get_the_category_list( ', ' ) ); ?></span>
 									</a>
 								</div>
 								<div class="column size2of5">
