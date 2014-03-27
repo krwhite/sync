@@ -1420,8 +1420,8 @@ div.item-list-tabs ul li:first-child {margin-left:0;}
 .groups ul.item-list li h5 {margin:0 8px 3px 0; font-size:1em;}
 .groups ul.item-list#member-list li span {margin-right:8px;}
 
-.groups.group-home .activity .activity-item.mini {display:none;} /* hiding non-posts on group home */
-.groups .activity .activity-item a[href*="/groups/"] {display:none;}  /* hiding "in group" on group page */
+.groups.group-home .activity .activity-item.mini, /* hiding non-posts on group home */
+.groups.group-home .activity .activity-item a[href*="/groups/"] {display:none;}  /* hiding "in group x" on group x's page */
 
 .workflow {
 	padding:8px 15px;
