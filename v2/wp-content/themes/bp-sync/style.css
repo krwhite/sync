@@ -234,7 +234,7 @@ textarea, form#whats-new-form textarea {min-height:80px;}
 	overflow: hidden;
 }
 
-#main:after, #pageContent:after, #pageContent div.page:after {
+#main:after, #pageContent:after, #pageContent div.page:after, ul.item-list#member-list:after {
 	content: "";
 	display: block;
 	clear: both;
@@ -1344,6 +1344,7 @@ div.item-list-tabs ul li.selected a:hover, div.item-list-tabs ul li.current a:fo
 .nav-tabs li a#members:before {content: "\f0c0";} /* icon-group */
 .nav-tabs li a#nav-invite-anyone:before {content: "\f145";} /* icon-ticket */
 .nav-tabs li a#nav-notifications:before {content: "\f0e0";} /* icon-envelope-alt */
+.nav-tabs li a#request-membership:before {content: "\f0fe";} /* icon-plus-sign-alt */
 .nav-tabs li a#admin:before {content: "\f085";} /* icon-cogs */
 
 
@@ -1559,6 +1560,8 @@ body.activity-permalink .activity-list li .activity-content {min-height:122px;}
 #sidebar .syncProfileCard .widgettitle, 
 #sidebar .syncHelpArticleSidebar .widgettitle, 
 #sidebar .syncTweets .widgettitle */
+#sidebar .syncHelpArticleSidebar .section.category, 
+#sidebar .syncHelpArticleSidebar .section.category + hr, 
 #sidebar h3.widgettitle {display:none}
 #sidebar .widget_tag_cloud h3.widgettitle {display:block;}
 
