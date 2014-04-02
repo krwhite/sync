@@ -1165,6 +1165,7 @@ div.page .entry .wpuf_customs {list-style:none; margin-left:0;}
 
 /* hiding specific dev and inactive accounts */
 #members-list .person#sync-member-1, 
+#members-list .person#sync-member-116, 
 #members-list .person#sync-member-163, 
 #members-list .person#sync-member-219, 
 #members-list .person#sync-member-250, 
@@ -1560,8 +1561,6 @@ body.activity-permalink .activity-list li .activity-content {min-height:122px;}
 #sidebar .syncProfileCard .widgettitle, 
 #sidebar .syncHelpArticleSidebar .widgettitle, 
 #sidebar .syncTweets .widgettitle */
-#sidebar .syncHelpArticleSidebar .section.category, 
-#sidebar .syncHelpArticleSidebar .section.category + hr, 
 #sidebar h3.widgettitle {display:none}
 #sidebar .widget_tag_cloud h3.widgettitle {display:block;}
 
