@@ -66,6 +66,9 @@ class syncHelpArticleSidebar extends WP_Widget
 					the_terms($post->ID, 'retrospective-category',  '', ', ');
 				} 
 
+				if( get_post_type() == 'prodev' ) {
+					the_terms($post->ID, 'prodev-category',  '', ', ');
+				} 
 
 				?>
 				
