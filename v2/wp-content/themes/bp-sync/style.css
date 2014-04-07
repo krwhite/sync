@@ -1168,9 +1168,11 @@ div.page .entry .wpuf_customs {list-style:none; margin-left:0;}
 #members-list .person#sync-member-116, 
 #members-list .person#sync-member-163, 
 #members-list .person#sync-member-219, 
+#members-list .person#sync-member-226, 
 #members-list .person#sync-member-250, 
 #members-list .person#sync-member-255, 
-#members-list .person#sync-member-260 {display:none;}
+#members-list .person#sync-member-260, 
+#members-list .person#sync-member-298 {display:none;}
 /* end hiding */
 
 #members-list a {
