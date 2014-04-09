@@ -30,16 +30,15 @@
 				<div class="sort-menu" >
 					<select id="changeSortOrder">
 						<option value="">Sort by</option>
-							<option value="<?php echo ($current_url) ?>?&orderby=modified" title="Sort by latest modified"
-								<?php if($_GET['orderby'] == 'modified') {
-									echo "selected=selected"; }	?>>Latest Modified</option>
+<option>Sort articles</option>
+							<option value="<?php echo ($current_url) ?>?&orderby=date&order=DESC" title="Sort by creation date - newest first"
+								<?php if(!$_GET['orderby'] == 'date' && $_GET['order'] == 'DESC') {
+									echo ""; } else { echo "selected=selected"; }	?>>Newest First</option>	
 									
 							<option value="<?php echo ($current_url) ?>?&orderby=date&order=ASC" title="Sort by creation date - oldest first" 
 								<?php if($_GET['orderby'] == 'date' && $_GET['order'] == 'ASC') {
 									echo "selected=selected"; }	?>>Oldest First</option>
-							<option value="<?php echo ($current_url) ?>?&orderby=date&order=DESC" title="Sort by creation date - newest first"
-								<?php if(!$_GET['orderby'] == 'date' && $_GET['order'] == 'DESC') {
-									echo ""; } else { echo "selected=selected"; }	?>>Newest First</option>
+							
 							<option value="<?php echo ($current_url) ?>?&orderby=title&order=ASC" title="Sort by title alphabetical"
 								<?php if($_GET['orderby'] == 'title' && $_GET['order'] == 'ASC') {
 									echo "selected=selected"; }	?>>Title A - Z</option>
@@ -47,6 +46,9 @@
 								<?php if($_GET['orderby'] == 'title' && $_GET['order'] == 'DESC') {
 									echo "selected=selected"; }	?>>Title Z - A</option>
 									
+							<option value="<?php echo ($current_url) ?>?&orderby=modified" title="Sort by most recently changed first"
+								<?php if($_GET['orderby'] == 'modified') {
+									echo "selected=selected"; }	?>>Last Modified</option>
 									
 					</select>
 					<script>
@@ -72,7 +74,7 @@
 							<div class="post-content row">
 								<div class="column size3of5">
 									<a class="article-link" href="<?php the_permalink(); ?>" rel="bookmark" title="<?php _e( 'Permanent Link to', 'buddypress' ); ?> <?php the_title_attribute(); ?>"><strong class="posttitle"><?php the_title(); ?></strong>
-										<span class="date"><?php printf( __( '%1$s', 'buddypress' ), get_the_modified_date(), get_the_category_list( ', ' ) ); ?></span>
+										<span class="date" title="Modified Date"><?php printf( __( '%1$s', 'buddypress' ), get_the_modified_date(), get_the_category_list( ', ' ) ); ?></span>
 									</a>
 								</div>
 								<div class="column size2of5">
