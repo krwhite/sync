@@ -52,7 +52,7 @@
 							<div class="clear"> </div>
 						</div>
 						<div class="postmetadata"> 
-							<span class="date"><?php the_time('F j, Y') ?></span> <span class="category"><?php the_category(', ') ?></span>
+							<span class="date"><?php the_modified_time('F j, Y') ?></span> <span class="category"><?php the_category(', ') ?></span>
 						</div>
 	
 					</div>
