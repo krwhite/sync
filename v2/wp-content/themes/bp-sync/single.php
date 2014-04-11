@@ -31,7 +31,7 @@
 				<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<div class="post-content">
 						<h2 class="page-title"><?php the_title(); ?></h2>
-						<i class="date"> <?php printf( __( '%1$s', 'buddypress' ), get_the_modified_date(), get_the_category_list( ', ' ) ); ?>  </i>
+						<i class="date">Edited <?php printf( __( '%1$s', 'buddypress' ), get_the_modified_date(), get_the_category_list( ', ' ) ); ?>  </i>
 						<div class="entry">
 							<?php the_content( __( 'Read the rest of this entry &rarr;', 'buddypress' ) ); ?>
 							<?php wp_link_pages( array( 'before' => '<div class="page-link"><p>' . __( 'Pages: ', 'buddypress' ), 'after' => '</p></div>', 'next_or_number' => 'number' ) ); ?>

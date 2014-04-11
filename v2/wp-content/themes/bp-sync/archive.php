@@ -73,7 +73,7 @@
 	
 							<div class="post-content row">
 								<div class="column size3of5">
-									<a class="article-link" href="<?php the_permalink(); ?>" rel="bookmark" title="<?php _e( 'Permanent Link to', 'buddypress' ); ?> <?php the_title_attribute(); ?>"><strong class="posttitle"><?php the_title(); ?></strong>
+									<a class="article-link" href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><strong class="posttitle"><?php the_title(); ?></strong>
 										<span class="date" title="Modified Date"><?php printf( __( '%1$s', 'buddypress' ), get_the_modified_date(), get_the_category_list( ', ' ) ); ?></span>
 									</a>
 								</div>

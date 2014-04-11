@@ -2,7 +2,7 @@
 Theme Name: Buddypress Sync
 Theme URI: sync.asynchrony.com
 Description: Theme for Asynchrony's Intranet
-Version: 1.0
+Version: 1.1
 Author: Asynchrony
 Author URI: www.asynchrony.com
 Template: bp-default
@@ -1111,7 +1111,7 @@ div.page .entry ul li {margin-bottom:10px;}
 div.page .entry ol, div.page .query-field-post_content ol {margin: 10px 0 10px 25px;}
 .home-page #main .widget h3 {border-bottom:1px solid #e3e6e4; padding-top:2em;}
 .home-page #main .query-news h2 {border:0; font-size:1.5em; padding-top:0;}
-.widget_list_newest_members .widget_list_newest_groups h2 {clear:both;}
+.widget_list_newest_groups h2 {clear:both; padding-top:30px;}
 .widget_list_newest_members .widget ul.item-list {margin:0;}
 .widget_list_newest_members #members-list li {float:left; width:25%; margin-bottom:5px; text-align:center; border:0;}
 .widget_list_newest_members #members-list li .item {clear:both;}
@@ -1149,7 +1149,7 @@ div.page .entry .wpuf_customs {list-style:none; margin-left:0;}
 
 /* People */
 .widget_nav_menu h3 i {color:#888;}
-#members-list {margin-right:-2%;}
+#members-list {margin:0 -2% 0 0;}
 #members-list.single-line {margin-right:0;}
 #members-list .person {
 	display:block;
@@ -1197,6 +1197,8 @@ div.page .entry .wpuf_customs {list-style:none; margin-left:0;}
 .item-list.single-line li {border-bottom:1px solid #DDD; clear:both;}
 #members-list.single-line a {display:inline; padding:0;}
 #members-list .small a {padding:4px 10px;}
+#members-list .item-title {width:auto; text-align:left;}
+#members-list .item-title a {padding-top:0; margin-top:-10px;}
 
 .nav-tabs li a#user-activity:before {content: "\f0e7";} /* icon-bolt */
 .nav-tabs li a#user-xprofile:before {content: "\f0ca";} /* icon-list-ul */
