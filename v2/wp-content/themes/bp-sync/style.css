@@ -1381,7 +1381,8 @@ div.item-list-tabs ul.workflow li.current a {font-weight:normal;}
 div.item-list-tabs, div#subnav.item-list-tabs {margin:0; background:none;}
 div#subnav.item-list-tabs {padding-bottom:10px; margin-bottom:10px; border-color:#DDD;}
 div.item-list-tabs ul li:first-child {margin-left:0;}
-.group-content #item-body #pag-top, .group-content #item-body #subnav {display:none;}
+.group-content #item-body #pag-top, 
+.group-members .group-content #item-body #subnav {display:none;} /* hiding subnav where not needed */
 .admin .group-content #item-body #subnav {display:block;}
 
 #item-header-avatar img.avatar, #group-create-body .left-menu img.avatar {float:none; box-shadow:none;}
@@ -1426,8 +1427,11 @@ div.item-list-tabs ul li:first-child {margin-left:0;}
 .groups ul.item-list li h5 {margin:0 8px 3px 0; font-size:1em;}
 .groups ul.item-list#member-list li span {margin-right:8px;}
 
-.groups.group-home .activity .activity-item.mini, /* hiding non-posts on group home */
+.groups.group-home .activity .activity-item.mini .activity-avatar, /* hiding non-posts on group home */
+.groups.group-home .activity .activity-item.mini .activity-meta, /* hiding non-post options on group home */
 .groups.group-home .activity .activity-item a[href*="/groups/"] {display:none;}  /* hiding "in group x" on group x's page */
+
+.groups.group-home .activity .activity-item.mini .activity-list .activity-content {margin-left:0;}
 
 .workflow {
 	padding:8px 15px;
@@ -1535,7 +1539,7 @@ div.activity-meta a.acomment-reply span {display:none;}
 .activity-meta .unfav:before {content: "\f005";}
 
 .activity-list li.mini .activity-avatar img.avatar, 
-.activity-list li.mini .activity-avatar img.FB_profile_pic {height:auto; width:auto; margin-left:0;}
+.activity-list li.mini .activity-avatar img.FB_profile_pic {height:50px; width:50px; margin-left:0;}
 .activity-list li.mini {font-size:1em;}
 ul.item-list li {border-color:#DDD;}
 .activity-list li.load-more {padding:0 !important; display:none; /* hiding until fixed */}

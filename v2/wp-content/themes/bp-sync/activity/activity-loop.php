@@ -14,7 +14,6 @@
 <?php do_action( 'bp_before_activity_loop' ); ?>
 
 <?php if ( bp_has_activities( bp_ajax_querystring( 'activity' ) ) ) : ?>
-
 	<?php /* Show pagination if JS is not enabled, since the "Load More" link will do nothing */ ?>
 	<noscript>
 		<div class="pagination">
