@@ -281,7 +281,7 @@ div.pagination {
 	margin:20px 0;
 	font-size:14px;
 }
-.members div.pagination {display:none;} /* show all on people page */
+.directory.members div.pagination {display:none;} /* show all on people page */
 .pagination a {display:inline-block; padding:5px;}
 div.pagination .pagination-links span, div.pagination .pagination-links a {font-size:14px;}
 div.pagination .pagination-links a:hover {font-weight:inherit; color:#F19231;}
@@ -1368,6 +1368,31 @@ div.item-list-tabs ul li.selected a:hover, div.item-list-tabs ul li.current a:fo
 	display:block;
 }
 
+.nav-tabs li:hover:before {
+	display:block;
+	position:absolute;
+	background:#35383B;
+	color:#FFF;
+	border-radius:3px;
+    bottom:120%;
+    margin-left:-50%;
+    padding: 2px 4px;
+    white-space:nowrap;
+    z-index: 1;
+}
+
+.nav-tabs li[id^="home"]:hover:before {content: "Discussions";} /* icon-comments */
+.nav-tabs li[id^="members"]:hover:before {content: "Group Members";} /* icon-group */
+.nav-tabs li[id^="groups"]:hover:before {content: "Group Memberships";} /* icon-group */
+.nav-tabs li[id*="invite"]:hover:before {content: "Send Invites";} /* icon-ticket */
+.nav-tabs li[id*="notifications"]:hover:before {content: "Notifications";} /* icon-envelope-alt */
+.nav-tabs li[id^="request-membership"]:hover:before {content: "Request to Join";} /* icon-plus-sign-alt */
+.nav-tabs li[id^="admin"]:hover:before, 
+.nav-tabs li[id^="settings"]:hover:before {content: "Settings";} /* icon-cogs */
+.nav-tabs li[id^="messages"]:hover:before {content: "Messages";} /* icon-comments */
+.nav-tabs li[id^="activity"]:hover:before {content: "sync Activity";}  /* icon-bolt */
+.nav-tabs li[id^="xprofile"]:hover:before {content: "Profile Details";} /* icon-list-ul */
+
 div.item-list-tabs ul.workflow li a, 
 div.item-list-tabs ul.workflow li span {
 	max-width:none;
@@ -1378,7 +1403,7 @@ div.item-list-tabs ul.workflow li span {
 
 div.item-list-tabs ul.workflow li.current a {font-weight:normal;}
 .nav-tabs li#admin-groups-li, .nav-tabs li#settings-personal-li {float:right;}
-div.item-list-tabs, div#subnav.item-list-tabs {margin:0; background:none;}
+div.item-list-tabs, div#subnav.item-list-tabs {margin:0; background:none; overflow:visible;}
 div#subnav.item-list-tabs {padding-bottom:10px; margin-bottom:10px; border-color:#DDD;}
 div.item-list-tabs ul li:first-child {margin-left:0;}
 .group-content #item-body #pag-top, 
@@ -1796,7 +1821,7 @@ body.activity-permalink .activity-list li .activity-content {min-height:122px;}
 	clear:both;
 }
 
-#footer #footer-widgets a {color:#CCC;}
+#footer #footer-widgets a {color:#CCC; font-weight:normal;}
 #footer #footer-widgets a:hover {color:#EEE;}
 #footer #footer-widget-area {margin:0; float:left;}
 #footer #footer-widget-area div.widget-area > ul > li {margin:0;}
